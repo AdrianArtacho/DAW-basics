@@ -96,3 +96,5 @@ Konzept und Lehre: **[Adrián Artacho](https://muk.ac.at/studienangebot/lehrende
 Die Abbildungen aus Herstellerhandbüchern sind mit Originalseite, Asset-URL und Rechteinhaber in den jeweiligen JSON-Dateien sowie auf der Website dokumentiert. Die Rechte bleiben bei Ableton, Apple, Steinberg, Image-Line und Avid. Diese fremden Abbildungen sind nicht als frei lizenzierte Projektbestandteile ausgewiesen. Eigene Prinzipdarstellungen sind als solche beschriftet.
 
 Der eigens synthetisierte Beispielklang kann für die Übung und für eigene Musik frei verwendet werden; es sind keine Fremdaufnahmen enthalten.
+
+## [ToDo](https://trello.com/c/gaMuYSPe/119-daw-basics)
