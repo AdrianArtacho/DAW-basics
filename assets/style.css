@@ -10,3 +10,5 @@
 @media print{.js-ready .print-daw[hidden]{display:block!important}}
 
 .daw-intro{font-size:12px;line-height:1.7;color:var(--muted);padding-bottom:15px;border-bottom:1px solid var(--line)}
+
+.glossary td a{display:block;min-height:24px}

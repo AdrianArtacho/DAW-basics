@@ -4,6 +4,8 @@
 
 Eine deutschsprachige Kompositionswerkstatt: Aus einer ungefähr drei Sekunden langen Aufnahme entsteht ein etwa dreiminütiges Stück. Die Klasse geht Operation für Operation gemeinsam vor; jede Person folgt den passenden Anleitungen für **Ableton Live, Logic Pro, Cubase, FL Studio oder Pro Tools**.
 
+![Vorschau der veröffentlichten Ressource](artifacts/daw-basics-preview.jpg)
+
 ## Die Ressource
 
 - **20 gemeinsame Operationen, 100 DAW-Anleitungen:** Konzept, kleiner Versuch, Hörfrage, konkrete Bedienung, Kontrollpunkt und Vertiefungsaufgabe.
