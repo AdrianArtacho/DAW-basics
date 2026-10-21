@@ -1,8 +1,8 @@
-# [DAW Basics — 3 Sekunden → 3 Minuten](https://adrianartacho.github.io/DAW-basics/)
+# [DAW Basics](https://adrianartacho.github.io/DAW-basics/)
 
 **MUK / Elektronische Musik · Adrián Artacho**
 
-Eine deutschsprachige Kompositionswerkstatt: Aus einer ungefähr drei Sekunden langen Aufnahme entsteht ein etwa dreiminütiges Stück. Die Klasse geht Operation für Operation gemeinsam vor; jede Person folgt den passenden Anleitungen für **Ableton Live, Logic Pro, Cubase, FL Studio oder Pro Tools**.
+Eine deutschsprachige Anleitung zu grundlegenden Audio-Operationen in **Ableton Live, Logic Pro, Cubase, FL Studio und Pro Tools**. Die Klasse geht Operation für Operation gemeinsam vor; jede Person folgt den Anleitungen für ihre DAW. Als durchgehendes Unterrichtsbeispiel entsteht aus einer ungefähr drei Sekunden langen Aufnahme ein etwa dreiminütiges Stück.
 
 ![Vorschau der veröffentlichten Ressource](artifacts/daw-basics-preview.jpg)
 
@@ -14,7 +14,7 @@ Eine deutschsprachige Kompositionswerkstatt: Aus einer ungefähr drei Sekunden l
 - Direkte Links öffnen eine bestimmte Operation und DAW, beispielsweise [`?daw=flstudio#fades`](https://adrianartacho.github.io/DAW-basics/?daw=flstudio#fades).
 - Suchfeld für Operationen und DAW-Begriffe; lokal gespeicherte Fortschrittshäkchen.
 - **12 echte Herstellerabbildungen**, direkt bei den passenden Anleitungen aufklappbar; zusätzlich eigene Prinzipdarstellungen.
-- Ein eigens synthetisierter **3-Sekunden-Beispielklang** als WAV, mit Player und Download.
+- Ein eigens synthetisierter **3-Sekunden-Beispielklang** als WAV, mit aufklappbarem Player und Download in Schritt 01.
 - Ein anpassbarer Unterrichtsplan für 90 Minuten und eine Druckansicht aller Schritte für die gewählte DAW.
 - Ohne JavaScript bleiben alle Anleitungen untereinander lesbar. Keine externen Schriftarten, Tracker oder Laufzeitbibliotheken.
 

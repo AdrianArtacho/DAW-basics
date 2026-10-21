@@ -1,5 +1,5 @@
 {
-  "title": "3 Sekunden → 3 Minuten",
+  "title": "DAW Basics",
   "subtitle": "Ein Klang. Fünf DAWs. Viele Möglichkeiten.",
   "date": "2026-10-21",
   "phases": [
@@ -35,7 +35,7 @@
       "summary": "Wir beginnen mit einer einzigen, ungefähr drei Sekunden langen Aufnahme. Alles Weitere entsteht aus diesem Material: aus seinen Ausschnitten, Schichten und Verwandlungen.",
       "concept": "Ein Clip, eine Region oder ein Event ist ein Verweis auf eine Audiodatei. Die Zeitleiste ordnet diese Bausteine; Spuren erlauben mehrere Schichten. Lege zuerst eine unveränderte Referenz an und arbeite mit Kopien.",
       "task": [
-        "Importiere deinen Klang oder lade den Beispielklang im Kopf der Seite herunter.",
+        "Importiere deinen Klang oder lade den Beispielklang in diesem Schritt herunter.",
         "Speichere das Projekt mit seinen Audiodateien. Benenne eine stummgeschaltete Spur ORIGINAL und eine Arbeitsspur MATERIAL.",
         "Höre dreimal: Wo sind Attacke, Ton, Geräusch und Ausklang? Notiere drei Eigenschaften."
       ],
