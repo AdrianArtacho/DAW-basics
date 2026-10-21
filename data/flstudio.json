@@ -1,0 +1,455 @@
+{
+  "id": "flstudio",
+  "name": "FL Studio",
+  "version": "FL Studio 2026 (26.1.7.5) · Online Manual, geprüft am 21.10.2026",
+  "platform": "Windows / macOS",
+  "intro": "Arbeite in der Playlist im Song-Modus. Aktuelle Clip Properties verändern einzelne Clip-Instanzen; Channel Settings gelten weiterhin gemeinsam. Die Anleitung nutzt Producer Edition oder höher. Aktuelle Fruity Edition: maximal 8 Audio Clips; Edison und NewTime sind dort nicht enthalten.",
+  "terms": {
+    "region": "Audio Clip / Clip instance",
+    "timeline": "Playlist",
+    "mixer": "Mixer · Insert Track",
+    "stretch": "Stretch / Stretch pro · NewTime",
+    "render": "Consolidate / Export"
+  },
+  "sources": [
+    {
+      "id": "fl-new",
+      "title": "Image-Line · What's New: 26.1.7.5 (12.10.2026)",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/WhatsNew.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-editions",
+      "title": "Image-Line · FL Studio Editions & Features",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/app_feature.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-compare",
+      "title": "Image-Line · Edition comparison: NewTime, Edison and effects",
+      "url": "https://www.image-line.com/fl-studio/compare",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-project",
+      "title": "Image-Line · Project Settings and sample collection",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/songsettings_settings.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-file",
+      "title": "Image-Line · File Menu",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/menu_file.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-playlist",
+      "title": "Image-Line · Playlist: editing, duplication, consolidation and markers",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/playlist.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-audio",
+      "title": "Image-Line · Audio Clips: local properties, fades and gain",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/playlist_audioclip.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-sampler",
+      "title": "Image-Line · Sampler Channel: stretching and shared settings",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/chansettings_sampler.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-newtime",
+      "title": "Image-Line · NewTime: warp markers",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Newtime.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-mixer",
+      "title": "Image-Line · Mixer: routing, inserts and sends",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/mixer.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-eq",
+      "title": "Image-Line · Fruity Parametric EQ 2",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Parametric%20EQ%202.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-comp",
+      "title": "Image-Line · Fruity Limiter: compression controls",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Limiter.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-reverb",
+      "title": "Image-Line · Fruity Reeverb 2",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Reeverb%202.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-delay",
+      "title": "Image-Line · Fruity Delay 3",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Delay%203.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-dist",
+      "title": "Image-Line · Fruity WaveShaper",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20WaveShaper.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-auto",
+      "title": "Image-Line · Automation Clips",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/playlist_automationclip.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-balance",
+      "title": "Image-Line · Fruity Balance",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Fruity%20Balance.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-export",
+      "title": "Image-Line · Export: render length, effects and tails",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/fformats_save_export.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-zip",
+      "title": "Image-Line · Zipped Project File",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/fformats_save_zip.htm",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "fl-time",
+      "title": "Image-Line · Toolbar: Time Panel",
+      "url": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/toolbar_panels.htm",
+      "accessed": "2026-10-21"
+    }
+  ],
+  "images": [
+    {
+      "id": "fl-properties",
+      "src": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/img_shot/clip_properties.png",
+      "sourceUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/playlist_audioclip.htm",
+      "title": "Clip Properties: Varianten einer einzelnen Clip-Instanz",
+      "alt": "Offizielle FL-Studio-Abbildung der Clip Properties mit Reglern für Gain, Pan, Pitch und Fine sowie Reverse.",
+      "credit": "Screenshot: Image-Line, FL Studio Online Manual. Rechte beim Hersteller.",
+      "operations": [
+        "reverse",
+        "pitch"
+      ],
+      "local": "assets/images/flstudio-properties.png"
+    },
+    {
+      "id": "fl-fades",
+      "src": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/img_shot/playlist_audioclipenvelopes.png",
+      "sourceUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/playlist_audioclip.htm",
+      "title": "Fade-Länge, Kurvenform und Clip Gain",
+      "alt": "Offizielle FL-Studio-Abbildung eines Audio Clips mit Fade-Längen, Kurvenreglern und Gain-Griff.",
+      "credit": "Screenshot: Image-Line, FL Studio Online Manual. Rechte beim Hersteller.",
+      "operations": [
+        "fades",
+        "gain"
+      ],
+      "local": "assets/images/flstudio-fades.png"
+    },
+    {
+      "id": "fl-newtime-image",
+      "src": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/img_plug/Newtime.png",
+      "sourceUrl": "https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Newtime.htm",
+      "title": "NewTime: lokale Zeitverschiebung mit Warp Markers",
+      "alt": "Offizielle NewTime-Oberfläche mit Wellenform, Warp-Markern und Werkzeugleiste.",
+      "credit": "Screenshot: Image-Line, FL Studio Online Manual. Rechte beim Hersteller.",
+      "operations": [
+        "warp"
+      ],
+      "local": "assets/images/flstudio-newtime.png"
+    }
+  ],
+  "operations": {
+    "setup": {
+      "term": "Playlist · Audio Clip · Song mode",
+      "steps": [
+        "Über File > New ein Projekt beginnen und mit File > Save as im eigenen Projektordner speichern.",
+        "Beim Speichern Copy used samples to the project folder aktivieren. Die 3-Sekunden-Datei aus dem Browser in die Playlist ziehen.",
+        "Im Transport Song statt Pattern wählen. Abspielen, stoppen und das Projekt erneut speichern."
+      ],
+      "tip": "Versionsstand: 26.1.7.5. Aktuelle Fruity Edition erlaubt 8 Audio Clips; für Edison und NewTime braucht es Producer oder höher. Ältere Anleitungen nennen teils andere Grenzen.",
+      "sources": [
+        "fl-file",
+        "fl-project",
+        "fl-audio",
+        "fl-time",
+        "fl-new",
+        "fl-editions",
+        "fl-compare"
+      ]
+    },
+    "cut": {
+      "term": "Slice tool · Resize · Snap",
+      "steps": [
+        "In der Playlist Stretch ausschalten; Snap für freie Schnitte auf None stellen.",
+        "Slice-Werkzeug wählen und senkrecht durch den Clip ziehen.",
+        "Zum Draw-Werkzeug wechseln; Clipkanten zum Kürzen ziehen."
+      ],
+      "tip": "Höre den Schnitt zuerst allein, dann im Zusammenhang. Ein brauchbares Fragment darf viel kürzer als eine Sekunde sein.",
+      "sources": [
+        "fl-playlist"
+      ]
+    },
+    "arrange": {
+      "term": "Draw · Copy · Mute",
+      "steps": [
+        "Mit Draw ein Fragment an eine neue Position ziehen.",
+        "Mit Shift-Ziehen eine Kopie auf einer weiteren Playlist-Zeile anlegen.",
+        "Das Original mit dem Mute-Werkzeug stummschalten."
+      ],
+      "tip": "Playlist-Zeilen sind zunächst Anordnungsflächen. Ein Wechsel auf eine andere Zeile erzeugt allein keine eigene Mixer-Zuordnung.",
+      "sources": [
+        "fl-playlist",
+        "fl-mixer"
+      ]
+    },
+    "fades": {
+      "term": "Show crossfade controls · Fade handles",
+      "steps": [
+        "Mit Shift+F die Fade-Regler einblenden.",
+        "Obere Dreiecke nach innen ziehen; Kreise verändern die Kurvenform.",
+        "Clips überlappen; am Fade-Griff per Rechtsklick Create crossfade wählen."
+      ],
+      "tip": "Probiere zuerst einen sehr kurzen Fade gegen Klicks, dann einen hörbaren Übergang. Vergleiche beide bei gleicher Lautstärke.",
+      "sources": [
+        "fl-audio"
+      ],
+      "image": "fl-fades"
+    },
+    "gain": {
+      "term": "Audio Clip Gain · Mixer fader · Pan",
+      "steps": [
+        "Den halbkreisförmigen Gain-Griff am unteren Cliprand vertikal ziehen.",
+        "Für eigenes Mixing in den Channel Settings einen freien Mixer-Track zuweisen; dessen Nummer steht im FX-Zielfeld.",
+        "Im Mixer den zugewiesenen Track wählen: Fader verändert den Spurpegel, Pan die Stereoposition."
+      ],
+      "tip": "Clip Gain gleicht einzelne Fragmente an. Der Mixer bearbeitet alle dorthin gerouteten Klänge gemeinsam. Für unabhängige Mixer-Wege zuvor im Clip-Menü Make unique wählen.",
+      "sources": [
+        "fl-audio",
+        "fl-mixer"
+      ],
+      "image": "fl-fades"
+    },
+    "loop": {
+      "term": "Duplicate · Playlist time selection",
+      "steps": [
+        "Gewünschte Fragmente auswählen.",
+        "Playlist-Menü > Edit > Duplicate wiederholt die Auswahl rechts daneben.",
+        "Eine Zeitauswahl bestimmt bei Bedarf den Wiederholungsabstand."
+      ],
+      "tip": "Erst vier Wiederholungen setzen. Danach eine auslassen oder verschieben: Die Abweichung macht den Loop zur musikalischen Entscheidung.",
+      "sources": [
+        "fl-playlist"
+      ]
+    },
+    "reverse": {
+      "term": "Clip Properties > Reverse",
+      "steps": [
+        "Genau eine Kopie mit Alt/Option-Doppelklick öffnen.",
+        "In Clip Properties Reverse einschalten.",
+        "Den rückwärts laufenden Klang vor sein Original setzen."
+      ],
+      "tip": "Bei älteren Versionen ohne lokale Clip Properties: Make unique, dann Channel Settings > Precomputed effects > Reverse. Vor physischem Dateieditieren stattdessen Make unique as sample verwenden.",
+      "sources": [
+        "fl-audio",
+        "fl-sampler"
+      ],
+      "image": "fl-properties"
+    },
+    "pitch": {
+      "term": "Clip Properties > Pitch / Fine",
+      "steps": [
+        "Für einen eindeutigen Vergleich in Channel Settings > Time stretching den Mode Stretch wählen. Soll nur diese Kopie einen anderen Algorithmus erhalten, vorher im Clip-Menü Make unique wählen.",
+        "Die gewünschte Kopie mit Alt/Option-Doppelklick in Clip Properties öffnen.",
+        "Pitch verändern; Fine erlaubt kleinere Abweichungen.",
+        "Vergleiche Original und Transposition bei gleicher Länge."
+      ],
+      "tip": "Ältere Version: Make unique und den PITCH-Regler im Bereich Time stretching nutzen. Dieser erhält die Dauer; bei Resample wechselt FL Studio dafür automatisch auf Auto.",
+      "sources": [
+        "fl-audio",
+        "fl-sampler"
+      ],
+      "image": "fl-properties"
+    },
+    "speed": {
+      "term": "Time stretching > Mode > Resample",
+      "steps": [
+        "Für eine unabhängige Variante im Clip-Menü Make unique wählen; dann Channel Settings öffnen.",
+        "Unter Time stretching den Mode auf Resample setzen.",
+        "In der Playlist Stretch einschalten und die Clipkante auf halbe beziehungsweise doppelte Länge ziehen.",
+        "Kürzer klingt höher, länger tiefer. Für diesen Versuch den PITCH-Regler nicht bewegen."
+      ],
+      "tip": "Der Resample-Algorithmus koppelt Abspielgeschwindigkeit und Tonhöhe. Prüfe anschließend, ob Stretch wieder ausgeschaltet werden soll, damit der nächste Kantenzug nur kürzt.",
+      "sources": [
+        "fl-sampler",
+        "fl-playlist"
+      ]
+    },
+    "stretch": {
+      "term": "Time stretching > Stretch / Stretch pro",
+      "steps": [
+        "Eine unabhängige Kopie anlegen; in Channel Settings > Time stretching den Mode Stretch wählen.",
+        "Den MUL-Regler für eine längere oder kürzere Dauer verändern. Die Tonhöhe bleibt erhalten.",
+        "Alternativ mit aktivem Playlist-Stretch die Clipkante ziehen. Danach die Bearbeitung mit Resample vergleichen."
+      ],
+      "tip": "Zeitkompression verkürzt den Klang. Ein Dynamikkompressor verändert dagegen den Pegelverlauf. Alle Instanzen eines Audio-Clip-Channels teilen dessen Stretch-Algorithmus.",
+      "sources": [
+        "fl-sampler",
+        "fl-audio"
+      ]
+    },
+    "warp": {
+      "term": "NewTime · Warp Markers",
+      "steps": [
+        "NewTime in einem freien Mixer-FX-Slot öffnen und die Ausgangsdatei über File > Load sample laden.",
+        "Mit Shift-Klick Warp-Marker vor, auf und nach einem markanten Ereignis setzen.",
+        "Den mittleren Marker horizontal ziehen; die äußeren begrenzen die betroffene Umgebung.",
+        "Über Send selection to Playlist eine neue Audioversion zurückgeben. Das unbearbeitete Original stummschalten und die NewTime-Wiedergabe stoppen."
+      ],
+      "tip": "NewTime ist aktuell ab Producer enthalten. Ohne NewTime: Klang in drei Fragmente schneiden und nur das mittlere zeitlich verändern; die Übergänge mit Fades gestalten. Das ist eine Schnittalternative, kein gleichwertiger Warp-Editor.",
+      "sources": [
+        "fl-newtime",
+        "fl-compare"
+      ],
+      "image": "fl-newtime-image"
+    },
+    "eq": {
+      "term": "Fruity Parametric EQ 2 · High Pass / Low Pass",
+      "steps": [
+        "Den Klang auf einen eigenen Mixer-Track routen. In einem freien FX-Slot Fruity Parametric EQ 2 laden.",
+        "Einen Bandpunkt rechtsklicken und unter Type etwa Low Pass oder High Pass wählen.",
+        "Den Punkt horizontal für die Grenzfrequenz verschieben; bei einem Peaking-Band verändert vertikales Ziehen die Anhebung oder Absenkung.",
+        "Über den Ein-/Ausschalter des Slots mit dem unbearbeiteten Klang vergleichen."
+      ],
+      "tip": "Als Hörversuch einen Klang zunehmend abdunkeln. Danach prüfen: Ist er nur leiser geworden oder hat sich sein Charakter verändert?",
+      "sources": [
+        "fl-eq",
+        "fl-mixer"
+      ]
+    },
+    "dynamics": {
+      "term": "Fruity Limiter > COMP · Threshold / Ratio",
+      "steps": [
+        "Fruity Limiter im Mixer-Track des Klangs laden und zur COMP-Ansicht wechseln.",
+        "RATIO erhöhen, etwa auf 3:1; THRESH senken, bis die lautesten Stellen hörbar und sichtbar reduziert werden.",
+        "Mit ATT und REL vergleichen, wie Anschlag und Ausklang reagieren.",
+        "GAIN für einen ähnlich lauten Vorher-Nachher-Vergleich ausgleichen."
+      ],
+      "tip": "Die vorgeschlagenen Werte sind ein Hörexperiment. Hier wird Dynamik komprimiert, keine Zeit. Falls bereits ein Limiter auf dem Master liegt, dessen Wirkung beim Vergleich berücksichtigen.",
+      "sources": [
+        "fl-comp"
+      ]
+    },
+    "space": {
+      "term": "Fruity Reeverb 2 · Fruity Delay 3",
+      "steps": [
+        "Fruity Reeverb 2 in einem FX-Slot des Klang-Tracks laden. DRY für das Direktsignal beibehalten, WET zunächst niedrig einstellen.",
+        "Mit DEC die Nachhallzeit, mit SIZE den Raumcharakter und mit DELAY den Abstand zum ersten Hallanteil verändern.",
+        "Für deutliche Echos stattdessen Fruity Delay 3 einsetzen: TIME und Feedback einstellen, dann WET/Dry abgleichen.",
+        "Kurzes Original, lange Hallfahne und hörbares Echo als drei verschiedene Gesten ausprobieren."
+      ],
+      "tip": "Auf einem Effekt-Send wird DRY auf 0 gestellt. Beim direkten Insert braucht es dagegen meist einen Anteil des trockenen Signals.",
+      "sources": [
+        "fl-reverb",
+        "fl-delay"
+      ]
+    },
+    "distortion": {
+      "term": "Fruity WaveShaper · Pre / Mix / Post",
+      "steps": [
+        "Fruity WaveShaper auf dem Klang-Track laden.",
+        "Per Rechtsklick einen Punkt auf der Kurve ergänzen und die gerade Kennlinie vorsichtig verbiegen.",
+        "Mit Pre den Eingang, mit Mix den Effektanteil und mit Post die Ausgangslautstärke einstellen.",
+        "Zwei Fassungen vergleichen: leichte Färbung und bewusst starke Verformung."
+      ],
+      "tip": "Die gerade Ausgangskurve allein verzerrt kaum. Beim Formen zuerst die Abhörlautstärke niedrig halten und anschließend den Pegel zum Original angleichen.",
+      "sources": [
+        "fl-dist"
+      ]
+    },
+    "sends": {
+      "term": "Mixer routing · Send switch / Send level",
+      "steps": [
+        "Einen freien Mixer-Track Hall nennen und Fruity Reeverb 2 laden: DRY 0%, WET 100%.",
+        "Den Quell-Track auswählen; unten am Hall-Track den Routing-Pfeil anklicken.",
+        "Den dort erscheinenden Send-Regler langsam aufdrehen. Die Verbindung des Quell-Tracks zum Master beibehalten.",
+        "Bei weiteren Quellen denselben Hall-Track als Ziel verwenden."
+      ],
+      "tip": "Standard-Sends sind post-fader: Der Quellfader beeinflusst auch den Hallanteil. Route to this track only würde den direkten Master-Weg entfernen und ist für diesen Parallelversuch ungeeignet.",
+      "sources": [
+        "fl-mixer",
+        "fl-reverb"
+      ]
+    },
+    "automation": {
+      "term": "Create automation clip · Control points",
+      "steps": [
+        "Für Lautstärkeautomation Fruity Balance auf dem Klang-Track laden; der Mixerfader bleibt so für den Gesamtmix verfügbar.",
+        "Den gewünschten Zeitbereich in der Playlist markieren. Volume rechtsklicken und Create automation clip wählen.",
+        "Im neuen Automation Clip per Rechtsklick Punkte setzen und durch Ziehen einen Verlauf formen.",
+        "Dasselbe Prinzip funktioniert etwa am EQ-FREQ-Regler oder am Hall-Send."
+      ],
+      "tip": "Springt ein gelöschter Verlauf beim Start zurück, unter Browser > Current project > Patterns > Initialized controls den gespeicherten Anfangswert prüfen. Nur den betroffenen Eintrag ändern.",
+      "sources": [
+        "fl-auto",
+        "fl-balance"
+      ]
+    },
+    "resample": {
+      "term": "Consolidate this track · Render settings",
+      "steps": [
+        "Projektversion sichern. Playlist-Trackkopf rechtsklicken: Consolidate this track > From track start.",
+        "Im Renderdialog Insert effects einschalten, Master effects für weiteres Bearbeiten meist ausschalten.",
+        "Ergebnis auf einen trockenen Mixer-Weg routen; Quellen stumm lassen."
+      ],
+      "tip": "Effekte nicht versehentlich doppelt anwenden. Bei relevanten Sends oder komplexem Routing stattdessen die gewünschte Mischung als WAV exportieren und neu importieren. Zum Vergleich eine unveränderte Projektversion behalten.",
+      "sources": [
+        "fl-playlist",
+        "fl-export",
+        "fl-file"
+      ]
+    },
+    "structure": {
+      "term": "Time markers · Minute : Second : Centisecond",
+      "steps": [
+        "Die obere Zeitanzeige auf Minute : Second : Centisecond umstellen.",
+        "Am Zeitlineal rechtsklicken und Add marker für Formabschnitte wählen.",
+        "Bis 3:00 arrangieren; Anfang, Kontrast und Schluss hörend prüfen."
+      ],
+      "tip": "Das Taktraster bestimmt nicht die Form. Lege etwa drei Bereiche mit unterschiedlichen Dichten an und entscheide dann, wo Wiederkehr oder Stille gebraucht wird.",
+      "sources": [
+        "fl-time",
+        "fl-playlist"
+      ]
+    },
+    "export": {
+      "term": "File > Export > Wave file · Song · Tail",
+      "steps": [
+        "Das Projekt speichern und die gewünschte Gesamtdauer in der Playlist markieren; eine alte kurze Loop-Auswahl entfernen.",
+        "File > Export > Wave file wählen. Mode: Song, WAV, Stereo und für die Unterrichtsabgabe beispielsweise 24 Bit einstellen; Split mixer tracks ausschalten. Die Samplerate wird unter Options > Audio settings festgelegt.",
+        "Für den fertigen Mix Insert- und Master-Effekte aktivieren. Leave remainder erhält Hallfahnen, kann die Datei aber verlängern.",
+        "Für exakt 3:00 alle Ausklänge innerhalb der Auswahl gestalten und Cut remainder verwenden. Total Time kontrollieren und die exportierte Datei ganz anhören.",
+        "Für ein transportierbares Arbeitsprojekt zusätzlich über Save as eine ZIP-Projektdatei mit den verwendeten Samples sichern."
+      ],
+      "tip": "Ein WAV ist die Abhördatei; FLP/ZIP bleibt das bearbeitbare Projekt. Nicht lizenzierte Trial-Plugins können beim erneuten Öffnen durch Platzhalter ersetzt werden.",
+      "sources": [
+        "fl-export",
+        "fl-zip"
+      ]
+    }
+  }
+}

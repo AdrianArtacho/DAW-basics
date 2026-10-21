@@ -1,0 +1,409 @@
+{
+  "title": "3 Sekunden → 3 Minuten",
+  "subtitle": "Ein Klang. Fünf DAWs. Viele Möglichkeiten.",
+  "date": "2026-10-21",
+  "phases": [
+    {
+      "id": "material",
+      "name": "Material entdecken",
+      "description": "Aus einem Klang werden Bausteine."
+    },
+    {
+      "id": "time",
+      "name": "Zeit & Tonhöhe",
+      "description": "Dasselbe Material bekommt neue Identitäten."
+    },
+    {
+      "id": "sound",
+      "name": "Klang gestalten",
+      "description": "Farbe, Raum und Bewegung entwickeln."
+    },
+    {
+      "id": "form",
+      "name": "Ein Stück formen",
+      "description": "Entscheidungen treffen, hören und abschließen."
+    }
+  ],
+  "operations": [
+    {
+      "id": "setup",
+      "title": "Ankommen & importieren",
+      "short": "Projekt & Material",
+      "phase": "material",
+      "level": "Basis",
+      "minutes": 5,
+      "summary": "Wir beginnen mit einer einzigen, ungefähr drei Sekunden langen Aufnahme. Alles Weitere entsteht aus diesem Material: aus seinen Ausschnitten, Schichten und Verwandlungen.",
+      "concept": "Ein Clip, eine Region oder ein Event ist ein Verweis auf eine Audiodatei. Die Zeitleiste ordnet diese Bausteine; Spuren erlauben mehrere Schichten. Lege zuerst eine unveränderte Referenz an und arbeite mit Kopien.",
+      "task": [
+        "Importiere deinen Klang oder lade den Beispielklang im Kopf der Seite herunter.",
+        "Speichere das Projekt mit seinen Audiodateien. Benenne eine stummgeschaltete Spur ORIGINAL und eine Arbeitsspur MATERIAL.",
+        "Höre dreimal: Wo sind Attacke, Ton, Geräusch und Ausklang? Notiere drei Eigenschaften."
+      ],
+      "listen": "Welche Eigenschaft könnte die Identität deines ganzen Stücks tragen?",
+      "checkpoint": "Das Projekt ist gespeichert; das Original bleibt als Referenz erhalten.",
+      "bonus": "Verwende einen selbst aufgenommenen Alltagsklang: Schlüssel, Papier, Stimme oder ein Instrument. Drei Sekunden müssen nicht drei Sekunden gleichförmiger Klang sein.",
+      "diagram": "source"
+    },
+    {
+      "id": "cut",
+      "title": "Schneiden & kürzen",
+      "short": "Schneiden",
+      "phase": "material",
+      "level": "Basis",
+      "minutes": 5,
+      "summary": "Ein kurzer Klang enthält oft mehrere Ereignisse. Durch Schnitte lösen wir sie aus ihrem ursprünglichen Zusammenhang.",
+      "concept": "Teilen erzeugt neue Clipgrenzen. Trimmen verschiebt die sichtbare Start- oder Endgrenze. Das zugrunde liegende Audio bleibt bei diesen üblichen Arrangement-Edits erhalten. Zoome hinein und schalte das Zeitraster bei Bedarf aus.",
+      "task": [
+        "Trenne Attacke, Mitte und Ausklang in drei Bausteine.",
+        "Kürze einen davon auf einen winzigen Impuls.",
+        "Lass zwischen den Teilen bewusst Stille und höre sie einzeln."
+      ],
+      "listen": "Wann erkennst du die Quelle noch? Wann hörst du einen eigenständigen neuen Klang?",
+      "checkpoint": "Du hast mindestens drei unterschiedlich lange Bausteine.",
+      "bonus": "Schneide in einen laufenden Ton. Hörst du einen Klick? Behalte die Stelle für den nächsten Fade-Versuch.",
+      "diagram": "cut"
+    },
+    {
+      "id": "arrange",
+      "title": "Verschieben, kopieren & schichten",
+      "short": "Anordnen & schichten",
+      "phase": "material",
+      "level": "Basis",
+      "minutes": 5,
+      "summary": "Komposition beginnt schon mit der Frage, wann etwas erklingt — und ob es allein oder gleichzeitig mit etwas anderem zu hören ist.",
+      "concept": "Hintereinander platzierte Clips bilden eine Folge; getrennte Spuren machen gleichzeitige Schichten übersichtlich. Kopien können trotzdem auf dieselbe Quelldatei oder dieselben Sample-Einstellungen verweisen. Eine Kopie im Arrangement ist deshalb nicht automatisch eine unabhängige Audiodatei.",
+      "task": [
+        "Baue aus drei Fragmenten eine Antwort auf den ursprünglichen Klang.",
+        "Dupliziere ein Fragment auf eine zweite Spur und verschiebe es leicht.",
+        "Benenne die Spuren nach ihrer Funktion: IMPULS, FLÄCHE, GESTE."
+      ],
+      "listen": "Entsteht bei Überlagerung ein Echo, ein neuer Klang oder eine Lautstärkeänderung?",
+      "checkpoint": "Du hast eine kurze Folge und eine gleichzeitige Schichtung.",
+      "bonus": "Vergleiche exaktes Übereinanderlegen mit einem kleinen Zeitversatz. Prüfe die Summe auch in Mono.",
+      "diagram": "layers"
+    },
+    {
+      "id": "fades",
+      "title": "Fades & Übergänge",
+      "short": "Fades & Crossfades",
+      "phase": "material",
+      "level": "Basis",
+      "minutes": 5,
+      "summary": "Ein Anfang kann schlagen, wachsen oder fast unbemerkt auftauchen. Mit Fades komponieren wir die Ränder eines Klangs.",
+      "concept": "Ein Fade verändert den Pegel am Cliprand. Ein Crossfade blendet zwei überlappende Klänge ineinander. Sehr kurze Fades können Schnittklicks vermeiden; längere Fades verändern die musikalische Geste. Ein Fade allein verlängert die Audiodatei nicht.",
+      "task": [
+        "Gib einem geschnittenen Fragment kurze Ein- und Ausblendungen.",
+        "Verwandle dieselbe Attacke durch einen langen Fade-in in ein Anschwellen.",
+        "Überblende zwei verschiedene Fragmente und höre den Übergang bei normaler Lautstärke."
+      ],
+      "listen": "Bleibt der Übergang gleichmäßig, oder hörst du eine Delle bzw. eine Überhöhung?",
+      "checkpoint": "Ein Schnitt ist sauber; ein zweiter Übergang ist bewusst hörbar gestaltet.",
+      "bonus": "Vergleiche lineare und gekrümmte Fades. Bei ähnlichem oder identischem Material ist eine Equal-Power-Kurve nicht automatisch die beste Wahl.",
+      "diagram": "fade"
+    },
+    {
+      "id": "gain",
+      "title": "Pegel & Panorama",
+      "short": "Pegel & Panorama",
+      "phase": "material",
+      "level": "Basis",
+      "minutes": 4,
+      "summary": "Wir verteilen Aufmerksamkeit: Ein Klang tritt nach vorne, ein anderer wird Hintergrund; links und rechts öffnen einen Raum.",
+      "concept": "Clip-Gain verändert den Pegel eines einzelnen Bausteins. Der Spur-Fader regelt die Spur an seiner Stelle im Signalweg. Eingangspegel vor einem Effekt beeinflusst oft dessen Reaktion. Ein Stereo-Balance-Regler arbeitet anders als das Panning eines Monosignals.",
+      "task": [
+        "Gleiche die Lautstärken deiner Fragmente mit Clip- oder Event-Gain grob an.",
+        "Stelle mit den Spur-Fadern Vordergrund und Hintergrund her.",
+        "Verteile zwei Schichten im Panorama und halte im Master Platz für weitere Klänge."
+      ],
+      "listen": "Ist die Hauptgeste auch bei leiser Wiedergabe klar?",
+      "checkpoint": "Die Summe übersteuert nicht; Lautstärke und Position unterstützen die musikalische Idee.",
+      "bonus": "Ändere einmal den Pegel vor und einmal nach einer Verzerrung. Vergleiche den Klang bei ähnlicher Ausgangslautstärke.",
+      "diagram": "gain"
+    },
+    {
+      "id": "loop",
+      "title": "Wiederholen & variieren",
+      "short": "Loops & Rhythmus",
+      "phase": "material",
+      "level": "Basis",
+      "minutes": 5,
+      "summary": "Wiederholung macht aus einem Ereignis ein Muster. Kleine Änderungen verhindern, dass das Muster nur auf der Stelle tritt.",
+      "concept": "Ein Arrangement-Loop wiederholt Material. Ein Wiedergabe-Loop wiederholt lediglich einen Bereich beim Arbeiten. Für unser Stück brauchen wir tatsächlich angeordnete oder geloopte Clips. Sehr kurze Wiederholungen können als Ton oder raues Timbre erscheinen.",
+      "task": [
+        "Wiederhole einen Impuls achtmal, zunächst regelmäßig.",
+        "Entferne zwei Wiederholungen und verschiebe eine weitere.",
+        "Baue eine zweite, anders lange Schleife darüber."
+      ],
+      "listen": "Wann entsteht ein Puls? Wann kippt Wiederholung in Textur?",
+      "checkpoint": "Eine wiederholte Figur entwickelt sich durch mindestens eine gezielte Änderung.",
+      "bonus": "Verkürze die Abstände schrittweise. Gestalte einen Übergang von einzeln hörbaren Ereignissen zu einer dichten Fläche.",
+      "diagram": "repeat"
+    },
+    {
+      "id": "reverse",
+      "title": "Rückwärts abspielen",
+      "short": "Reverse",
+      "phase": "time",
+      "level": "Basis",
+      "minutes": 4,
+      "summary": "Aus einem Ausklang wird ein Anwachsen. Reverse macht vertraute Ursache-Wirkungs-Beziehungen hörbar fremd.",
+      "concept": "Reverse kehrt die zeitliche Reihenfolge des Audiomaterials um. Die Tonhöhen bleiben grundsätzlich erhalten; Attacke und Ausklang tauschen ihre Rollen. Je nach DAW kann die Umkehr auf den Clip, ein Sample oder eine neu berechnete Datei wirken.",
+      "task": [
+        "Erzeuge eine rückwärts abgespielte Variante auf einer eigenen Spur.",
+        "Setze sie unmittelbar vor das Original.",
+        "Passe die Übergangsstelle mit Fades an."
+      ],
+      "listen": "Wo erwartest du den Höhepunkt? Wird diese Erwartung erfüllt?",
+      "checkpoint": "Ein rückwärts gerichteter Klang führt in ein anderes Ereignis hinein.",
+      "bonus": "Rendere einen verhallten Klang, drehe das Ergebnis um und schneide daraus eine neue Geste.",
+      "diagram": "reverse"
+    },
+    {
+      "id": "pitch",
+      "title": "Tonhöhe verändern",
+      "short": "Pitch-Shift",
+      "phase": "time",
+      "level": "Basis",
+      "minutes": 5,
+      "summary": "Dasselbe Material kann als hohe Figur, mittlere Stimme oder tiefe Fläche auftreten.",
+      "concept": "Pitch-Shifting verändert die Tonhöhe bei möglichst gleichbleibender Dauer. Ein Halbton entspricht bei gleichstufiger Stimmung 100 Cent; eine Oktave zwölf Halbtönen. Formanten und Transienten können sich je nach Algorithmus trotzdem verändern.",
+      "task": [
+        "Erzeuge Varianten bei −12, 0 und +7 Halbtönen.",
+        "Kontrolliere, ob alle drei gleich lang bleiben.",
+        "Ordne sie als Frage und Antwort oder als Schichtung an."
+      ],
+      "listen": "Welche Variante wirkt wie derselbe Gegenstand, welche wie ein neues Instrument?",
+      "checkpoint": "Mindestens eine Tonhöhenvariante bleibt ungefähr so lang wie das Original.",
+      "bonus": "Verstimme zwei Kopien um wenige Cent gegeneinander. Höre auf Schwebungen und prüfe die Mono-Summe.",
+      "diagram": "pitch"
+    },
+    {
+      "id": "speed",
+      "title": "Tempo und Tonhöhe koppeln",
+      "short": "Repitch / Varispeed",
+      "phase": "time",
+      "level": "Basis",
+      "minutes": 5,
+      "summary": "Wir behandeln den Klang wie ein schneller oder langsamer laufendes Tonband.",
+      "concept": "Bei gekoppelter Wiedergabegeschwindigkeit verändert sich beides: Dauer und Tonhöhe. Halbe Geschwindigkeit macht drei Sekunden zu sechs Sekunden und verschiebt um eine Oktave nach unten; doppelte Geschwindigkeit ergibt 1,5 Sekunden und eine Oktave nach oben. Das ist ein anderer Versuch als Pitch-Shift oder tonhöhentreues Stretching.",
+      "task": [
+        "Erzeuge eine Variante mit halber Geschwindigkeit.",
+        "Vergleiche sie mit der −12-Halbton-Variante aus dem vorherigen Schritt.",
+        "Nutze den langsameren Klang als neues Ausgangsmaterial."
+      ],
+      "listen": "Welche Details werden bei langsamer Wiedergabe erstmals hörbar?",
+      "checkpoint": "Du hörst und siehst: Tonhöhe sinkt, Dauer wächst.",
+      "bonus": "Manche DAWs bieten Varispeed nur für das ganze Projekt. Rendere dann eine Variante separat, bevor du sie mit dem Original kombinierst.",
+      "diagram": "speed"
+    },
+    {
+      "id": "stretch",
+      "title": "Zeit dehnen & stauchen",
+      "short": "Time-Stretch",
+      "phase": "time",
+      "level": "Basis",
+      "minutes": 6,
+      "summary": "Ein kurzer Klang wird zur Fläche; ein längerer Verlauf wird zu einer knappen Geste.",
+      "concept": "Time-Stretching verändert die Dauer und versucht dabei, die Tonhöhe zu erhalten. Drei Sekunden können zu zwölf oder zu 1,5 Sekunden werden. Das Stauchen der Zeit ist keine Dynamikkompression. Bei starken Faktoren werden Artefakte oft selbst zum interessanten Material.",
+      "task": [
+        "Dehne eine Kopie auf ungefähr die vierfache Dauer.",
+        "Stauche eine andere Kopie auf die halbe Dauer.",
+        "Vergleiche mindestens zwei Algorithmen, falls deine DAW sie anbietet."
+      ],
+      "listen": "Bleibt die Attacke scharf? Entstehen Körner, Flattern oder ein metallischer Nachklang?",
+      "checkpoint": "Eine deutlich längere Variante behält ungefähr die ursprüngliche Tonhöhe.",
+      "bonus": "Dehne eine bereits gedehnte, gerenderte Variante erneut. Entscheide nach Gehör, ob die Artefakte zu deiner Idee passen.",
+      "diagram": "stretch"
+    },
+    {
+      "id": "warp",
+      "title": "Einzelne Zeitpunkte verschieben",
+      "short": "Warp / Flex",
+      "phase": "time",
+      "level": "Vertiefung",
+      "minutes": 6,
+      "summary": "Jetzt verändern wir die Zeit innerhalb eines Klangs: Der Anfang bleibt, die Mitte wird lang, das Ende kommt früher.",
+      "concept": "Warp-, Flex- oder Elastic-Marker verankern bestimmte Stellen im Audio und verschieben andere. So wird nicht die gesamte Datei gleichmäßig gedehnt. Fixiere Nachbarpunkte, damit eine lokale Änderung nicht ungewollt den ganzen Verlauf verschiebt.",
+      "task": [
+        "Setze Anker am Anfang, an einem inneren Ereignis und am Ende.",
+        "Verschiebe nur das innere Ereignis.",
+        "Gestalte einmal eine Verzögerung und einmal eine Beschleunigung."
+      ],
+      "listen": "Wo wird aus einer technischen Zeitkorrektur eine expressive Geste?",
+      "checkpoint": "Die Gesamtlänge bleibt kontrolliert, während sich der innere Verlauf ändert.",
+      "bonus": "Falls die Edition keinen Warp-Editor hat: Schneide in Teilstücke, verschiebe sie und dehne nur das mittlere Teilstück. Gestalte die Nähte mit Fades.",
+      "diagram": "warp"
+    },
+    {
+      "id": "eq",
+      "title": "Filtern & Klangfarben trennen",
+      "short": "EQ & Filter",
+      "phase": "sound",
+      "level": "Basis",
+      "minutes": 5,
+      "summary": "Aus einem Klang gewinnen wir verschiedene Register und Farben: dumpfer Körper, mittlere Präsenz, helles Geräusch.",
+      "concept": "Ein EQ hebt Frequenzbereiche an oder senkt sie ab. Ein Hochpass lässt hohe Frequenzen passieren, ein Tiefpass tiefe. Filter machen aus einem geräuschhaften Klang nicht automatisch einen sauber gestimmten Ton; starke Resonanz verändert das Ergebnis zusätzlich.",
+      "task": [
+        "Lege einen EQ oder Filter auf eine Arbeitsspur.",
+        "Erzeuge eine dunkle Variante mit Tiefpass und eine helle mit Hochpass.",
+        "Vergleiche unbearbeitet und bearbeitet bei ähnlicher Lautstärke."
+      ],
+      "listen": "Welche Frequenzbereiche tragen die Identität der Quelle?",
+      "checkpoint": "Zwei Schichten besetzen unterschiedliche klangliche Bereiche.",
+      "bonus": "Bewege die Filterfrequenz langsam während der Wiedergabe. Merke dir eine Bewegung für den Automationsschritt.",
+      "diagram": "filter"
+    },
+    {
+      "id": "dynamics",
+      "title": "Dynamik komprimieren",
+      "short": "Kompressor & Gate",
+      "phase": "sound",
+      "level": "Vertiefung",
+      "minutes": 5,
+      "summary": "Wir verändern das Verhältnis zwischen Attacke, Körper und leisen Details — ohne die Länge des Clips zu ändern.",
+      "concept": "Der hier verwendete Kompressor reduziert Pegel oberhalb einer Schwelle entsprechend seiner Kennlinie. Attack und Release beeinflussen die zeitliche Reaktion. Ein Gate bzw. Downward-Expander schwächt leise Anteile ab. Diese Dynamikbearbeitung ist vom zeitlichen Dehnen oder Stauchen getrennt.",
+      "task": [
+        "Beginne mit einem moderaten Verhältnis, etwa 3:1, und senke den Threshold, bis Pegelreduktion sichtbar wird.",
+        "Vergleiche kurze und längere Attack-Zeiten.",
+        "Gleiche die Ausgangslautstärke für den Bypass-Vergleich an."
+      ],
+      "listen": "Wird der Klang dichter, weicher oder perkussiver? Verwechsle lauter nicht mit besser.",
+      "checkpoint": "Du kannst eine Änderung der Hüllkurve hören, ohne die Clipdauer zu verändern.",
+      "bonus": "Ein Gate kann aus einem langen Ausklang eine abgehackte Figur machen. Lass die leisen Details alternativ bewusst stehen.",
+      "diagram": "dynamics"
+    },
+    {
+      "id": "space",
+      "title": "Echo & Raum",
+      "short": "Delay & Reverb",
+      "phase": "sound",
+      "level": "Basis",
+      "minutes": 5,
+      "summary": "Ein Einzelereignis bekommt Antworten oder eine Umgebung. Der Ausklang kann länger und wichtiger werden als sein Auslöser.",
+      "concept": "Delay erzeugt zeitversetzte Wiederholungen; Reverb einen dichten räumlichen Nachklang. Dry/Wet bestimmt das Verhältnis von Original und Effekt. Feedback erzeugt weitere Wiederholungen und kann bei hohen Werten den Pegel stark anwachsen lassen.",
+      "task": [
+        "Vergleiche einen kurzen Raum mit einem sehr langen Hall.",
+        "Erzeuge mit einem Delay eine rhythmische Antwort.",
+        "Baue eine Pause, in der ausschließlich der Effekt ausklingt."
+      ],
+      "listen": "Wann bleibt der Raum Hintergrund? Wann wird er selbst zum Ereignis?",
+      "checkpoint": "Ein Effekt erfüllt eine hörbare formale Funktion.",
+      "bonus": "Vergleiche Hall vor und nach einer Verzerrung. Gleiche die Lautstärke an und beginne mit niedrigen Pegeln.",
+      "diagram": "echo"
+    },
+    {
+      "id": "distortion",
+      "title": "Verfremden & Effektketten",
+      "short": "Verzerrung & Collage",
+      "phase": "sound",
+      "level": "Vertiefung",
+      "minutes": 5,
+      "summary": "Wir machen aus dem Ausgangsmaterial neue Texturen: körnig, rau, schmal, schimmernd oder fast unkenntlich.",
+      "concept": "Sättigung und Verzerrung verändern die Wellenform und erzeugen zusätzliche Spektralanteile. Bit- und Samplerate-Reduktion bringen andere Artefakte hervor. Die Reihenfolge einer Effektkette kann das Ergebnis deutlich verändern.",
+      "task": [
+        "Probiere eine zurückhaltende und eine extreme Verzerrung.",
+        "Vergleiche Filter → Verzerrung mit Verzerrung → Filter.",
+        "Wähle zwei kurze interessante Stellen für eine spätere Collage."
+      ],
+      "listen": "Welche neue Textur passt zum Material? Was ist lediglich lauter geworden?",
+      "checkpoint": "Eine Effektkette erzeugt eine bewusst gewählte neue Klangidentität.",
+      "bonus": "Kombiniere Reverse, Stretching und Effekte. Notiere die Reihenfolge, damit du die Variante später wiederfindest.",
+      "diagram": "chain"
+    },
+    {
+      "id": "sends",
+      "title": "Parallel bearbeiten",
+      "short": "Sends & Busse",
+      "phase": "sound",
+      "level": "Vertiefung",
+      "minutes": 5,
+      "summary": "Mehrere Schichten können denselben Raum teilen. Oder das Original bleibt klar, während daneben eine stark veränderte Version entsteht.",
+      "concept": "Ein Send schickt Signal zu einem zusätzlichen Effektweg. Der Effekt-Return wird zur trockenen Spur gemischt. Für einen üblichen Hall-Send steht der Effekt auf 100 % Wet; die Send-Stärke regelt den Hallanteil. Pre- und Post-Fader bestimmen, ob der Spur-Fader den Send-Pegel mitverändert.",
+      "task": [
+        "Erzeuge einen gemeinsamen Hall-Return oder Aux-Kanal.",
+        "Schicke zwei Spuren mit unterschiedlichen Send-Pegeln dorthin.",
+        "Vergleiche diesen gemeinsamen Raum mit zwei getrennten Insert-Effekten."
+      ],
+      "listen": "Wirken die Schichten zusammengehörig, ohne ihre Unterschiede zu verlieren?",
+      "checkpoint": "Zwei Spuren speisen einen gemeinsamen Effektweg.",
+      "bonus": "Verzerrung oder Filter im Return verändern nur den Effektanteil. Vermeide beim Routing eine unbeabsichtigte Rückkopplung.",
+      "diagram": "sends"
+    },
+    {
+      "id": "automation",
+      "title": "Bewegungen zeichnen",
+      "short": "Automation",
+      "phase": "sound",
+      "level": "Basis",
+      "minutes": 6,
+      "summary": "Eine Einstellung wird zum Verlauf: Der Klang wandert, öffnet sich, wächst oder entfernt sich.",
+      "concept": "Automation speichert Parameteränderungen über die Zeit. Für den Einstieg zeichnen wir Punkte und Kurven. Viele DAWs bieten Read, Touch, Latch und Write; dann wähle Read zum Abspielen. Andere, etwa FL Studio, spielen aktive Automation Clips ohne einen solchen Moduswechsel ab.",
+      "task": [
+        "Zeichne eine langsame Lautstärke- oder Filterbewegung.",
+        "Füge eine zweite, deutlich schnellere Bewegung hinzu.",
+        "Spiele ab einer früheren Position ab und prüfe auch den Ausgangswert vor dem ersten Punkt."
+      ],
+      "listen": "Hat der Verlauf Richtung? Unterstützt er eine größere Form?",
+      "checkpoint": "Eine Parameterbewegung wird bei erneuter Wiedergabe reproduziert.",
+      "bonus": "Automatisiere den Send nur am Ende einer Geste: Ein einzelner Klang öffnet einen Raum, während die folgenden trocken bleiben.",
+      "diagram": "automation"
+    },
+    {
+      "id": "resample",
+      "title": "Rendern & erneut zerschneiden",
+      "short": "Resampling",
+      "phase": "form",
+      "level": "Basis",
+      "minutes": 6,
+      "summary": "Wir behandeln das bisherige Ergebnis wieder wie eine Aufnahme. Eine Effektkette wird zu neuem schneidbarem Material.",
+      "concept": "Bounce, Render, Commit oder Resampling schreiben Klang in eine Audiodatei. Welche Inserts, Sends und Automationen enthalten sind, hängt vom Verfahren ab. Einfaches Zusammenfassen von Clips druckt nicht in jeder DAW die Effekte mit.",
+      "task": [
+        "Rendere eine interessante Variante einschließlich ihres Ausklangs.",
+        "Verwende die erzeugte neue Spur oder importiere das Ergebnis auf eine neue Spur. Schalte die ursprüngliche Variante stumm und vermeide, bereits eingerechnete Effekte nochmals anzuwenden.",
+        "Schneide daraus drei neue Bausteine und kombiniere sie mit dem ersten Material."
+      ],
+      "listen": "Hörst du im neuen Material noch seine Entstehungsgeschichte?",
+      "checkpoint": "Eine neue Audiodatei enthält die beabsichtigte Bearbeitung; das bearbeitbare Originalprojekt bleibt erhalten.",
+      "bonus": "Erzeuge einen kurzen Effektkatalog: A_dunkel, B_rueckwaerts, C_lang, D_rau. Verwende nur die Varianten, die dein Stück wirklich braucht.",
+      "diagram": "render"
+    },
+    {
+      "id": "structure",
+      "title": "Drei Minuten komponieren",
+      "short": "Form & Dramaturgie",
+      "phase": "form",
+      "level": "Basis",
+      "minutes": 15,
+      "summary": "Das Ziel ist ein Stück mit hörbaren Beziehungen. Nicht jede Technik muss darin vorkommen. Entscheide, was sich wiederholt, was sich verwandelt und was nur einmal geschieht.",
+      "concept": "Setze Zeitmarken in Minuten und Sekunden. Ein möglicher Entwurf: 0:00–0:30 vorstellen; 0:30–1:15 verwandeln; 1:15–2:00 kontrastieren; 2:00–2:40 verdichten; 2:40–3:00 zurücknehmen. Das ist ein Angebot, keine verbindliche Form.",
+      "task": [
+        "Lege bei 0:00, 0:30, 1:15, 2:00, 2:40 und 3:00 Orientierungspunkte an.",
+        "Wähle drei verwandte Klangfamilien und einen klaren Kontrast. Plane mindestens eine Pause.",
+        "Höre das ganze Stück ohne Mausbewegung. Ändere danach nur die drei wichtigsten Stellen."
+      ],
+      "listen": "Was erinnert an den Anfang? Wo verändert sich deine Aufmerksamkeit? Ist das Ende vorbereitet?",
+      "checkpoint": "Es gibt einen nachvollziehbaren Verlauf bis etwa 3:00, einschließlich des letzten Ausklangs.",
+      "bonus": "Tauscht euch zu zweit aus: Die hörende Person beschreibt den Verlauf, bevor die komponierende Person ihre Absicht erklärt.",
+      "diagram": "form"
+    },
+    {
+      "id": "export",
+      "title": "Exportieren & gemeinsam hören",
+      "short": "Export & Hörkontrolle",
+      "phase": "form",
+      "level": "Basis",
+      "minutes": 5,
+      "summary": "Wir machen aus dem Projekt eine Datei, die außerhalb der eigenen DAW genauso funktioniert.",
+      "concept": "Für die Abgabe eignet sich eine Stereo-WAV-Datei, etwa mit 24 Bit und der Projekt-Samplerate. Exportiere den Master- bzw. Main-Ausgang und den vollständigen Zeitbereich. Plane den Ausklang in die drei Minuten ein, wenn die Abgabe genau 3:00 dauern soll.",
+      "task": [
+        "Prüfe Solo, Mute, Masterpegel sowie Anfang und Ende des Exportbereichs.",
+        "Exportiere eine WAV-Datei ohne unbeabsichtigte Normalisierung; nenne sie Name_Titel.wav.",
+        "Öffne die exportierte Datei außerhalb der DAW und höre sie vollständig: Achte besonders auf Übergänge, dichte Stellen und den letzten Ausklang."
+      ],
+      "listen": "Fehlen Spuren oder Effekte? Ist der Schluss vollständig? Klingt die Datei wie dein Projekt?",
+      "checkpoint": "Die WAV-Datei ist abspielbar; das Projekt mit seinen Audiodateien ist ebenfalls gesichert.",
+      "bonus": "Notiere drei Entscheidungen: Welche Technik wurde musikalisch wichtig? Welche Variante hast du verworfen? Was möchtest du als Nächstes ausprobieren?",
+      "diagram": "export"
+    }
+  ]
+}

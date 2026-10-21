@@ -1,0 +1,475 @@
+{
+  "id": "logic",
+  "name": "Logic Pro",
+  "version": "Logic Pro für Mac 12.3 · Online-Benutzerhandbuch",
+  "platform": "macOS",
+  "intro": "Diese Schritte gelten für Logic Pro am Mac, nicht für die iPad-Version. Arbeite im linearen Tracks-Bereich. Die englischen Bediennamen helfen beim Nachschlagen im Herstellerhandbuch; die Anordnung kann in älteren Versionen abweichen.",
+  "terms": {
+    "region": "Audio Region",
+    "timeline": "Tracks Area",
+    "mixer": "Mixer / Channel Strip",
+    "stretch": "Time Stretch / Flex Time",
+    "render": "Bounce / Bounce in Place"
+  },
+  "sources": [
+    {
+      "id": "logic-save",
+      "title": "Apple: Save projects",
+      "url": "https://support.apple.com/guide/logicpro/save-projects-lgcpce128e82/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-import",
+      "title": "Apple: Create tracks using drag and drop",
+      "url": "https://support.apple.com/guide/logicpro/create-tracks-using-drag-and-drop-lgcpd1e675e5/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-cut",
+      "title": "Apple: Split regions",
+      "url": "https://support.apple.com/guide/logicpro/split-regions-lgcpf7c0e886/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-move",
+      "title": "Apple: Move regions",
+      "url": "https://support.apple.com/guide/logicpro/move-regions-lgcpf7c0d489/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-fades",
+      "title": "Apple: Create fades on audio regions",
+      "url": "https://support.apple.com/guide/logicpro/create-fades-on-audio-regions-lgcpf7c0ee6c/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-crossfade",
+      "title": "Apple: Create automatic crossfades",
+      "url": "https://support.apple.com/guide/logicpro/create-automatic-crossfades-lgcp9260fa9c/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-gain",
+      "title": "Apple: Change the gain of audio regions",
+      "url": "https://support.apple.com/guide/logicpro/change-gain-audio-regions-tracks-area-lgcp8e4c781d/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-loop",
+      "title": "Apple: Loop regions",
+      "url": "https://support.apple.com/guide/logicpro/loop-regions-lgcpf7c0e0db/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-reverse",
+      "title": "Apple: Reverse audio regions",
+      "url": "https://support.apple.com/guide/logicpro/reverse-audio-regions-lgcp99b0012e/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-pitch",
+      "title": "Apple: Change the pitch of an audio region",
+      "url": "https://support.apple.com/en-ie/102146",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-stretch",
+      "title": "Apple: Time stretch regions",
+      "url": "https://support.apple.com/guide/logicpro/time-stretch-regions-lgcpf7c0ebee/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-flex",
+      "title": "Apple: Overview of Flex Time and Pitch",
+      "url": "https://support.apple.com/guide/logicpro/flex-time-and-pitch-overview-lgcp15968647/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-algorithms",
+      "title": "Apple: Flex Time algorithms and parameters",
+      "url": "https://support.apple.com/guide/logicpro/flex-time-algorithms-and-parameters-lgcpa77a4a3f/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-markers",
+      "title": "Apple: Time stretch using flex markers",
+      "url": "https://support.apple.com/guide/logicpro/time-stretch-using-flex-markers-lgcpdca9f4c5/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-eq",
+      "title": "Apple: Use the Channel EQ",
+      "url": "https://support.apple.com/guide/logicpro/use-the-channel-eq-lgcpbc219e52/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-compressor",
+      "title": "Apple: Compressor",
+      "url": "https://support.apple.com/guide/logicpro/compressor-overview-lgcef1bec0a5/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-reverb",
+      "title": "Apple: ChromaVerb",
+      "url": "https://support.apple.com/guide/logicpro/chromaverb-overview-lgcp18cc0940/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-delay",
+      "title": "Apple: Stereo Delay",
+      "url": "https://support.apple.com/guide/logicpro/stereo-delay-controls-lgcef18b892f/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-overdrive",
+      "title": "Apple: Overdrive",
+      "url": "https://support.apple.com/guide/logicpro/overdrive-controls-lgcef1a8f10b/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-sends",
+      "title": "Apple: Route audio via send effects",
+      "url": "https://support.apple.com/guide/logicpro/route-audio-via-send-effects-lgcp8ea0091c/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-automation",
+      "title": "Apple: Add automation points to tracks",
+      "url": "https://support.apple.com/guide/logicpro/add-automation-points-lgcpb1a3327b/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-bip",
+      "title": "Apple: Bounce regions in place",
+      "url": "https://support.apple.com/guide/logicpro/bounce-regions-in-place-lgcp8ae5826e/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-form",
+      "title": "Apple: Add markers",
+      "url": "https://support.apple.com/guide/logicpro/add-markers-lgcp564d6a94/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-bounce",
+      "title": "Apple: Bounce a project to an audio file",
+      "url": "https://support.apple.com/guide/logicpro/bounce-a-project-to-an-audio-file-lgcp785a41c3/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-varispeed",
+      "title": "Apple: Use Varispeed – Speed and Pitch",
+      "url": "https://support.apple.com/guide/logicpro/varispeed-alter-speed-pitch-audio-lgcp1cc678a7/mac",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "logic-bounce-range",
+      "title": "Apple: Set the bounce range",
+      "url": "https://support.apple.com/guide/logicpro/set-the-bounce-range-lgcp190ba9b7/mac",
+      "accessed": "2026-10-21"
+    }
+  ],
+  "images": [
+    {
+      "id": "logic-scissors",
+      "src": "https://help.apple.com/assets/697921A0B89A6DAE620D667A/697921A59331DF6F330EFA33/en_US/35cf45b33a15e4d68f33f32ac7376eae.png",
+      "sourceUrl": "https://support.apple.com/guide/logicpro/split-regions-lgcpf7c0e886/mac",
+      "title": "Schneiden mit dem Scissors Tool",
+      "alt": "Offizielle Apple-Abbildung: Scherenwerkzeug an einer Region mit Anzeige der Schnittposition.",
+      "credit": "© Apple Inc. · Logic Pro User Guide",
+      "operations": [
+        "cut"
+      ],
+      "local": "assets/images/logic-scissors.png"
+    },
+    {
+      "id": "logic-fade-inspector",
+      "src": "https://help.apple.com/assets/697921A0B89A6DAE620D667A/697921A59331DF6F330EFA33/en_US/bc38e18c425d8fc1d31ffb8210766378.png",
+      "sourceUrl": "https://support.apple.com/guide/logicpro/create-fades-on-audio-regions-lgcpf7c0ee6c/mac",
+      "title": "Fade im Region Inspector",
+      "alt": "Offizielle Apple-Abbildung des Fade-In-Parameters im Inspector und seines Verlaufs in der Audioregion.",
+      "credit": "© Apple Inc. · Logic Pro User Guide",
+      "operations": [
+        "fades"
+      ],
+      "local": "assets/images/logic-fade-inspector.png"
+    },
+    {
+      "id": "logic-flex-markers",
+      "src": "https://help.apple.com/assets/697921A0B89A6DAE620D667A/697921A59331DF6F330EFA33/en_US/49e514db7a4512f8c4b29e5729bc6524.png",
+      "sourceUrl": "https://support.apple.com/guide/logicpro/time-stretch-using-flex-markers-lgcpdca9f4c5/mac",
+      "title": "Drei Flex-Marker begrenzen eine Veränderung",
+      "alt": "Offizielle Apple-Abbildung einer Audioregion mit drei Flex-Markern um ein Ereignis.",
+      "credit": "© Apple Inc. · Logic Pro User Guide",
+      "operations": [
+        "warp"
+      ],
+      "local": "assets/images/logic-flex-markers.png"
+    }
+  ],
+  "operations": {
+    "setup": {
+      "term": "Project · Audio Track · Tracks Area",
+      "steps": [
+        "Ein leeres Projekt anlegen. Die WAV-Datei in den freien Tracks-Bereich unter den vorhandenen Spuren ziehen; dadurch entsteht eine Audiospur.",
+        "File > Save wählen und die Audiodateien in das Projekt kopieren lassen.",
+        "Die unveränderte Aufnahme auf einer stummgeschalteten Originalspur behalten; mit einer Kopie auf einer zweiten Audiospur arbeiten. Flex zunächst ausgeschaltet lassen."
+      ],
+      "tip": "Zum Importieren in die Timeline ziehen, nicht unter die Spurköpfe: Dort bietet Logic auch Sampler-Instrumente an.",
+      "sources": [
+        "logic-import",
+        "logic-save",
+        "logic-flex"
+      ]
+    },
+    "cut": {
+      "term": "Split Regions at Playhead · Scissors Tool",
+      "steps": [
+        "Region auswählen und den Playhead an die Schnittstelle setzen.",
+        "Edit > Split > Regions at Playhead wählen. Alternativ das Scissors Tool im Werkzeugmenü auswählen und an der Schnittstelle klicken.",
+        "Die entstandenen Regionen getrennt verschieben. Zum Kürzen ihre unteren Randbereiche ziehen."
+      ],
+      "tip": "Snap bestimmt das Einrasten; für frei gesetzte Schnitte die Rastereinstellung prüfen.",
+      "sources": [
+        "logic-cut",
+        "logic-move"
+      ],
+      "image": "logic-scissors"
+    },
+    "arrange": {
+      "term": "Move / Copy Region · Tracks Area",
+      "steps": [
+        "Region an eine neue Zeitposition ziehen.",
+        "Für eine Kopie beim Ziehen Option gedrückt halten; alternativ kopieren und am Playhead einfügen.",
+        "Gleichzeitige Klangschichten auf getrennte Audiospuren legen und nach ihrer Rolle benennen."
+      ],
+      "tip": "Control beim Verschieben übergeht das normale Raster; Control+Shift erlaubt feinere Schritte, abhängig vom Zoom.",
+      "sources": [
+        "logic-move"
+      ]
+    },
+    "fades": {
+      "term": "Fade Tool · Fade In / Fade Out · X-Fade",
+      "steps": [
+        "Fade Tool im Werkzeugmenü der Tracks Area wählen und über den Anfang beziehungsweise das Ende einer Audioregion ziehen.",
+        "Die genaue Fade-Länge im Region Inspector unter Fade In / Fade Out einstellen.",
+        "Für automatische Überblendungen im Drag-Menü X-Fade wählen und zwei Audioregionen auf derselben Spur überlappen lassen."
+      ],
+      "tip": "Die Fades im Tracks-Bereich sind nichtdestruktiv. Fades im Audio File Editor verändern dagegen die Audiodatei.",
+      "sources": [
+        "logic-fades",
+        "logic-crossfade"
+      ],
+      "image": "logic-fade-inspector"
+    },
+    "gain": {
+      "term": "Gain Tool · Region Gain · Channel Strip Volume",
+      "steps": [
+        "Im Werkzeugmenü Gain Tool auswählen und über die Audioregion bewegen.",
+        "An der eingeblendeten gelben Linie nach unten oder oben ziehen, um den Regionpegel zu ändern.",
+        "Anschließend im Channel Strip Lautstärke und Panorama für die Mischung einstellen."
+      ],
+      "tip": "In älteren Versionen ohne Gain Tool den Gain-Parameter des Region Inspector verwenden. Regionpegel und Spur-Fader erfüllen unterschiedliche Aufgaben.",
+      "sources": [
+        "logic-gain"
+      ]
+    },
+    "loop": {
+      "term": "Loop Region · Loop Pointer",
+      "steps": [
+        "Zuerst den gewünschten Audioausschnitt zuschneiden.",
+        "Die Maus über die obere rechte Regionkante bewegen, bis der Loop Pointer erscheint.",
+        "Die Kante bis zum gewünschten Ende der Wiederholungen ziehen."
+      ],
+      "tip": "L aktiviert eine fortlaufende Schleife bis zur nächsten Region oder zum Projektende. Die untere Kante verändert dagegen die Regionlänge.",
+      "sources": [
+        "logic-loop"
+      ]
+    },
+    "reverse": {
+      "term": "Reverse im Region Inspector",
+      "steps": [
+        "Eine Kopie der Audioregion auswählen.",
+        "Im Region Inspector More aufklappen und Reverse aktivieren.",
+        "Den rückwärts klingenden Abschnitt vor einen markanten Einsatz setzen; mit deaktiviertem Reverse vergleichen."
+      ],
+      "tip": "Reverse ist bei aktivem Flex Time nicht verfügbar. Die gewünschte Flex-Bearbeitung zuerst mit Bounce in Place auf eine neue Spur rendern und dort Flex deaktivieren.",
+      "sources": [
+        "logic-reverse",
+        "logic-bip"
+      ]
+    },
+    "pitch": {
+      "term": "Transpose · Fine Tune",
+      "steps": [
+        "Audioregion auswählen und mit I den Inspector öffnen.",
+        "Im Region-Bereich Transpose beispielsweise auf +7 Halbtöne setzen.",
+        "Fine Tune für kleinere Abweichungen verwenden und die unveränderte Regiondauer kontrollieren."
+      ],
+      "tip": "Für diese Aufgabe wird die ganze Region transponiert. Flex Pitch zur Bearbeitung einzelner erkannter Noten ist dafür nicht nötig.",
+      "sources": [
+        "logic-pitch",
+        "logic-flex"
+      ]
+    },
+    "speed": {
+      "term": "Varispeed (Speed and Pitch) · Bounce",
+      "steps": [
+        "Das Hauptprojekt speichern. Ein separates leeres Testprojekt anlegen und nur die unveränderte 3-Sekunden-Datei am Anfang importieren; Flex ausgeschaltet lassen.",
+        "Control-Klick auf die Control Bar > Customize Control Bar and Display. Im LCD-Menü Custom wählen und Varispeed anhaken.",
+        "Varispeed einschalten. Oben in der Varispeed-Anzeige ausdrücklich Varispeed (Speed and Pitch) wählen; unten Percentage (%) wählen und −50 eingeben.",
+        "Cycle ausschalten und die vollständige Region auswählen. File > Bounce > Project or Section öffnen: PCM/WAV, Mode Realtime, Normalize Off. Die Start-/Endpositionen müssen die ausgewählte Region umfassen; den Klang bouncen.",
+        "Zum Hauptprojekt zurückkehren und dort Varispeed ausgeschaltet lassen. Die neue WAV-Datei mit ausgeschaltetem Flex importieren: Aus 3 Sekunden werden 6 Sekunden, eine Oktave tiefer."
+      ],
+      "tip": "Speed Only würde die Tonhöhe erhalten. Bonus für lokale Band-Effekte: Auf einer eigenen Spur Flex Time – Speed (FX) wählen und mit Flex-Markern einzelne Ereignisse verschieben.",
+      "sources": [
+        "logic-varispeed",
+        "logic-bounce-range",
+        "logic-bounce",
+        "logic-import",
+        "logic-algorithms"
+      ]
+    },
+    "stretch": {
+      "term": "Time Stretch · Option-Ziehen",
+      "steps": [
+        "Eine Audioregionkopie auswählen. Im Tracks-Menü Edit > Time Stretch > Time Stretching Algorithm beispielsweise Universal wählen.",
+        "Option gedrückt halten und die rechte Regionkante bis zur gewünschten Länge ziehen.",
+        "Den längeren und kürzeren Klang mit dem Original vergleichen; die Tonhöhe soll hier erhalten bleiben."
+      ],
+      "tip": "Dieser Vorgang erzeugt eine neue PCM-Audiodatei. Das ist ein anderer Arbeitsweg als das Verschieben einzelner Flex-Marker.",
+      "sources": [
+        "logic-stretch"
+      ]
+    },
+    "warp": {
+      "term": "Flex Time · Flex Markers",
+      "steps": [
+        "Edit > Show Flex Pitch/Time wählen. Flex auf der Audiospur aktivieren und einen passenden Modus wählen, etwa Monophonic oder Polyphonic.",
+        "In der unteren Wellenformhälfte auf ein Ereignis klicken, um es mit drei Flex-Markern zu umgeben.",
+        "Den mittleren Marker früher oder später ziehen. Die Nachbarmarker begrenzen die zeitliche Veränderung."
+      ],
+      "tip": "Speed (FX) ändert dabei auch die Tonhöhe. Für diese Aufgabe einen tonhöhenerhaltenden Flex-Modus verwenden und den Flex-Schalter der Region eingeschaltet lassen.",
+      "sources": [
+        "logic-flex",
+        "logic-algorithms",
+        "logic-markers"
+      ],
+      "image": "logic-flex-markers"
+    },
+    "eq": {
+      "term": "Channel EQ",
+      "steps": [
+        "Im Channel Strip auf die EQ-Fläche klicken. Ist schon ein Effekt im ersten Slot, öffnet ein Doppelklick einen EQ im nächsten freien Slot.",
+        "Im Channel EQ einen Filterbereich verändern, etwa tiefe Frequenzen absenken oder die Höhen stark reduzieren.",
+        "Zwischen aktivem und umgangenem Effekt vergleichen und die Lautstärke ungefähr angleichen."
+      ],
+      "tip": "Eine schmale Filterung kann aus dem Fundstück eine ganz neue Klangfarbe herausholen.",
+      "sources": [
+        "logic-eq"
+      ]
+    },
+    "dynamics": {
+      "term": "Dynamics > Compressor",
+      "steps": [
+        "In einem freien Audio FX-Slot Dynamics > Compressor einsetzen.",
+        "Mit Ratio etwa 3:1 beginnen und Threshold senken, bis die Anzeige eine Pegelreduktion zeigt.",
+        "Attack und Release variieren. Den Ausgangspegel so einstellen, dass der Vergleich nicht nur durch größere Lautstärke beeindruckt."
+      ],
+      "tip": "Hier werden Pegelunterschiede verändert. Die Zeitkompression beim Stretching ist eine andere Operation.",
+      "sources": [
+        "logic-compressor"
+      ]
+    },
+    "space": {
+      "term": "Reverb > ChromaVerb · Delay > Stereo Delay",
+      "steps": [
+        "In einem Audio FX-Slot Reverb > ChromaVerb wählen. Raumtyp und Decay verändern.",
+        "Alternativ Delay > Stereo Delay einsetzen; Delay Time und Feedback für hörbare Wiederholungen einstellen.",
+        "Den Effektanteil dosieren und bewusst zwischen deutlichem Echo und zusammenhängendem Nachhall unterscheiden."
+      ],
+      "tip": "Für eine Collage verschiedene Kopien desselben Geräuschs in unterschiedliche Räume setzen.",
+      "sources": [
+        "logic-reverb",
+        "logic-delay"
+      ]
+    },
+    "distortion": {
+      "term": "Distortion > Overdrive",
+      "steps": [
+        "Auf einer Klangspur im Audio FX-Menü Distortion > Overdrive einsetzen.",
+        "Drive erhöhen, dann mit Tone die entstandenen Höhen gestalten.",
+        "Output absenken beziehungsweise Level Compensation verwenden und mit Bypass vergleichen."
+      ],
+      "tip": "Speichere eine raue und eine sanfte Variante für unterschiedliche Formabschnitte.",
+      "sources": [
+        "logic-overdrive"
+      ]
+    },
+    "sends": {
+      "term": "Send · Bus · Aux Channel Strip",
+      "steps": [
+        "In einem freien Send-Slot der Klangspur einen freien Bus wählen.",
+        "Im zugehörigen Aux Channel Strip ChromaVerb einsetzen. Dort den trockenen Anteil auf 0 und den Hallanteil auf 100 % stellen.",
+        "Auf der Klangspur den Send-Regler langsam öffnen. Weitere Klangspuren können denselben Bus verwenden."
+      ],
+      "tip": "Post Fader bedeutet: Wird die Klangspur leiser, erhält auch der Hall weniger Signal. Aux-Effekte liegen auf einem parallelen Signalweg.",
+      "sources": [
+        "logic-sends",
+        "logic-reverb"
+      ]
+    },
+    "automation": {
+      "term": "Track Automation · Automation Points",
+      "steps": [
+        "Mit A die Automation einblenden und Track Automation auswählen.",
+        "Im Parametermenü etwa Volume, Pan oder einen Effektparameter wählen. Den Wiedergabemodus auf Read stellen.",
+        "Punkte auf der Automationslinie setzen und ziehen; mit dem Pencil Tool lässt sich eine Kurve zeichnen.",
+        "Einen ganzen Formabschnitt abspielen und die Veränderung hören."
+      ],
+      "tip": "Die erste Eingabe in einer leeren Automationsspur erzeugt zunächst einen Ausgangspunkt am Projektbeginn. Weitere Punkte bilden den Verlauf.",
+      "sources": [
+        "logic-automation"
+      ]
+    },
+    "resample": {
+      "term": "Bounce Regions in Place",
+      "steps": [
+        "Bearbeitete Region auswählen und File > Bounce > Regions in Place öffnen.",
+        "Destination: New Track und Source: Mute wählen. Bypass Effect Plug-ins ausgeschaltet lassen; bei Bedarf Add Effects Tail to File und Add Effects Tail to Region aktivieren.",
+        "Die neue Audioregion schneiden, umkehren oder erneut dehnen. Die stumme Quellspur zur späteren Änderung behalten."
+      ],
+      "tip": "Für die komplette Mischung einschließlich Aux/Sends Project or Section bouncen und die WAV-Datei neu importieren. Bounce in Place ist kein vollständiger Mixdown.",
+      "sources": [
+        "logic-bip",
+        "logic-bounce"
+      ]
+    },
+    "structure": {
+      "term": "Marker Track · Markers",
+      "steps": [
+        "In den Global Tracks die Marker-Spur einblenden.",
+        "Playhead an die geplanten Abschnittsanfänge setzen und jeweils Add Marker (+) verwenden.",
+        "Die Marker nach ihrer Funktion benennen, etwa Vorstellung, Verwandlung und Rückkehr. Die Gesamtform auf drei Minuten abstimmen."
+      ],
+      "tip": "Marker dienen hier der Orientierung. Arrangement-Marker können zusätzlich ganze Abschnitte verschieben; das ist für den ersten Entwurf nicht nötig.",
+      "sources": [
+        "logic-form"
+      ]
+    },
+    "export": {
+      "term": "Bounce Project or Section",
+      "steps": [
+        "Alle gewünschten Spuren zum Stereo-Ausgang routen und einen Bereich einschließlich Ausklang festlegen.",
+        "File > Bounce > Project or Section wählen. PCM aktivieren; WAV, 24 Bit und die Projekt-Samplerate wählen.",
+        "Start und End kontrollieren, Normalize für den unveränderten Mix ausschalten und bouncen.",
+        "Die Datei außerhalb von Logic anhören. Bei einer Vorgabe von genau 3:00 den Ausklang innerhalb dieser Zeit gestalten."
+      ],
+      "tip": "Bounce in Place produziert Arbeitsmaterial; Project or Section liefert die Stereo-Abgabe der gesamten Mischung.",
+      "sources": [
+        "logic-bounce",
+        "logic-save"
+      ]
+    }
+  }
+}

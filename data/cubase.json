@@ -1,0 +1,510 @@
+{
+  "id": "cubase",
+  "name": "Cubase",
+  "version": "Cubase 15.0: Operation Manual und Plug-in Reference; Pro als Referenz, Hinweise für Artist / Elements",
+  "platform": "macOS / Windows",
+  "intro": "Arbeite im Projektfenster mit Audio-Events. Die Anleitungen beziehen sich auf Cubase 15; englische Menünamen helfen beim Abgleich mit der offiziellen Hilfe. Free Warp und Render in Place setzen eine passende Edition voraus. Für Elements sind Alternativen angegeben.",
+  "terms": {
+    "region": "Audio-Event (verweist auf einen Audio-Clip im Pool)",
+    "timeline": "Project Window / Projektfenster",
+    "mixer": "MixConsole / Channel Settings",
+    "stretch": "Sizing Applies Time Stretch / AudioWarp",
+    "render": "Render in Place / Export Audio Mixdown"
+  },
+  "sources": [
+    {
+      "id": "cu-import",
+      "title": "Cubase 15: Importing Audio Files",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/importing_audio_and_midi/importing_audio_and_midi_importing_audio_files_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-cut",
+      "title": "Cubase 15: Splitting Events",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/parts_events/parts_and_events_splitting_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-duplicate",
+      "title": "Cubase 15: Duplicating Events",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/parts_events/parts_and_events_duplicating_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-repeat",
+      "title": "Cubase 15: Repeating Events",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/parts_events/parts_and_events_repeating_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-fades",
+      "title": "Cubase 15: Creating and Editing Fades with the Handles",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/fades_crossfades_and_envelopes/fades_event_based_creating_and_editing_with_handles_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-crossfade",
+      "title": "Cubase 15: Crossfades",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/fades_crossfades_and_envelopes/fades_crossfades_c.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-gain",
+      "title": "Cubase 15: Adjusting the Event Volume",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/fades_crossfades_and_envelopes/fades_event_envelopes_adjusting_static_event_volume_changes_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-reverse",
+      "title": "Cubase 15: Reverse",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/direct_offline_processing/direct_offline_processing_reverse_r.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-process",
+      "title": "Cubase 15: Built-In Audio Processes",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/direct_offline_processing/direct_offline_processing_built-in_audio_processes_c.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-pitch",
+      "title": "Cubase 15: Pitch Shift",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/direct_offline_processing/direct_offline_processing_pitch_shift_r.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-stretch",
+      "title": "Cubase 15: Sizing Applies Time Stretch",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/parts_events/parts_and_events_resizing_events_with_the_object_selection_tool_sizing_applies_time_stretch_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-warp",
+      "title": "Cubase 15: Free Warp",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/sample_editor_tempo_matching_audio/sample_editor_tempo_matching_audio_free_warp_c.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-warp-project",
+      "title": "Cubase 15: Free Warp in the Event Display",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/editing_tempo_and_signature/editing_tempo_time_warp_tool_free_warp_using_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-eq",
+      "title": "Cubase 15: Equalizer Settings",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/mixconsole/mixconsole_equalizer_settings_r.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-comp",
+      "title": "Cubase 15: Standard Compressor",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/mixconsole/mixconsole_standard_compressor_r.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-inserts",
+      "title": "Cubase 15: Adding Insert Effects",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/audio_effects/audio_effects_insert_effects_adding_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-room",
+      "title": "Cubase 15: RoomWorks SE",
+      "url": "https://www.steinberg.help/r/cubase-pro/cubaseplugref/15.0/en/_shared/topics/plug_ref/roomworks_se_r.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-delay",
+      "title": "Cubase 15: MonoDelay",
+      "url": "https://www.steinberg.help/r/cubase-pro/cubaseplugref/15.0/en/_shared/topics/plug_ref/monodelay_r.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-amp",
+      "title": "Cubase Artist 15: AmpSimulator",
+      "url": "https://www.steinberg.help/r/cubase-artist/cubaseplugref/15.0/en/_shared/topics/plug_ref/ampsimulator_r.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-fxtrack",
+      "title": "Cubase 15: Effect Channel Tracks",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/tracks_about/tracks_about_fx_channel_tracks_c.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-sends",
+      "title": "Cubase 15: Adding Send Effects",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/mixconsole/mixconsole_adding_send_effects_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-auto",
+      "title": "Cubase 15: Manual Writing of Automation Data",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/automation/automation_manual_writing_of_automation_data_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-render",
+      "title": "Cubase 15: Rendering Selections",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/rendering_to_audio/rendering_to_audio_rendering_selections_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-render-options",
+      "title": "Cubase Artist 15: Render Selection Dialog",
+      "url": "https://www.steinberg.help/r/cubase-artist/15.0/en/cubase_nuendo/topics/rendering_to_audio/rendering_to_audio_render_selection_r.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-marker",
+      "title": "Cubase 15: Adding and Editing Markers",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/markers/markers_editing_markers_on_the_marker_track_c.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-export",
+      "title": "Cubase 15: Export Audio Mixdown Dialog",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/export_audio_mixdown/export_audio_mixdown_options_r.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-elements-stretch",
+      "title": "Cubase Elements 15: Sizing Applies Time Stretch",
+      "url": "https://www.steinberg.help/r/cubase-elements/15.0/en/cubase_nuendo/topics/parts_events/parts_and_events_resizing_events_with_the_object_selection_tool_sizing_applies_time_stretch_t.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-audio-preferences",
+      "title": "Cubase Pro 15 — Editing – Audio: gemeinsame Clips und Stretch-Algorithmen",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/preferences/preferences_editing_audio_r.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-warp-algorithms",
+      "title": "Cubase Pro 15 — Algorithm Presets",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/sample_editor_tempo_matching_audio/sample_editor_tempo_matching_audio_algorithm_presets_c.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "cu-elastique",
+      "title": "Cubase Pro 15 — élastique: Time, Pitch und Tape",
+      "url": "https://www.steinberg.help/r/cubase-pro/15.0/en/cubase_nuendo/topics/time_stretch_and_pitch_shift_algorithms/time_stretch_and_pitch_shift_algorithms_elastique_r.html",
+      "accessed": "2026-10-21"
+    }
+  ],
+  "images": [
+    {
+      "id": "cu-room-image",
+      "src": "https://www.steinberg.help/api/khub/maps/FwAsGDu1WXcOgUM7NTxNIw/resources/rvOwvgBhrkqJK67B3Dl8fw-FwAsGDu1WXcOgUM7NTxNIw/content?v=a51757d362aa9dce",
+      "sourceUrl": "https://www.steinberg.help/r/cubase-pro/cubaseplugref/15.0/en/_shared/topics/plug_ref/roomworks_se_r.html",
+      "title": "RoomWorks SE: Hallzeit und Dry/Wet-Mischung",
+      "alt": "Offizielle Abbildung der RoomWorks-SE-Oberfläche mit Pre-Delay, Reverb Time und Mix.",
+      "credit": "© Steinberg Media Technologies GmbH · Abbildung aus der Cubase 15 Plug-in Reference",
+      "operations": [
+        "space",
+        "sends"
+      ],
+      "local": "assets/images/cubase-roomworks-se.png"
+    },
+    {
+      "id": "cu-amp-image",
+      "src": "https://www.steinberg.help/api/khub/maps/nqcrrBlLriHAoshRTirLrQ/resources/ikW2k36nUPgmUuEph3JFZQ-nqcrrBlLriHAoshRTirLrQ/content?v=455b91630874314f",
+      "sourceUrl": "https://www.steinberg.help/r/cubase-artist/cubaseplugref/15.0/en/_shared/topics/plug_ref/ampsimulator_r.html",
+      "title": "AmpSimulator: Drive färbt, Volume gleicht aus",
+      "alt": "Offizielle Abbildung des AmpSimulator mit Verstärker- und Boxenauswahl, Drive, Klangreglern und Volume.",
+      "credit": "© Steinberg Media Technologies GmbH · Abbildung aus der Cubase Artist 15 Plug-in Reference",
+      "operations": [
+        "distortion"
+      ],
+      "local": "assets/images/cubase-ampsimulator.png"
+    }
+  ],
+  "operations": {
+    "setup": {
+      "term": "Project / Import Audio File / Audio-Event",
+      "steps": [
+        "Neues leeres Projekt in einem eigenen Ordner speichern.",
+        "Projektcursor an den Anfang setzen; File > Import > Audio File öffnen und die 3-Sekunden-Datei wählen.",
+        "Im Importdialog eine Kopie in den Projektordner übernehmen. Cubase legt bei Bedarf eine Audiospur an.",
+        "Die Spur „Original“ nennen; eine Arbeitskopie erstellen und das Original stummschalten.",
+        "Unter Preferences > Editing > Audio für On Processing Shared Clips die Option Create New Version wählen, damit Offline-Bearbeitung nicht alle Eventkopien verändert."
+      ],
+      "tip": "Für freies Sounddesign das Zeitlineal auf Seconds stellen. Die Übung braucht zunächst weder MIDI noch einen festen Beat.",
+      "sources": [
+        "cu-import",
+        "cu-duplicate",
+        "cu-audio-preferences"
+      ]
+    },
+    "cut": {
+      "term": "Split / Split at Cursor / Normal Sizing",
+      "steps": [
+        "In die Wellenform hineinzoomen und für freie Schnitte Snap ausschalten.",
+        "Mit Split (Schere) an der gewünschten Stelle auf das Audio-Event klicken.",
+        "Zum Auswählen und Verschieben wieder Object Selection benutzen; unerwünschte Stücke markieren und löschen.",
+        "Zum bloßen Kürzen mit Normal Sizing die untere Eventkante ziehen."
+      ],
+      "tip": "Bei Edit > Functions > Split at Cursor zuerst die gewünschten Events auswählen; ohne Auswahl kann der Schnitt mehrere Spuren treffen.",
+      "sources": [
+        "cu-cut"
+      ]
+    },
+    "arrange": {
+      "term": "Object Selection / Duplicate",
+      "steps": [
+        "Ein Event mit Object Selection an eine neue Zeitposition ziehen.",
+        "Für eine Kopie Alt/Option gedrückt halten und ziehen; alternativ Edit > Functions > Duplicate.",
+        "Kopien auf eine zweite Audiospur legen und gegeneinander verschieben.",
+        "Die Spuren nach ihrer Funktion benennen, etwa „Impuls“, „Fläche“ und „Detail“."
+      ],
+      "tip": "Audio-Kopien verweisen zunächst auf denselben Clip. Bei späterer Offline-Bearbeitung gegebenenfalls eine New Version erzeugen, damit die Varianten getrennt bleiben.",
+      "sources": [
+        "cu-duplicate",
+        "cu-process"
+      ]
+    },
+    "fades": {
+      "term": "Fade Handles / Crossfade",
+      "steps": [
+        "Audio-Event auswählen; die kleinen Dreiecke an den oberen Ecken einblenden.",
+        "Das linke Dreieck nach innen ziehen: Fade-in. Das rechte nach innen ziehen: Fade-out.",
+        "Für einen Crossfade zwei Events auf derselben Spur leicht überlappen, beide markieren und Audio > Fades > Crossfade ausführen (Standardtaste X).",
+        "Schnittstelle hören und die Überblendung bei Bedarf verlängern."
+      ],
+      "tip": "Ein sehr kurzer Fade kann Knackser beseitigen; ein langer Fade verändert die musikalische Geste. Bei mehreren ausgewählten Events wirken die Fade-Griffe auf alle.",
+      "sources": [
+        "cu-fades",
+        "cu-crossfade"
+      ]
+    },
+    "gain": {
+      "term": "Event Volume / Volume auf der Info Line",
+      "steps": [
+        "Das Audio-Event auswählen und die Info Line einblenden.",
+        "Den Wert Volume zunächst um etwa 6 dB absenken.",
+        "Alternativ in Cubase 15 den Lautstärkeregler unten links im vergrößerten Event ziehen.",
+        "Erst danach mit dem Kanal-Fader das Verhältnis zu anderen Spuren mischen."
+      ],
+      "tip": "Event Volume verändert den Pegel vor der Spurbearbeitung; der MixConsole-Fader regelt den Kanal. Eine bereits verzerrt aufgenommene Datei wird durch Absenken nicht repariert.",
+      "sources": [
+        "cu-gain"
+      ]
+    },
+    "loop": {
+      "term": "Repeat / Duplicate / Cycle",
+      "steps": [
+        "Ein interessantes Fragment sauber schneiden und kurz ein-/ausblenden.",
+        "Event markieren und Edit > Functions > Repeat öffnen.",
+        "Zum Beispiel sieben Kopien erzeugen und die Wiederholung als Rhythmus anhören.",
+        "Einzelne Kopien auslassen, versetzen oder im Pegel ändern."
+      ],
+      "tip": "Cycle wiederholt nur die Wiedergabe zwischen den Locators. Repeat erzeugt tatsächlich Events im Arrangement und bleibt deshalb im Export hörbar.",
+      "sources": [
+        "cu-repeat"
+      ]
+    },
+    "reverse": {
+      "term": "Reverse / Direct Offline Processing",
+      "steps": [
+        "Eine Variante des Fragments auswählen.",
+        "Audio > Processes > Reverse aufrufen.",
+        "Wenn Cubase nach der Bearbeitung gemeinsam verwendeter Clips fragt, New Version wählen.",
+        "Rückwärtsklang an eine andere Stelle setzen; neue Schnittkanten mit Fades beruhigen."
+      ],
+      "tip": "In Pro/Artist erscheint die Bearbeitung in Direct Offline Processing. Reverse hat keine Parameter und wird unmittelbar angewandt; die Quelldatei als Reserve behalten.",
+      "sources": [
+        "cu-reverse",
+        "cu-process"
+      ]
+    },
+    "pitch": {
+      "term": "Pitch Shift + Time Correction",
+      "steps": [
+        "Eventkopie wählen; Audio > Processes > Pitch Shift öffnen.",
+        "Auf der Transpose-Seite beispielsweise +7 oder −12 Halbtöne einstellen.",
+        "Time Correction aktivieren, damit die Länge erhalten bleibt; Algorithmus passend zum Klang wählen.",
+        "Vorhören und anwenden; die Variante gegen das Original vergleichen."
+      ],
+      "tip": "VariAudio ist für das Umformen des ganzen Geräuschs nicht nötig. Pitch Shift bearbeitet auch nicht melodisches Material. Bei geteilten Quelldateien New Version wählen.",
+      "sources": [
+        "cu-pitch",
+        "cu-process"
+      ]
+    },
+    "speed": {
+      "term": "Pitch Shift ohne Time Correction",
+      "steps": [
+        "Eine neue Eventkopie in Audio > Processes > Pitch Shift öffnen.",
+        "Time Correction ausschalten.",
+        "Transpose auf +12 setzen: die Variante steigt eine Oktave und wird ungefähr halb so lang.",
+        "Eine zweite Variante mit −12 erstellen: tiefer und ungefähr doppelt so lang."
+      ],
+      "tip": "Das ist der gekoppelte Bandmaschinen-Effekt. Nicht mit Pitch Shift bei eingeschalteter Time Correction oder reiner Zeitdehnung verwechseln.",
+      "sources": [
+        "cu-pitch"
+      ]
+    },
+    "stretch": {
+      "term": "Sizing Applies Time Stretch",
+      "steps": [
+        "Object Selection anklicken und im Werkzeugmenü Sizing Applies Time Stretch wählen.",
+        "Nur die gewünschte Kopie auswählen.",
+        "Die untere rechte Eventecke nach rechts ziehen, etwa von 3 auf 6 Sekunden; für Zeitstauchung nach links ziehen.",
+        "Danach wieder Normal Sizing wählen, damit spätere Zuschnitte nicht erneut stretchen."
+      ],
+      "tip": "Auch Elements 15 bietet dieses Werkzeug. Seine Voreinstellung steht unter Preferences > Editing > Audio > Time Stretch Tool Algorithm. Eine Tape-Variante koppelt Zeit und Tonhöhe; für unabhängige Dehnung den Tonhöhenerhalt prüfen. Große Dehnungen dürfen als Klangtextur hörbare Artefakte erzeugen.",
+      "sources": [
+        "cu-stretch",
+        "cu-elements-stretch",
+        "cu-audio-preferences",
+        "cu-elastique"
+      ]
+    },
+    "warp": {
+      "term": "AudioWarp / Free Warp",
+      "steps": [
+        "In Pro/Artist ein Audio-Event im Sample Editor öffnen und den Bereich AudioWarp einblenden.",
+        "Unter Warping Algorithm for Audio Clip beispielsweise élastique Pro – Time wählen; für diese Übung keine Tape-Variante. Dann Free Warp aktivieren.",
+        "Vor und nach dem zu verändernden Detail Warp-Marker als Grenzen setzen.",
+        "Einen Marker auf dem Detail setzen und verschieben; die benachbarten Bereiche werden gedehnt bzw. gestaucht.",
+        "A/B hören und überflüssige Marker entfernen."
+      ],
+      "tip": "Free Warp ist in Pro/Artist verfügbar. Fehlt es in Elements, das Detail herausschneiden und mit Sizing Applies Time Stretch bearbeiten. Warp Grid verändert das Zeitraster; Free Warp verändert das Audio.",
+      "sources": [
+        "cu-warp",
+        "cu-warp-project",
+        "cu-elements-stretch",
+        "cu-warp-algorithms",
+        "cu-elastique"
+      ]
+    },
+    "eq": {
+      "term": "Channel Settings / Equalizer",
+      "steps": [
+        "Am Audiokanal Edit Channel Settings (e) öffnen und Equalizer wählen.",
+        "Ein EQ-Band aktivieren; Frequency verändern, um eine interessante Klangzone zu finden.",
+        "Gain absenken oder anheben und mit Q die Breite einstellen.",
+        "Zum Vergleich den EQ kurz über Bypass abschalten und die Lautheit angleichen."
+      ],
+      "tip": "Die Low-/High-Cut-Filter des Pre-Bereichs werden dort bedient. Für die Übung genügt zunächst ein einziges Band.",
+      "sources": [
+        "cu-eq"
+      ]
+    },
+    "dynamics": {
+      "term": "Channel Strip / Standard Compressor",
+      "steps": [
+        "Channel Settings öffnen und im Channel Strip den Standard Compressor aktivieren.",
+        "Als Versuch Ratio auf 3:1 setzen; Threshold senken, bis Gain Reduction sichtbar wird.",
+        "Attack und Release verändern und auf den Beginn bzw. Nachklang des Fragments hören.",
+        "Mit MakeUp Gain die Vergleichslautheit angleichen; Bypass vergleichen."
+      ],
+      "tip": "Hier wird der Lautstärkeverlauf verdichtet. Die Dauer des Events bleibt unverändert: Dynamikkompression und Zeitstauchung sind zwei verschiedene Operationen.",
+      "sources": [
+        "cu-comp"
+      ]
+    },
+    "space": {
+      "term": "Inserts / RoomWorks SE / MonoDelay",
+      "steps": [
+        "Am Audiokanal Channel Settings > Inserts öffnen und RoomWorks SE einsetzen.",
+        "Reverb Time vergrößern; Mix für den Insert zunächst niedrig halten und nach Gehör erhöhen.",
+        "Optional dahinter MonoDelay einsetzen: Sync ausschalten, Delay in Millisekunden und Feedback einstellen.",
+        "Mit Bypass vergleichen; die Reihenfolge von Hall und Delay einmal vertauschen."
+      ],
+      "tip": "Bei einem Insert mischt Mix trockenen Klang und Effekt. Bei einem Send-Effekt wird der Effekt auf 100 % wet gesetzt.",
+      "sources": [
+        "cu-inserts",
+        "cu-room",
+        "cu-delay"
+      ],
+      "image": "cu-room-image"
+    },
+    "distortion": {
+      "term": "Inserts / AmpSimulator",
+      "steps": [
+        "In einem freien Insert-Slot AmpSimulator auswählen.",
+        "Ein Amplifier Model und ein Cabinet Model wählen.",
+        "Drive langsam erhöhen; mit Volume die Ausgangslautheit zurücknehmen.",
+        "Die verzerrte Variante leise mit dem Original vergleichen oder als eigene Schicht verwenden."
+      ],
+      "tip": "Drive verändert den Charakter, Volume den Ausgangspegel. Höhere Lautheit allein ist noch keine interessantere Klanggestaltung.",
+      "sources": [
+        "cu-amp",
+        "cu-inserts"
+      ],
+      "image": "cu-amp-image"
+    },
+    "sends": {
+      "term": "FX Channel Track / Sends",
+      "steps": [
+        "Project > Add Track > FX Channel wählen und beispielsweise RoomWorks SE laden.",
+        "Den Hall-Mix auf 100 % setzen und die Effektspur „Hall“ nennen.",
+        "Am Audiokanal im Bereich Sends diesen FX-Kanal wählen und den Send einschalten.",
+        "Send-Pegel aufziehen; der Audiokanal bleibt direkt am Stereo-Ausgang hörbar."
+      ],
+      "tip": "Der Send dosiert die Zufuhr, der FX-Kanal den gemeinsamen Rückweg. In einer einfachen Mischung Post-Fader verwenden.",
+      "sources": [
+        "cu-fxtrack",
+        "cu-sends",
+        "cu-room"
+      ],
+      "image": "cu-room-image"
+    },
+    "automation": {
+      "term": "Automation Track / Draw / Read",
+      "steps": [
+        "Unter der gewünschten Spur Show/Hide Automation öffnen.",
+        "Als Parameter zuerst Volume wählen.",
+        "Mit Draw Punkte auf die Linie setzen und einen Verlauf zeichnen.",
+        "Read (R) einschalten und abspielen; anschließend etwa Pan oder einen Effektparameter ausprobieren."
+      ],
+      "tip": "Bei gezeichneter Automation braucht Write (W) nicht aktiv zu sein. Nach aufgezeichneten Reglerfahrten Write ausschalten, damit die nächste Wiedergabe nichts überschreibt.",
+      "sources": [
+        "cu-auto"
+      ]
+    },
+    "resample": {
+      "term": "Render in Place / Audio Mixdown + Reimport",
+      "steps": [
+        "In Pro/Artist die bearbeiteten Events wählen: Edit > Render in Place > Render Settings.",
+        "Complete Signal Path wählen, wenn Klang und Effekte gemeinsam neues Material werden sollen.",
+        "Tail Mode auf Seconds stellen und genügend Nachklang zugeben; Source Events stummschalten lassen.",
+        "Rendern und die neue Audiodatei wieder schneiden oder rückwärts spielen."
+      ],
+      "tip": "In Elements: gewünschten Bereich solo als Audio Mixdown exportieren und wieder importieren. Audio > Bounce Selection verbindet Audio, ist aber kein Ersatz für das Drucken aller Insert-/Send-Effekte.",
+      "sources": [
+        "cu-render",
+        "cu-render-options",
+        "cu-export"
+      ]
+    },
+    "structure": {
+      "term": "Marker Track / Position Markers",
+      "steps": [
+        "Project > Add Track > Marker öffnen.",
+        "Cursor beispielsweise auf 0:00, 0:45, 1:30, 2:15 und 3:00 setzen und jeweils Add Position Marker anklicken.",
+        "Die Abschnitte benennen: „Material“, „Verdichtung“, „Kontrast“, „Rückkehr“, „Ende“.",
+        "Klangvarianten auf die Abschnitte verteilen; Lücken und Kontraste bewusst setzen."
+      ],
+      "tip": "Die Zeitmarken sind ein Kompositionsvorschlag. Nutze ein Sekundenlineal, damit die Dreiminutenform nicht von einer späteren Tempoänderung abhängt.",
+      "sources": [
+        "cu-marker"
+      ]
+    },
+    "export": {
+      "term": "Export Audio Mixdown",
+      "steps": [
+        "Linken Locator auf den Beginn, rechten Locator auf das vereinbarte Ende einschließlich Nachklang setzen.",
+        "File > Export > Audio Mixdown öffnen; bei Channel Selection den Stereo-Ausgang und den Locator-Bereich wählen.",
+        "WAV, Interleaved, 24 Bit und die Projekt-Samplerate einstellen; Namen und Zielordner festlegen.",
+        "Export Audio ausführen und die Datei separat vollständig anhören."
+      ],
+      "tip": "Soll die Datei exakt 3:00 dauern, müssen Ausklang und Schlussfade innerhalb dieser Grenze liegen. Echtzeitexport ist für externe Hardware erforderlich.",
+      "sources": [
+        "cu-export"
+      ]
+    }
+  }
+}

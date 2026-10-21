@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+.openai/
+.qa/
+.DS_Store
+_site/

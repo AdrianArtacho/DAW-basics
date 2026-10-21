@@ -1,0 +1,412 @@
+{
+  "id": "ableton",
+  "name": "Ableton Live",
+  "version": "Live 12 · Online-Referenzhandbuch",
+  "platform": "macOS / Windows",
+  "intro": "Arbeite für diese Übung in der Arrangement View. Die englischen Bediennamen entsprechen dem Live-12-Handbuch; ältere Versionen nennen Main noch Master. Tastenkürzel beziehen sich auf die Standardbelegung. In Intro/Lite können Geräte und Spuranzahl eingeschränkt sein.",
+  "terms": {
+    "region": "Audio Clip",
+    "timeline": "Arrangement View",
+    "mixer": "Mixer / Main",
+    "stretch": "Warp",
+    "render": "Export Audio/Video / Resampling"
+  },
+  "sources": [
+    {
+      "id": "live-start",
+      "title": "Ableton: First Steps – Audio Settings",
+      "url": "https://www.ableton.com/en/manual/first-steps/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-collect",
+      "title": "Ableton: Collect All and Save",
+      "url": "https://help.ableton.com/hc/en-us/articles/209775645-Collect-All-and-Save",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-arrangement",
+      "title": "Ableton: Arrangement View – Schnitt, Fades und Locators",
+      "url": "https://www.ableton.com/en/manual/arrangement-view/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-clip",
+      "title": "Ableton: Clip View – Loop, Reverse, Gain und Pitch",
+      "url": "https://www.ableton.com/en/manual/clip-view/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-warp",
+      "title": "Ableton: Audio Clips, Tempo, and Warping",
+      "url": "https://www.ableton.com/en/manual/audio-clips-tempo-and-warping/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-effects",
+      "title": "Ableton: Live Audio Effect Reference",
+      "url": "https://www.ableton.com/en/manual/live-audio-effect-reference/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-devices",
+      "title": "Ableton: Working with Instruments and Effects",
+      "url": "https://www.ableton.com/en/manual/working-with-instruments-and-effects/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-mixing",
+      "title": "Ableton: Mixing – Sends und Return Tracks",
+      "url": "https://www.ableton.com/en/manual/mixing/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-routing",
+      "title": "Ableton: Routing and I/O – Resampling",
+      "url": "https://www.ableton.com/en/manual/routing-and-i-o/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-record",
+      "title": "Ableton: Recording New Clips",
+      "url": "https://www.ableton.com/en/manual/recording-new-clips/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-automation",
+      "title": "Ableton: Automation",
+      "url": "https://www.ableton.com/en/manual/automation/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-files",
+      "title": "Ableton: Managing Files and Sets – Export Audio/Video",
+      "url": "https://www.ableton.com/en/manual/managing-files-and-sets/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-keys",
+      "title": "Ableton: Live Keyboard Shortcuts",
+      "url": "https://www.ableton.com/en/manual/live-keyboard-shortcuts/",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "live-editions",
+      "title": "Ableton: Compare Live editions",
+      "url": "https://www.ableton.com/en/live/compare-editions/",
+      "accessed": "2026-10-21"
+    }
+  ],
+  "images": [
+    {
+      "id": "live-clip-view",
+      "src": "https://ableton-production.imgix.net/live-manual/12/ClipViewAudioClipL12.png?auto=&w=1000",
+      "sourceUrl": "https://www.ableton.com/en/manual/clip-view/",
+      "title": "Clip View eines Audioclips",
+      "alt": "Offizielle Ableton-Abbildung der Clip View mit Audioparametern links und Wellenform rechts.",
+      "credit": "© Ableton AG · Live 12 Reference Manual",
+      "operations": [
+        "gain",
+        "loop",
+        "reverse",
+        "pitch"
+      ],
+      "local": "assets/images/ableton-clip-view.png"
+    },
+    {
+      "id": "live-fades",
+      "src": "https://ableton-production.imgix.net/live-manual/12/ArrangementClipFade.png?auto=&w=1000",
+      "sourceUrl": "https://www.ableton.com/en/manual/arrangement-view/",
+      "title": "Fade-Griffe im Arrangement",
+      "alt": "Offizielle Ableton-Abbildung eines Audioclips mit Fade-In- und Fade-Out-Kurven.",
+      "credit": "© Ableton AG · Live 12 Reference Manual",
+      "operations": [
+        "fades"
+      ],
+      "local": "assets/images/ableton-fades.png"
+    },
+    {
+      "id": "live-warp-markers",
+      "src": "https://ableton-production.imgix.net/live-manual/12/WarpMarkerL12.png?auto=&w=1000",
+      "sourceUrl": "https://www.ableton.com/en/manual/audio-clips-tempo-and-warping/",
+      "title": "Warp Markers im Sample Editor",
+      "alt": "Offizielle Ableton-Abbildung mit gelben Warp-Markern über einer Wellenform.",
+      "credit": "© Ableton AG · Live 12 Reference Manual",
+      "operations": [
+        "stretch",
+        "warp",
+        "speed"
+      ],
+      "local": "assets/images/ableton-warp-markers.png"
+    }
+  ],
+  "operations": {
+    "setup": {
+      "term": "Live Set · Audio Track · Arrangement View",
+      "steps": [
+        "In Settings > Audio den passenden Audio-Ausgang wählen. Ein neues Live Set speichern.",
+        "Die 3-Sekunden-Datei in eine Audiospur der Arrangement View ziehen. Doppelklicken und Warp zunächst ausschalten, damit der Originalklang seine Dauer behält.",
+        "Eine zweite Audiospur für eine Clipkopie anlegen; die Originalspur deaktivieren. File > Collect All and Save verwenden, damit die Audiodatei zum Projekt gehört."
+      ],
+      "tip": "Zum Abgeben den gesamten Projektordner behalten. Die .als-Datei allein enthält die Aufnahme nicht.",
+      "sources": [
+        "live-start",
+        "live-clip",
+        "live-collect"
+      ]
+    },
+    "cut": {
+      "term": "Split · Clip Edges",
+      "steps": [
+        "Die Audiospur aufklappen und in die Wellenform an der Schnittstelle klicken.",
+        "Rechtsklick > Split; alternativ Cmd+E (Mac) / Ctrl+E (Windows).",
+        "Die neuen Clipkanten ziehen, um Anfang oder Ende zu kürzen."
+      ],
+      "tip": "Für freie Schnitte das Raster über das Kontextmenü deaktivieren.",
+      "sources": [
+        "live-arrangement",
+        "live-keys"
+      ]
+    },
+    "arrange": {
+      "term": "Duplicate · Arrangement View",
+      "steps": [
+        "Clip auswählen und Edit > Duplicate oder Cmd+D / Ctrl+D verwenden.",
+        "Kopien am Clipkopf an neue Zeitpositionen oder auf andere Audiospuren ziehen.",
+        "Spuren nach ihrer Rolle benennen: Impuls, Fläche, Übergang."
+      ],
+      "tip": "Gleichzeitige Schichten auf getrennte Spuren legen.",
+      "sources": [
+        "live-arrangement",
+        "live-keys"
+      ]
+    },
+    "fades": {
+      "term": "Fade In / Fade Out · Crossfade",
+      "steps": [
+        "Spurhöhe vergrößern und Automation Mode ausschalten, damit die Fade-Griffe sichtbar werden.",
+        "Obere Fade-Griffe an den Cliprändern nach innen ziehen.",
+        "Für eine Überblendung den Fade-Griff über die Grenze zum benachbarten Clip ziehen."
+      ],
+      "tip": "Kurze Fades beseitigen Klicks; lange Fades gestalten Übergänge.",
+      "sources": [
+        "live-arrangement"
+      ],
+      "image": "live-fades"
+    },
+    "gain": {
+      "term": "Clip Gain · Track Volume · Pan",
+      "steps": [
+        "Clip doppelklicken und im Audio Utilities Panel Gain absenken.",
+        "Mehrere Fragmente auf ähnliche wahrgenommene Lautstärke bringen.",
+        "Danach im Mixer Track Volume und Pan für die Mischung einstellen."
+      ],
+      "tip": "Clip Gain wirkt vor den Spur-Effekten; der Fader regelt die Spur.",
+      "sources": [
+        "live-clip",
+        "live-mixing"
+      ],
+      "image": "live-clip-view"
+    },
+    "loop": {
+      "term": "Loop · Loop Brace",
+      "steps": [
+        "Clip View öffnen, Warp aktivieren und Loop einschalten.",
+        "Den Loop Brace auf den gewünschten Ausschnitt begrenzen.",
+        "Im Arrangement die rechte Clipkante verlängern; der Ausschnitt wiederholt sich."
+      ],
+      "tip": "Für Wiederholungen ohne Tempoanpassung stattdessen Clips mit ausgeschaltetem Warp duplizieren.",
+      "sources": [
+        "live-clip"
+      ],
+      "image": "live-clip-view"
+    },
+    "reverse": {
+      "term": "Reverse · Reverse Clip(s)",
+      "steps": [
+        "Eine Clipkopie auswählen.",
+        "In Clip View auf Reverse klicken; im Arrangement geht auch Rechtsklick > Reverse Clip(s).",
+        "Den rückwärts abgespielten Klang vor einen anderen Einsatz setzen und anhören."
+      ],
+      "tip": "Live erzeugt eine neue Audiodatei für die Umkehrung.",
+      "sources": [
+        "live-clip"
+      ],
+      "image": "live-clip-view"
+    },
+    "pitch": {
+      "term": "Pitch · Warp",
+      "steps": [
+        "Clip View öffnen und Warp aktivieren.",
+        "Als Warp Mode beispielsweise Tones oder Texture wählen; Re-Pitch vermeiden.",
+        "Pitch in Halbtönen verändern, etwa um +7; die Clipdauer dabei vergleichen."
+      ],
+      "tip": "Ohne Warp verändert Transposition auch die Abspielgeschwindigkeit.",
+      "sources": [
+        "live-clip",
+        "live-warp"
+      ],
+      "image": "live-clip-view"
+    },
+    "speed": {
+      "term": "Re-Pitch Warp Mode",
+      "steps": [
+        "Eine Kopie verwenden und in Clip View Warp aktivieren.",
+        "Re-Pitch als Warp Mode wählen.",
+        "Mit gedrückter Shift-Taste die Clipkante im Arrangement verlängern oder verkürzen. Beim Verlängern werden Tonhöhe und Geschwindigkeit niedriger."
+      ],
+      "tip": "Im Re-Pitch-Modus ist der Pitch-Regler deaktiviert: Tonhöhe und Geschwindigkeit sind gekoppelt.",
+      "sources": [
+        "live-warp"
+      ],
+      "image": "live-warp-markers"
+    },
+    "stretch": {
+      "term": "Warp · Time-Stretching",
+      "steps": [
+        "Warp aktivieren; Tones für tonales oder Texture für geräuschhaftes Material ausprobieren.",
+        "Im Arrangement Shift halten und die Clipkante auf ungefähr doppelte Länge ziehen.",
+        "Pitch unverändert lassen und mit dem Original vergleichen."
+      ],
+      "tip": "Complex/Complex Pro sind editionsabhängig. Extreme Dehnung darf hier bewusst hörbare Artefakte erzeugen.",
+      "sources": [
+        "live-warp",
+        "live-editions"
+      ],
+      "image": "live-warp-markers"
+    },
+    "warp": {
+      "term": "Warp Markers",
+      "steps": [
+        "Im Sample Editor eines gewarpten Clips vor und nach dem Zielereignis durch Doppelklick feste Warp Markers setzen.",
+        "Einen dritten Marker auf dem Ereignis anlegen.",
+        "Nur den mittleren Marker verschieben und die veränderte Binnenzeit hören."
+      ],
+      "tip": "Die äußeren Marker begrenzen, welcher Abschnitt mitgezogen wird.",
+      "sources": [
+        "live-warp"
+      ],
+      "image": "live-warp-markers"
+    },
+    "eq": {
+      "term": "EQ Three · EQ Eight",
+      "steps": [
+        "Im Browser EQ Three suchen und auf die Audiospur ziehen.",
+        "Low, Mid oder High absenken; die Trennfrequenzen mit FreqLo/FreqHi verändern.",
+        "Gerät aus- und einschalten und bei ähnlicher Lautstärke vergleichen."
+      ],
+      "tip": "EQ Eight bietet gezieltere Filter, benötigt aber Standard oder Suite.",
+      "sources": [
+        "live-effects",
+        "live-devices",
+        "live-editions"
+      ]
+    },
+    "dynamics": {
+      "term": "Compressor",
+      "steps": [
+        "Compressor auf die Spur ziehen.",
+        "Ratio beispielsweise auf 3:1 stellen; Threshold senken, bis Gain Reduction sichtbar wird.",
+        "Attack und Release verändern, danach den Ausgangspegel für einen fairen Vergleich anpassen."
+      ],
+      "tip": "Das verdichtet Pegelunterschiede; die Clipdauer bleibt gleich.",
+      "sources": [
+        "live-effects",
+        "live-devices"
+      ]
+    },
+    "space": {
+      "term": "Reverb · Delay",
+      "steps": [
+        "Reverb oder Delay auf die Spur ziehen.",
+        "In Reverb Decay, in Delay Time/Sync und Feedback verändern.",
+        "Dry/Wet dosieren und nach dem Clipende weiterhören."
+      ],
+      "tip": "Ein kurzer Impuls kann durch einen langen Nachhall zur Fläche werden.",
+      "sources": [
+        "live-effects",
+        "live-devices"
+      ]
+    },
+    "distortion": {
+      "term": "Saturator",
+      "steps": [
+        "Saturator auf eine Arbeitskopie legen.",
+        "Drive allmählich erhöhen und Output entsprechend absenken.",
+        "Unterschiedliche Kurven ausprobieren; mit Dry/Wet die Bearbeitung beimischen."
+      ],
+      "tip": "Saturator gehört in aktuellen Live-12-Editionen auch zu Intro; ältere Editionen prüfen.",
+      "sources": [
+        "live-effects",
+        "live-editions"
+      ]
+    },
+    "sends": {
+      "term": "Return Track · Send",
+      "steps": [
+        "Create > Insert Return Track wählen und dort Reverb einsetzen.",
+        "Den Hall auf 100 % Dry/Wet stellen. Auf der Klangspur den passenden Send langsam öffnen.",
+        "Den Hallanteil mit dem Send regeln; das trockene Signal bleibt über die Klangspur hörbar."
+      ],
+      "tip": "Sends der Return-Spur selbst geschlossen lassen. So entsteht keine unbeabsichtigte Rückkopplung.",
+      "sources": [
+        "live-mixing",
+        "live-effects"
+      ]
+    },
+    "automation": {
+      "term": "Automation Mode · Breakpoints",
+      "steps": [
+        "In Arrangement View Automation Mode einschalten.",
+        "Den gewünschten Regler rechtsklicken, etwa Pan oder einen Effektparameter, und Show Automation wählen.",
+        "Punkte in der Hüllkurve setzen und verschieben. Eine langsame Veränderung über einen Abschnitt zeichnen.",
+        "Falls manuelle Reglerbewegungen die Kurve übersteuern, Re-Enable Automation anklicken."
+      ],
+      "tip": "Die Taste A schaltet Automation Mode nur um, wenn die Computertastatur nicht gerade als MIDI-Klaviatur verwendet wird.",
+      "sources": [
+        "live-automation",
+        "live-keys"
+      ]
+    },
+    "resample": {
+      "term": "Resampling · Audio From",
+      "steps": [
+        "Eine neue Audiospur anlegen und Audio From auf Resampling stellen.",
+        "Nur die gewünschten Quellspuren spielen lassen; die neue Spur scharf schalten und im Arrangement aufnehmen.",
+        "Nach dem Effekt-Ausklang stoppen. Quellspuren deaktivieren und die Aufnahme als neues Material schneiden."
+      ],
+      "tip": "Resampling zeichnet den Main-Ausgang einschließlich seiner Effekte auf. Consolidate verbindet Clips, druckt aber keine Spur-Effekte ein.",
+      "sources": [
+        "live-routing",
+        "live-record",
+        "live-arrangement"
+      ]
+    },
+    "structure": {
+      "term": "Locators · Arrangement",
+      "steps": [
+        "An Abschnittsanfängen im Scrub-Bereich rechtsklicken und Add Locator wählen.",
+        "Locators etwa Fundstück, Verdichtung und Auflösung nennen.",
+        "Mit dem Sekundenlineal auf drei Minuten komponieren; Pausen und Veränderungen bewusst einplanen."
+      ],
+      "tip": "Eine Steigerung kann auch durch dichteres Schneiden entstehen.",
+      "sources": [
+        "live-arrangement"
+      ]
+    },
+    "export": {
+      "term": "Export Audio/Video",
+      "steps": [
+        "Den vollständigen Bereich inklusive Nachhall markieren und File > Export Audio/Video öffnen.",
+        "Rendered Track: Main wählen (in älteren Versionen Master). Render Start und Render Length kontrollieren; Render as Loop ausschalten.",
+        "Für die Klassenabgabe WAV, 24 Bit und die Projekt-Samplerate wählen; Normalize ausgeschaltet lassen.",
+        "Exportierte Datei separat öffnen, Anfang, Ende und Dauer prüfen. Für genau 3:00 muss der Ausklang innerhalb dieser Grenze liegen."
+      ],
+      "tip": "Projekt speichern und Collect All and Save ausführen. Export und editierbares Projekt gemeinsam aufbewahren.",
+      "sources": [
+        "live-files",
+        "live-collect"
+      ]
+    }
+  }
+}

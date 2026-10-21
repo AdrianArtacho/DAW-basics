@@ -1,0 +1,467 @@
+{
+  "id": "protools",
+  "name": "Pro Tools",
+  "version": "Avid User Guide, Dokumentationsstand 2026.4; einzelne Grundlagen zusätzlich mit Avids archivierter HTML-Hilfe abgeglichen",
+  "platform": "macOS / Windows",
+  "intro": "Arbeite im Edit Window mit Audio Clips. Die Grundübung ist auch mit Pro Tools Intro möglich: dort stehen acht Audio- und vier Aux-Input-Spuren zur Verfügung. Clip Gain, Elastic Audio und Track Commit sind laut Versionsvergleich enthalten; erweiterte Clip FX brauchen Studio/Ultimate.",
+  "terms": {
+    "region": "Audio Clip (ältere Anleitungen: Region)",
+    "timeline": "Edit Window",
+    "mixer": "Mix Window",
+    "stretch": "Elastic Audio / TCE Trim",
+    "render": "Commit / Bounce Mix / AudioSuite Render"
+  },
+  "sources": [
+    {
+      "id": "pt-docs",
+      "title": "Avid: aktueller Dokumentationsindex (2026.4)",
+      "url": "https://kb.avid.com/pkb/articles/en_US/Knowledge/Pro-Tools-Documentation",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-compare",
+      "title": "Avid: Pro Tools Editionsvergleich",
+      "url": "https://www.avid.com/pro-tools/comparison",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-included",
+      "title": "Avid: enthaltene Plug-ins in Pro Tools Intro",
+      "url": "https://www.avid.com/pro-tools/whats-included-with-pro-tools-intro",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-import",
+      "title": "Avid: Importing Audio",
+      "url": "https://www.avid.com/pro-tools/user-guide/import-audio",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-cut",
+      "title": "Avid: Cutting Clips",
+      "url": "https://www.avid.com/pro-tools/user-guide/cut-clips",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-smart",
+      "title": "Avid: Smart Tool",
+      "url": "https://www.avid.com/pro-tools/user-guide/smart-tool",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-duplicate",
+      "title": "Avid HTML-Hilfe: Duplicating Clips (Grundfunktion)",
+      "url": "https://apps.avid.com/protoolsfirsthelp/version12.3/enu/Pro%20Tools%20First%20Help/Arr3.clips.33.26.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-fades",
+      "title": "Avid: Fades",
+      "url": "https://www.avid.com/pro-tools/user-guide/how-to-fade",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-gain",
+      "title": "Avid: Clip Gain",
+      "url": "https://www.avid.com/pro-tools/user-guide/clip-gain",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-reverse",
+      "title": "Avid HTML-Hilfe: Reverse / AudioSuite > Other",
+      "url": "https://apps.avid.com/proToolsFirstHelp/version12.0/enu/Pro%20Tools%20First%20Help/OtherAS.52.11.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-audiosuite",
+      "title": "Avid: AudioSuite",
+      "url": "https://www.avid.com/pro-tools/user-guide/audiosuite",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-pitch",
+      "title": "Avid: Pitch Shift & Transpose",
+      "url": "https://www.avid.com/pro-tools/user-guide/pitch-shift-transpose",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-elastic",
+      "title": "Avid: Elastic Audio",
+      "url": "https://www.avid.com/pro-tools/user-guide/elastic-audio",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-stretch",
+      "title": "Avid: Time Stretch with Elastic Audio",
+      "url": "https://www.avid.com/pro-tools/user-guide/time-stretch",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-tce",
+      "title": "Avid HTML-Hilfe: Elastic Audio Tracks / TCE Trim",
+      "url": "https://apps.avid.com/protoolsfirsthelp/version12.3/enu/Pro%20Tools%20First%20Help/Proc2.ElasticAudio.37.03.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-inserts",
+      "title": "Avid: Adding Plug-ins",
+      "url": "https://www.avid.com/pro-tools/user-guide/adding-plugins",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-eq",
+      "title": "Avid HTML-Hilfe: 7-Band EQ III",
+      "url": "https://apps.avid.com/proToolsFirstHelp/version12.0/enu/Pro%20Tools%20First%20Help/EQ3.41.28.html",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-plugins",
+      "title": "Avid: Audio Plug-Ins Guide 2024.3 (Dynamics III, D-Verb, Mod Delay III)",
+      "url": "https://resources.avid.com/SupportFiles/PT/Audio_Plug-Ins_Guide_2024.3.pdf",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-dfi",
+      "title": "Avid: D-Fi / Lo-Fi",
+      "url": "https://www.avid.com/plugins/d-fi",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-dverb",
+      "title": "Avid: D-Verb",
+      "url": "https://www.avid.com/plugins/d-verb",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-aux",
+      "title": "Avid: Using Aux Tracks",
+      "url": "https://www.avid.com/pro-tools/user-guide/aux-tracks",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-auto",
+      "title": "Avid: Automation",
+      "url": "https://www.avid.com/pro-tools/user-guide/automation",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-consolidate",
+      "title": "Avid: Consolidating Clips",
+      "url": "https://www.avid.com/pro-tools/user-guide/consolidate-clips",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-markers",
+      "title": "Avid: Creating and Managing Markers",
+      "url": "https://www.avid.com/pro-tools/user-guide/create-markers",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-bounce",
+      "title": "Avid Knowledge Base: Bounce Mix a Session",
+      "url": "https://kb.avid.com/pkb/articles/en_US/Knowledge/Bounce-Mix-a-Session?retURL=/pkb/a_1",
+      "accessed": "2026-10-21"
+    },
+    {
+      "id": "pt-bounce-tails",
+      "title": "Avid: Bouncing a Final Mix (Nachklang / Einstellungen)",
+      "url": "https://www.avid.com/pro-tools/user-guide/bouncing-final-mix",
+      "accessed": "2026-10-21"
+    }
+  ],
+  "images": [
+    {
+      "id": "pt-batch-fades",
+      "src": "https://edge.sitecorecloud.io/avidtech-d6a2e9a9/media/images/pro-tools/user-guide/how-to-fade/batchfades.png?h=1058&iar=0&w=1936",
+      "sourceUrl": "https://www.avid.com/pro-tools/user-guide/how-to-fade",
+      "title": "Batch Fades: mehrere Schnittstellen gemeinsam bearbeiten",
+      "alt": "Offizieller Pro-Tools-Screenshot des Batch-Fades-Dialogs mit Einstellungen für Fade-in, Crossfade und Fade-out.",
+      "credit": "© Avid Technology, Inc. · Abbildung aus dem offiziellen Pro Tools User Guide",
+      "operations": [
+        "fades"
+      ],
+      "local": "assets/images/protools-batch-fades.png"
+    }
+  ],
+  "operations": {
+    "setup": {
+      "term": "Session / Audio Track / Import Audio",
+      "steps": [
+        "Eine neue leere Session in einem eigenen Ordner speichern.",
+        "Über File > Import > Audio die Quelldatei übernehmen; für eine unabhängige Session Copy bzw. Convert verwenden und New Track wählen.",
+        "Alternativ die Datei aus Finder/Explorer in freien Platz im Edit Window ziehen.",
+        "Die Originalspur benennen und stummschalten; mit einer Arbeitskopie beginnen."
+      ],
+      "tip": "Für freies Sounddesign Sample-Based als Spurzeitbasis und Min:Secs als Zeitlineal nutzen. Intro reicht für eine kompakte Collage; bei acht Audiospuren Varianten zusammenfassen.",
+      "sources": [
+        "pt-import",
+        "pt-compare",
+        "pt-elastic"
+      ]
+    },
+    "cut": {
+      "term": "Separate Clip at Selection / Trim",
+      "steps": [
+        "Mit dem Selector an die Schnittstelle klicken; für freie Positionen Slip statt Grid wählen.",
+        "Edit > Separate Clip > At Selection ausführen: Cmd+E am Mac, Ctrl+E unter Windows.",
+        "Für ein isoliertes Fragment erst einen Zeitbereich markieren und denselben Befehl benutzen.",
+        "Überflüssige Stücke löschen; mit dem normalen Trim-Werkzeug nur die Clipgrenzen kürzen."
+      ],
+      "tip": "Die Einzeltaste B schneidet nur bei aktiviertem Edit Keyboard Focus. Die Menüfunktion funktioniert unabhängig davon.",
+      "sources": [
+        "pt-cut",
+        "pt-smart"
+      ]
+    },
+    "arrange": {
+      "term": "Grabber / Duplicate / Slip und Grid",
+      "steps": [
+        "Mit dem Grabber einen Clip in der unteren Hälfte anfassen und verschieben.",
+        "Für eine direkt anschließende Kopie Edit > Duplicate verwenden (Cmd/Ctrl+D).",
+        "Für Überlagerungen Kopien auf eine zweite Audiospur legen.",
+        "Zwischen Slip für freie Zeiten und Grid für gerasterte Positionen wechseln."
+      ],
+      "tip": "Shuffle schließt beim Löschen Lücken und verschiebt nachfolgendes Material. Für diese Collage zunächst Slip verwenden, damit Zeitpositionen bewusst erhalten bleiben.",
+      "sources": [
+        "pt-smart",
+        "pt-duplicate"
+      ]
+    },
+    "fades": {
+      "term": "Smart Tool / Fades / Crossfade",
+      "steps": [
+        "Die Werkzeugleiste über Trim, Selector und Grabber anklicken, um das Smart Tool zu aktivieren.",
+        "Obere linke bzw. rechte Clipecke nach innen ziehen: Fade-in bzw. Fade-out.",
+        "Für einen präzisen Crossfade einen Bereich über die Schnittstelle zweier Clips markieren; Edit > Fades > Create öffnen (Cmd/Ctrl+F).",
+        "Fadeform und Länge einstellen und die Schnittstelle anhören."
+      ],
+      "tip": "Ein Crossfade benötigt Audiomaterial jenseits der sichtbaren Clipgrenzen. Bei vielen Schnitten mehrere Clips auswählen und Batch Fades verwenden.",
+      "sources": [
+        "pt-fades"
+      ],
+      "image": "pt-batch-fades"
+    },
+    "gain": {
+      "term": "Clip Gain / Clip Gain Line",
+      "steps": [
+        "Am Clip das Gain-Symbol unten links öffnen; falls es fehlt, View > Clip > Clip Gain Info aktivieren.",
+        "Mit dem kleinen Clip-Gain-Fader beispielsweise um 6 dB absenken.",
+        "Für einzelne Stellen View > Clip > Clip Gain Line einschalten und Punkte auf der Linie bearbeiten.",
+        "Den Spur-Fader anschließend für das Mischverhältnis verwenden."
+      ],
+      "tip": "Clip Gain sitzt vor den Spur-Plug-ins; Volume-Automation steuert den Kanal. Niedrigerer Clip Gain kann einen nachfolgenden Kompressor weniger stark anregen.",
+      "sources": [
+        "pt-gain"
+      ]
+    },
+    "loop": {
+      "term": "Duplicate / Repeat",
+      "steps": [
+        "Ein kurzes Fragment inklusive kleiner Fades auswählen.",
+        "Edit > Repeat öffnen und beispielsweise sieben Wiederholungen erzeugen.",
+        "Einzelne Kopien löschen, verkürzen oder verschieben, damit ein eigener Rhythmus entsteht.",
+        "Alternativ mit Edit > Duplicate wiederholt anschließende Kopien anlegen."
+      ],
+      "tip": "Loop Playback wiederholt nur das Abhören. Für ein exportierbares Arrangement müssen die Wiederholungen als Clips oder Clip-Loops in der Timeline stehen.",
+      "sources": [
+        "pt-duplicate"
+      ]
+    },
+    "reverse": {
+      "term": "AudioSuite / Reverse",
+      "steps": [
+        "Eine Kopie als ganzen Clip auswählen.",
+        "AudioSuite > Other > Reverse öffnen; bei anders sortiertem Plug-in-Menü nach Reverse suchen.",
+        "Use in Playlist aktivieren und Render anklicken.",
+        "Die rückwärts laufende Variante platzieren und ihre Enden mit Fades versehen."
+      ],
+      "tip": "AudioSuite erzeugt eine neue Audiodatei. Das Original bleibt als Ausgangsmaterial erhalten. Reverse ist ein AudioSuite-Prozess, kein Echtzeit-Insert.",
+      "sources": [
+        "pt-reverse",
+        "pt-audiosuite"
+      ]
+    },
+    "pitch": {
+      "term": "Elastic Audio / Elastic Properties / Pitch Shift",
+      "steps": [
+        "An der Arbeits-Audiospur Elastic Audio aktivieren und Polyphonic wählen.",
+        "Den ganzen Clip mit dem Grabber auswählen.",
+        "Clip > Elastic Properties öffnen und Pitch Shift etwa auf +7 oder −12 Halbtöne setzen.",
+        "Gegen das Original hören; die Länge bleibt bei dieser Methode erhalten."
+      ],
+      "tip": "Nicht jeder Algorithmus bietet unabhängige Tonhöhenänderung. Für diesen Schritt Polyphonic verwenden; Monophonic und Varispeed sind keine gleichwertigen Ersatzoptionen.",
+      "sources": [
+        "pt-pitch"
+      ]
+    },
+    "speed": {
+      "term": "Elastic Audio / Varispeed",
+      "steps": [
+        "Die Variante auf eine eigene Audiospur legen und dort als Elastic-Audio-Algorithmus Varispeed wählen.",
+        "Im Trim-Werkzeugmenü die Variante TCE (Time Compression/Expansion) aktivieren.",
+        "Das Clipende auf die halbe Länge ziehen: der Klang wird schneller und etwa eine Oktave höher.",
+        "Eine zweite Kopie auf doppelte Länge ziehen: langsamer und etwa eine Oktave tiefer."
+      ],
+      "tip": "Der Algorithmus gilt für die Spur. Unterschiedliche Verfahren auf getrennten Spuren halten. Varispeed koppelt Zeit und Tonhöhe wie eine Bandmaschine.",
+      "sources": [
+        "pt-elastic",
+        "pt-pitch",
+        "pt-tce"
+      ]
+    },
+    "stretch": {
+      "term": "Elastic Audio / TCE Trim",
+      "steps": [
+        "An einer eigenen Arbeits-Audiospur Elastic Audio > Polyphonic einschalten; für stark perkussive Klänge Rhythmic ausprobieren.",
+        "Das Trim-Werkzeugmenü öffnen und TCE (Time Compression/Expansion) wählen.",
+        "Das Clipende von 3 auf etwa 6 Sekunden ziehen; für Zeitstauchung auf etwa 1,5 Sekunden.",
+        "Danach wieder das normale Trim-Werkzeug wählen und den Klang vergleichen."
+      ],
+      "tip": "Die Tonhöhe bleibt beim gewählten Stretch-Algorithmus grundsätzlich erhalten; extreme Dehnungen verändern trotzdem die Textur. Ohne Elastic Audio nutzt TCE einen Offline-Prozess.",
+      "sources": [
+        "pt-tce",
+        "pt-elastic"
+      ]
+    },
+    "warp": {
+      "term": "Elastic Audio / Warp View / Warp Markers",
+      "steps": [
+        "Elastic Audio mit Polyphonic oder Rhythmic aktivieren und die Spuransicht von Waveform auf Warp umstellen.",
+        "Mit Doppelklick im Clip Warp-Marker vor und nach dem zu bewegenden Detail setzen.",
+        "Einen weiteren Marker auf dem Detail setzen und nach links oder rechts ziehen.",
+        "Abhören: Die Nachbarbereiche ändern ihre Dauer, die äußeren Marker begrenzen die Bearbeitung."
+      ],
+      "tip": "Analysis-Marker beschreiben erkannte Ereignisse. Warp-Marker halten oder verschieben Zeitpositionen. Für gezielte Klanggestaltung in Warp View arbeiten.",
+      "sources": [
+        "pt-stretch"
+      ]
+    },
+    "eq": {
+      "term": "Insert / EQ III 7-Band",
+      "steps": [
+        "Window > Mix öffnen; im ersten freien Insert-Slot EQ > EQ III 7-Band wählen.",
+        "Ein parametrisches Band nutzen: Frequency durch den Klang fahren, dann Gain absenken oder anheben.",
+        "Mit Q die Breite einstellen; für eine Telefonfarbe zusätzlich Hoch- und Tiefpass aktivieren.",
+        "Bypass vergleichen und den Ausgangspegel bei Bedarf ausgleichen."
+      ],
+      "tip": "EQ III ist auch in Intro enthalten. Erst eine Änderung gezielt hören, dann weitere Bänder hinzufügen.",
+      "sources": [
+        "pt-inserts",
+        "pt-eq",
+        "pt-included"
+      ]
+    },
+    "dynamics": {
+      "term": "Insert / Dynamics III Compressor/Limiter",
+      "steps": [
+        "In einen Insert-Slot Dynamics III Compressor/Limiter laden.",
+        "Ratio zunächst auf 3:1 setzen und Thresh senken, bis Gain Reduction einsetzt.",
+        "Mit Attack und Release den Anschlag und das Ausschwingen verändern.",
+        "Mit Gain die Lautheit an den Bypass-Vergleich angleichen."
+      ],
+      "tip": "Der Kompressor verändert Pegelverhältnisse, nicht die Cliplänge. Der ebenfalls enthaltene Expander/Gate kann leise Anteile stärker zurücknehmen.",
+      "sources": [
+        "pt-included",
+        "pt-plugins"
+      ]
+    },
+    "space": {
+      "term": "Insert / D-Verb / Mod Delay III",
+      "steps": [
+        "Auf der Arbeits-Audiospur D-Verb als Insert laden.",
+        "Ein Hall- oder Raumprogramm wählen; Decay und einen zunächst kleinen Mix-Anteil einstellen.",
+        "Für hörbare Wiederholungen zusätzlich Mod Delay III probieren: Delay Time und Feedback verändern.",
+        "Den Nachklang ausklingen lassen; den zeitlichen Abstand zum nächsten Klang kompositorisch nutzen."
+      ],
+      "tip": "Bei einem Insert mischt Mix trocken und bearbeitet. Auf einem separaten Aux-Effektweg den Hall auf 100 % wet stellen.",
+      "sources": [
+        "pt-dverb",
+        "pt-plugins",
+        "pt-inserts"
+      ]
+    },
+    "distortion": {
+      "term": "Insert / D-Fi Lo-Fi",
+      "steps": [
+        "Im freien Insert-Slot nach Lo-Fi suchen und das Plug-in laden.",
+        "Distortion oder Saturation vorsichtig erhöhen.",
+        "Als zweite Variante Sample Size bzw. Sample Rate reduzieren und den Körnungsunterschied hören.",
+        "Pegel anschließend absenken und die Varianten gleich laut vergleichen."
+      ],
+      "tip": "Lo-Fi gehört auch zu Intro. D-Fi Vari-Fi ist ein anderes Werkzeug: Es erzeugt Anlauf-/Abbrems-Effekte, nicht die hier gesuchte Klangverzerrung.",
+      "sources": [
+        "pt-dfi",
+        "pt-included"
+      ]
+    },
+    "sends": {
+      "term": "Send / Bus / Aux Input",
+      "steps": [
+        "Track > New öffnen und eine Stereo-Aux-Input-Spur „Hall“ anlegen.",
+        "Als Aux Input einen freien Stereobus wählen, etwa Bus 1–2; den Aux Output auf den Hauptausgang legen und den Aux-Fader auf 0 dB stellen.",
+        "D-Verb auf dem Aux einsetzen und Mix auf 100 % wet stellen.",
+        "Am Quellkanal einen Send zu Bus 1–2 anlegen, Post-Fader lassen und den Send-Pegel aufziehen."
+      ],
+      "tip": "Der Quellkanal bleibt direkt hörbar. Der Aux empfängt nur die gesendete Kopie; für einen gemeinsamen Raum können mehrere Spuren denselben Bus nutzen.",
+      "sources": [
+        "pt-aux",
+        "pt-dverb"
+      ]
+    },
+    "automation": {
+      "term": "Track View / Volume / Breakpoints / Read",
+      "steps": [
+        "Im Edit Window am Track View Selector statt Waveform den Parameter Volume wählen.",
+        "Mit dem Grabber Punkte auf die Automationslinie setzen.",
+        "Die Punkte zu einem Crescendo oder Decrescendo ziehen; für feinere Verläufe den Pencil verwenden.",
+        "Den Automationsmodus auf Read stellen und wiedergeben; danach Pan oder einen freigegebenen Plug-in-Parameter ausprobieren."
+      ],
+      "tip": "Für den Einstieg genügt gezeichnete Volume-Automation. Nach aufgenommenen Fahrten Write/Latch verlassen und wieder Read wählen.",
+      "sources": [
+        "pt-auto"
+      ]
+    },
+    "resample": {
+      "term": "Bounce Mix + Import / Commit",
+      "steps": [
+        "Die gewünschten Spuren einschließlich ihrer Effekt-Returns hörbar lassen und einen Bereich samt Nachklang markieren.",
+        "File > Bounce Mix öffnen, den tatsächlich gehörten Hauptausgang als Mix Source wählen und eine WAV-Datei exportieren.",
+        "Die Datei auf eine neue Audiospur importieren und die bisherigen Quellspuren stummschalten.",
+        "Die entstandene Klangschicht erneut schneiden, dehnen oder rückwärts abspielen."
+      ],
+      "tip": "Edit > Consolidate Clip verbindet Schnitte auf einer Spur, druckt aber nicht die komplette Insert-/Send-Mischung. Bounce + Reimport erfasst den gewählten Mix-Ausgang.",
+      "sources": [
+        "pt-bounce",
+        "pt-import",
+        "pt-consolidate"
+      ]
+    },
+    "structure": {
+      "term": "Markers / Memory Locations",
+      "steps": [
+        "Min:Secs als Zeitformat anzeigen und die Markers-Ruler einblenden (View > Rulers > Markers).",
+        "Cursor zum Abschnittsbeginn setzen und Enter auf dem Nummernblock drücken; einen Marker benennen.",
+        "Wiederholen, etwa bei 0:00, 0:45, 1:30, 2:15 und 3:00.",
+        "Über Window > Memory Locations zwischen „Material“, „Verdichtung“, „Kontrast“ und „Rückkehr“ navigieren."
+      ],
+      "tip": "Auf Mac-Laptops entspricht Fn+Return häufig der Enter-Taste des Nummernblocks. Alternativ die Memory-Locations-Funktionen über das Fenster bedienen.",
+      "sources": [
+        "pt-markers"
+      ]
+    },
+    "export": {
+      "term": "File > Bounce Mix",
+      "steps": [
+        "Im Zeitlineal den vollständigen Bereich markieren; Schlussfade und Effektfahnen berücksichtigen.",
+        "File > Bounce Mix öffnen (in älteren Versionen Bounce to Disk).",
+        "Den Hauptausgang als Mix Source wählen; WAV, Interleaved, 24 Bit und die Session-Samplerate einstellen.",
+        "Bounce ausführen und die exportierte Datei außerhalb der Session kontrollieren."
+      ],
+      "tip": "Für exakt 3:00 den Ausklang vor der Endmarke gestalten. Externe Hardware braucht Echtzeit-Bounce; reine interne Bearbeitung kann offline exportiert werden.",
+      "sources": [
+        "pt-bounce",
+        "pt-bounce-tails"
+      ]
+    }
+  }
+}
