@@ -1,6 +1,6 @@
 # Bildnachweise
 
-Die folgenden Abbildungen stammen aus offiziellen Herstellerhandbüchern. Die Rechte verbleiben bei den jeweils genannten Herstellern. Die Speicherung dient der Erläuterung der dokumentierten Arbeitsschritte; diese Dateien sind nicht als frei lizenzierte Projektbestandteile ausgewiesen.
+Die folgenden 14 Abbildungen stammen aus offiziellen Herstellerhandbüchern und von der ReaPlugs-Produktseite von Cockos. Die Rechte verbleiben bei den jeweils genannten Herstellern. Die Speicherung dient der Erläuterung der dokumentierten Arbeitsschritte; diese Dateien sind nicht als frei lizenzierte Projektbestandteile ausgewiesen.
 
 | Datei | Abbildung | Originalseite | Rechte |
 | --- | --- | --- | --- |
@@ -16,5 +16,9 @@ Die folgenden Abbildungen stammen aus offiziellen Herstellerhandbüchern. Die Re
 | [flstudio-fades.png](flstudio-fades.png) | Fade-Länge, Kurvenform und Clip Gain | [Herstellerhandbuch](https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/playlist_audioclip.htm) | Screenshot: Image-Line, FL Studio Online Manual. Rechte beim Hersteller. |
 | [flstudio-newtime.png](flstudio-newtime.png) | NewTime: lokale Zeitverschiebung mit Warp Markers | [Herstellerhandbuch](https://www.image-line.com/fl-studio-learning/fl-studio-online-manual/html/plugins/Newtime.htm) | Screenshot: Image-Line, FL Studio Online Manual. Rechte beim Hersteller. |
 | [protools-batch-fades.png](protools-batch-fades.png) | Batch Fades: mehrere Schnittstellen gemeinsam bearbeiten | [Herstellerhandbuch](https://www.avid.com/pro-tools/user-guide/how-to-fade) | © Avid Technology, Inc. · Abbildung aus dem offiziellen Pro Tools User Guide |
+| [reaper-reaeq.png](reaper-reaeq.png) | ReaEQ: Filterkurve und Frequenzbänder | [ReaPlugs-Produktseite](https://www.reaper.fm/reaplugs/) | © Cockos Incorporated · ReaPlugs |
+| [reaper-reacomp.png](reaper-reacomp.png) | ReaComp: Threshold, Ratio, Attack und Release | [ReaPlugs-Produktseite](https://www.reaper.fm/reaplugs/) | © Cockos Incorporated · ReaPlugs |
 
-Originale Asset-URLs und Abrufdaten stehen in `data/*.json`. Stand: 21.10.2026.
+Die beiden Cockos-Abbildungen zeigen die separat angebotene ReaPlugs-Ausgabe. Sie veranschaulichen die Parameter der Effekte; deren Darstellung in REAPER 7.86 kann abweichen.
+
+Originale Asset-URLs und Abrufdaten stehen in `data/*.json`. Stand: 21.10.2026 für die fünf ursprünglichen DAWs; 21.11.2026 für REAPER.

@@ -1,6 +1,6 @@
 'use strict';
 (() => {
-  const dawIds = ['ableton', 'logic', 'cubase', 'flstudio', 'protools'];
+  const dawIds = [...document.querySelectorAll('.daw-button')].map(button => button.dataset.daw);
   const operationEls = [...document.querySelectorAll('[data-operation]')];
   const operationIds = operationEls.map(el => el.dataset.operation);
   const routes = [...operationIds, 'unterricht', 'woerterbuch', 'quellen'];
@@ -41,7 +41,7 @@
     all('.instruction-section').forEach(section => section.classList.toggle('compare-mode', compare));
     all('.compare-toggle').forEach(input => { input.checked = compare; });
     const label = document.querySelector(`.daw-button[data-daw="${daw}"]`).textContent;
-    document.querySelector('.print-daw').textContent = `DAW Basics · Anleitung für ${label} · MUK / Elektronische Musik · 21.10.2026`;
+    document.querySelector('.print-daw').textContent = `DAW Basics · Anleitung für ${label} · MUK / Elektronische Musik · ${document.getElementById('guide-date').textContent}`;
     document.getElementById('print-guide').title = `Alle 20 Schritte für ${label} drucken`;
     if (updateURL) {
       const url = new URL(location.href);

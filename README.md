@@ -2,18 +2,18 @@
 
 **MUK / Elektronische Musik · Adrián Artacho**
 
-Eine deutschsprachige Anleitung zu grundlegenden Audio-Operationen in **Ableton Live, Logic Pro, Cubase, FL Studio und Pro Tools**. Die Klasse geht Operation für Operation gemeinsam vor; jede Person folgt den Anleitungen für ihre DAW. Als durchgehendes Unterrichtsbeispiel entsteht aus einer ungefähr drei Sekunden langen Aufnahme ein etwa dreiminütiges Stück.
+Eine deutschsprachige Anleitung zu grundlegenden Audio-Operationen in **Ableton Live, Logic Pro, Cubase, FL Studio, Pro Tools und REAPER**. Die Klasse geht Operation für Operation gemeinsam vor; jede Person folgt den Anleitungen für ihre DAW. Als durchgehendes Unterrichtsbeispiel entsteht aus einer ungefähr drei Sekunden langen Aufnahme ein etwa dreiminütiges Stück.
 
 ![Vorschau der veröffentlichten Ressource](artifacts/daw-basics-preview.jpg)
 
 ## Die Ressource
 
-- **20 gemeinsame Operationen, 100 DAW-Anleitungen:** Konzept, kleiner Versuch, Hörfrage, konkrete Bedienung, Kontrollpunkt und Vertiefungsaufgabe.
+- **20 gemeinsame Operationen, 120 DAW-Anleitungen:** Konzept, kleiner Versuch, Hörfrage, konkrete Bedienung, Kontrollpunkt und Vertiefungsaufgabe.
 - Ein DAW-Wechsel gilt für alle Schritte und bleibt in diesem Browser gespeichert.
 - Vergleichsansicht und **DAW-Wörterbuch** verbinden die verschiedenen Bezeichnungen.
-- Direkte Links öffnen eine bestimmte Operation und DAW, beispielsweise [`?daw=flstudio#fades`](https://adrianartacho.github.io/DAW-basics/?daw=flstudio#fades).
+- Direkte Links öffnen eine bestimmte Operation und DAW, beispielsweise [Fades in FL Studio](https://adrianartacho.github.io/DAW-basics/?daw=flstudio#fades) oder [Schritt 01 in REAPER](https://adrianartacho.github.io/DAW-basics/?daw=reaper#setup).
 - Suchfeld für Operationen und DAW-Begriffe; lokal gespeicherte Fortschrittshäkchen.
-- **12 echte Herstellerabbildungen**, direkt bei den passenden Anleitungen aufklappbar; zusätzlich eigene Prinzipdarstellungen.
+- **14 Herstellerabbildungen mit Quellenangabe**, direkt bei den passenden Anleitungen aufklappbar; zusätzlich eigene Prinzipdarstellungen.
 - Ein eigens synthetisierter **3-Sekunden-Beispielklang** als WAV, mit aufklappbarem Player und Download in Schritt 01.
 - Ein anpassbarer Unterrichtsplan für 90 Minuten und eine Druckansicht aller Schritte für die gewählte DAW.
 - Ohne JavaScript bleiben alle Anleitungen untereinander lesbar. Keine externen Schriftarten, Tracker oder Laufzeitbibliotheken.
@@ -31,7 +31,7 @@ Die Sammlung unterscheidet ausdrücklich **unabhängige Tonhöhenänderung**, **
 
 ## Dokumentation und Versionen
 
-Recherche- und Prüfstand: **21. Oktober 2026**.
+Recherche- und Prüfstand: **21. Oktober 2026** für Ableton Live, Logic Pro, Cubase, FL Studio und Pro Tools; **21. November 2026** für REAPER.
 
 | DAW | Referenz |
 | --- | --- |
@@ -40,10 +40,11 @@ Recherche- und Prüfstand: **21. Oktober 2026**.
 | Cubase | Cubase Pro 15.0 Operation Manual und Plug-in Reference; Alternativen für Artist / Elements |
 | FL Studio | FL Studio 2026 / 26.1.7.5 Online Manual; Producer Edition als Arbeitsgrundlage, aktuelle Fruity-Grenzen erklärt |
 | Pro Tools | Avid-Dokumentationsstand 2026.4, User Guide und ergänzende offizielle Hilfe; Editionseinschränkungen ausgewiesen |
+| REAPER | [REAPER User Guide 7.86](https://www.reaper.fm/userguide.php) und offizielle Tutorials; Bedienelemente der englischen Standardoberfläche |
 
 Jede DAW-Anleitung verweist auf ihre offiziellen Quellen. Alle Quellseiten und Bildnachweise stehen zusätzlich unter **Quellen & Versionen**. Englische Oberflächenbegriffe erleichtern den Abgleich mit der Dokumentation; übersetzte Menüs und eigene Tastaturbelegungen können abweichen.
 
-Die Anleitung ist **anhand offizieller Dokumentation geprüft**, nicht in allen fünf Desktop-Anwendungen praktisch getestet. Einzelne Herstellerabbildungen zeigen ältere Oberflächen, die weiterhin im aktuellen Handbuch verwendet werden. Beispielsweise nennt Avids Web-Tutorial teilweise noch „Bounce to Disk“; die Anleitung verwendet den aktuellen Befehl „Bounce Mix“.
+Die Anleitung ist **anhand offizieller Dokumentation geprüft**, nicht in allen sechs Desktop-Anwendungen praktisch getestet. Einzelne Herstellerabbildungen zeigen ältere Oberflächen, die weiterhin im aktuellen Handbuch verwendet werden. Beispielsweise nennt Avids Web-Tutorial teilweise noch „Bounce to Disk“; die Anleitung verwendet den aktuellen Befehl „Bounce Mix“. Die REAPER-Abbildungen von ReaEQ und ReaComp stammen aus der separaten ReaPlugs-Ausgabe; im Kurs kommen die in REAPER mitgelieferten Effekte zum Einsatz.
 
 ## Lokal verwenden
 
@@ -59,12 +60,13 @@ Dann `http://localhost:8000/` öffnen. Es sind weder npm-Installation noch Frame
 
 | Datei | Inhalt |
 | --- | --- |
-| `data/operations.json` | Gemeinsame Konzepte, Aufgaben und Reihenfolge |
+| `data/operations.json` | Liste der verfügbaren DAWs, gemeinsame Konzepte, Aufgaben und Reihenfolge |
 | `data/ableton.json` | Ableton-Anleitungen, Quellen und Bildnachweise |
 | `data/logic.json` | Logic-Anleitungen, Quellen und Bildnachweise |
 | `data/cubase.json` | Cubase-Anleitungen, Quellen und Bildnachweise |
 | `data/flstudio.json` | FL-Studio-Anleitungen, Quellen und Bildnachweise |
 | `data/protools.json` | Pro-Tools-Anleitungen, Quellen und Bildnachweise |
+| `data/reaper.json` | REAPER-Anleitungen, Quellen und Bildnachweise |
 | `scripts/build.py` | Erzeugt `index.html` aus diesen Daten |
 | `assets/app.js` | Navigation, DAW-Auswahl, Suche und Fortschritt |
 | `assets/style.css` | Layout und Druckansicht |
@@ -79,7 +81,7 @@ python3 scripts/check.py
 node --check assets/app.js
 ```
 
-Der Check prüft die 20 Operationen × 5 DAWs, Quellenreferenzen, lokale Dateien, HTML-Anker, Bildbeschreibungen und die exakt dreisekündige Audiodatei. `scripts/make_sample.py` erzeugt den Beispielklang reproduzierbar neu (48 kHz, mono, 16 Bit PCM, ungefähr −6 dBFS Spitzenpegel).
+Der Check prüft die 20 Operationen × 6 DAWs, Quellenreferenzen, lokale Dateien, HTML-Anker, Bildbeschreibungen und die exakt dreisekündige Audiodatei. `scripts/make_sample.py` erzeugt den Beispielklang reproduzierbar neu (48 kHz, mono, 16 Bit PCM, ungefähr −6 dBFS Spitzenpegel).
 
 ## GitHub Pages
 
@@ -93,7 +95,7 @@ Für die erste Aktivierung: **Settings → Pages → Build and deployment → So
 
 Konzept und Lehre: **[Adrián Artacho](https://muk.ac.at/studienangebot/lehrende/details/adrian-artacho.html)** · **[MUK — Musik und Kunst Privatuniversität der Stadt Wien](https://muk.ac.at/)** / Elektronische Musik.
 
-Die Abbildungen aus Herstellerhandbüchern sind mit Originalseite, Asset-URL und Rechteinhaber in den jeweiligen JSON-Dateien sowie auf der Website dokumentiert. Die Rechte bleiben bei Ableton, Apple, Steinberg, Image-Line und Avid. Diese fremden Abbildungen sind nicht als frei lizenzierte Projektbestandteile ausgewiesen. Eigene Prinzipdarstellungen sind als solche beschriftet.
+Die Abbildungen aus den Herstellerhandbüchern und von der [ReaPlugs-Produktseite](https://www.reaper.fm/reaplugs/) sind mit Originalseite, Asset-URL und Rechteinhaber in den jeweiligen JSON-Dateien sowie auf der Website dokumentiert. Die Rechte bleiben bei Ableton, Apple, Steinberg, Image-Line, Avid und Cockos. Diese fremden Abbildungen sind nicht als frei lizenzierte Projektbestandteile ausgewiesen. Eigene Prinzipdarstellungen sind als solche beschriftet.
 
 Der eigens synthetisierte Beispielklang kann für die Übung und für eigene Musik frei verwendet werden; es sind keine Fremdaufnahmen enthalten.
 

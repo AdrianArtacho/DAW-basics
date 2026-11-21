@@ -1,0 +1,584 @@
+{
+  "id": "reaper",
+  "name": "REAPER",
+  "version": "REAPER 7.86 · Up and Running: A REAPER User Guide, November 2026",
+  "platform": "macOS / Windows / Linux",
+  "intro": "In der Arrange View heißt ein Audiobaustein Media Item. Er enthält einen oder mehrere Takes; bearbeitet wird der aktive Take. Eine Region bezeichnet dagegen einen Abschnitt des ganzen Projekts. Die Beispiele verwenden die englische Oberfläche, Standard-Mausgesten und mitgelieferte Effekte. Bei anderer Tastenbelegung: Actions > Show action list öffnen und nach dem englischen Befehl suchen.",
+  "terms": {
+    "region": "Media Item (mit aktivem Take)",
+    "timeline": "Arrange View / Ruler",
+    "mixer": "Mixer / Master",
+    "stretch": "Playback rate / Stretch markers",
+    "render": "Render to File / Apply track/take FX to items as new take"
+  },
+  "sources": [
+    {
+      "id": "reaper-guide",
+      "title": "Geoffrey Francis · REAPER User Guide und ergänzende Handbücher",
+      "url": "https://www.reaper.fm/userguide.php",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-project-save",
+      "title": "REAPER User Guide 7.86 · 3.1–3.3 Projekt und Mediendateien sichern (S. 57–58)",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=57",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-quickstart",
+      "title": "REAPER Quick Start · Import, Schnitt und Crossfades (offizielle Kurzübersicht)",
+      "url": "https://www.reaper.fm/guides/REAPER%20Quick%20Start.pdf",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-track-manage",
+      "title": "REAPER User Guide 7.86 · 2.24 Managing Tracks (S. 50)",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=50",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-basic-edit",
+      "title": "REAPER User Guide 7.86 · 7.2.1–7.2.2 Basic / Smart Editing (S. 124–125)",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=124",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-ripple",
+      "title": "REAPER User Guide 7.86 · 7.20 Ripple Editing (S. 139)",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=139",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-fades",
+      "title": "REAPER User Guide 7.86 · 7.31 Adjusting Media Item Fades (S. 144)",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=144",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-crossfades",
+      "title": "REAPER User Guide 7.86 · 7.32 Crossfades and the Crossfade Editor (S. 145)",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=145",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-item-volume",
+      "title": "REAPER User Guide 7.86 · 7.9 Item volume handle (S. 135)",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=135",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-track-controls",
+      "title": "REAPER User Guide 7.86 · 2.4–2.5 Track Volume und Pan (S. 35–36)",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=35",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-create-loops",
+      "title": "REAPER User Guide 7.86 · 9.1 Creating Loops (S. 175)",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=175",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-reverse-take",
+      "title": "REAPER User Guide 7.86, § 8.9, S. 166: Reverse items as new take",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=166",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-select-take",
+      "title": "REAPER User Guide 7.86: Takes auswählen",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=164",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-take-pitch",
+      "title": "REAPER User Guide 7.86, §§ 10.1–10.2, S. 193: Project Play Rate und Changing Pitch for Individual Media Items",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=193",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-take-stretch",
+      "title": "REAPER User Guide 7.86, § 10.5, S. 195: Time Stretching",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=195",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-stretch-markers",
+      "title": "REAPER User Guide 7.86, § 10.7, S. 196–198: Stretch Markers",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=196",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-algorithms-video",
+      "title": "REAPER Video · Kenny Gioia: Pitch-Time Shifting Algorithms",
+      "url": "https://www.reaper.fm/videos.php#Ao0FdtHJGR8",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-stretch-markers-video",
+      "title": "REAPER Video · Kenny Gioia: Stretch Markers",
+      "url": "https://www.reaper.fm/videos.php#rMg_3AI6MKo",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-fx-eq",
+      "title": "ReaEffects Guide · ReaEQ, S. 17–18",
+      "url": "https://dlx.reaper.fm/userguide/REAPEREffectsGuide2021.pdf#page=17",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-fx-comp",
+      "title": "ReaEffects Guide · ReaComp, S. 9–10",
+      "url": "https://dlx.reaper.fm/userguide/REAPEREffectsGuide2021.pdf#page=9",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-fx-delay",
+      "title": "ReaEffects Guide · ReaDelay, S. 14–15",
+      "url": "https://dlx.reaper.fm/userguide/REAPEREffectsGuide2021.pdf#page=14",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-fx-reverb",
+      "title": "ReaEffects Guide · ReaVerbate, S. 32",
+      "url": "https://dlx.reaper.fm/userguide/REAPEREffectsGuide2021.pdf#page=32",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-fx-chain",
+      "title": "REAPER User Guide 7.86 · Controlling Track FX, Abschnitt 2.12",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=41",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-saturation-video",
+      "title": "REAPER Video · Creating a LoFi Mix with Saturation",
+      "url": "https://www.reaper.fm/videos.php#H9nTv1-jCTc",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-fx-bus",
+      "title": "REAPER User Guide 7.86 · Using an FX Bus, Abschnitt 2.14",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=43",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-send-routing",
+      "title": "REAPER User Guide 7.86 · REAPER Routing Essentials, Abschnitt 2.21",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=48",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-draw-envelopes",
+      "title": "REAPER User Guide 7.86 · Manually Editing Envelopes, Abschnitt 18.14",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=369",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-fx-envelopes",
+      "title": "REAPER User Guide 7.86 · Managing FX Parameters, Abschnitt 6.7",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=115",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-render-options",
+      "title": "REAPER User Guide 7.86 · Kap. 21.3 · Renderbereich, WAV-Format und Pegel",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=415",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-render-import",
+      "title": "REAPER User Guide 7.86 · Kap. 21.3 · Gerenderte Dateien als neue Spuren einfügen",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=417",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-render-source",
+      "title": "REAPER User Guide 7.86 · Kap. 21.5 · Master mix, Stems und einzelne Items",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=419",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-form-markers",
+      "title": "REAPER User Guide 7.86 · Kap. 9.2 · Projektmarker setzen und benennen",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=176",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-form-regions",
+      "title": "REAPER User Guide 7.86 · Kap. 9.8 · Abschnitte als Regions anlegen",
+      "url": "https://dlx.reaper.fm/userguide/ReaperUserGuide786c.pdf#page=179",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-video-setup",
+      "title": "REAPER Video · Starting a New Project",
+      "url": "https://www.reaper.fm/videos.php#hLB83sOxVfs",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-video-cut",
+      "title": "REAPER Video · Splitting Items",
+      "url": "https://www.reaper.fm/videos.php#J3Kb2bKDcjk",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-video-arrange",
+      "title": "REAPER Video · Basic Audio Editing",
+      "url": "https://www.reaper.fm/videos.php#EGL54WGa85A",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-video-fades",
+      "title": "REAPER Video · Fades & Crossfades",
+      "url": "https://www.reaper.fm/videos.php#HLFMV7ae3TE",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-video-sends",
+      "title": "REAPER Video · Sends & Busses",
+      "url": "https://www.reaper.fm/videos.php#pfHGwzNyFC8",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-video-automation",
+      "title": "REAPER Video · Envelopes & Automation",
+      "url": "https://www.reaper.fm/videos.php#PyRpS_BTlzE",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-video-structure",
+      "title": "REAPER Video · Markers & Regions",
+      "url": "https://www.reaper.fm/videos.php#rPUFHabfdI0",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-video-export",
+      "title": "REAPER Video · Rendering",
+      "url": "https://www.reaper.fm/videos.php#S5zSy-fOu2s",
+      "accessed": "2026-11-21"
+    }
+  ],
+  "images": [
+    {
+      "id": "reaper-img-reaeq",
+      "label": "Abbildung von Cockos",
+      "src": "https://www.reaper.fm/reaplugs/reaeq.png",
+      "sourceUrl": "https://www.reaper.fm/reaplugs/",
+      "local": "assets/images/reaper-reaeq.png",
+      "title": "ReaEQ: den Filtertyp für ein Band wählen",
+      "alt": "ReaEQ mit Frequenzkurve und geöffnetem Type-Menü; Low Pass und High Pass stehen in der Liste.",
+      "credit": "© Cockos Incorporated · ReaPlugs-Produktseite. Die Abbildung zeigt die separate ReaPlugs-Version; in REAPER ist ReaEQ bereits enthalten.",
+      "operations": [
+        "eq"
+      ],
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "reaper-img-reacomp",
+      "label": "Abbildung von Cockos",
+      "src": "https://www.reaper.fm/reaplugs/reacomp.png",
+      "sourceUrl": "https://www.reaper.fm/reaplugs/",
+      "local": "assets/images/reaper-reacomp.png",
+      "title": "ReaComp: Threshold, Ratio und Attack einstellen",
+      "alt": "ReaComp mit Threshold-Regler links, Attack und Ratio in der Mitte sowie Wet- und Dry-Reglern rechts.",
+      "credit": "© Cockos Incorporated · ReaPlugs-Produktseite. Die Abbildung zeigt die separate ReaPlugs-Version; in REAPER ist ReaComp bereits enthalten.",
+      "operations": [
+        "dynamics"
+      ],
+      "accessed": "2026-11-21"
+    }
+  ],
+  "operations": {
+    "setup": {
+      "term": "Arrange View · Insert > Media file · Save project as",
+      "steps": [
+        "Öffne ein leeres Projekt. Ziehe die WAV-Datei auf die freie Fläche der Arrange View; alternativ wähle Insert > Media file. Spiele den Klang einmal ab.",
+        "Benenne die Spur ORIGINAL. Rechtsklick auf ihren Spurkopf > Duplicate tracks; nenne die Kopie MATERIAL. Klicke am Spurkopf von ORIGINAL auf den Mute-Schalter (M), sodass nur MATERIAL klingt.",
+        "Wähle File > Save project as. Aktiviere Create subdirectory for project und Copy all media into project directory und speichere das Projekt unter einem eigenen Namen."
+      ],
+      "tip": "Kein Ton? Prüfe unter Preferences > Audio > Device das Ausgabegerät. Das Projekt (.rpp) und seine kopierten Audiodateien gehören zusammen.",
+      "sources": [
+        "reaper-guide",
+        "reaper-project-save",
+        "reaper-quickstart",
+        "reaper-track-manage",
+        "reaper-video-setup"
+      ]
+    },
+    "cut": {
+      "term": "Split items at edit or play cursor · Trim item edges",
+      "steps": [
+        "Stoppe die Wiedergabe. Klicke in die Wellenform auf MATERIAL, wo die Attacke endet. Drücke S. Wähle das rechte Teilstück, klicke an den Beginn des Ausklangs und drücke erneut S.",
+        "Greife die Seitenkante eines Fragments mittig, nicht an der oberen Ecke. Ziehe sie nach innen, bis nur ein kurzer Impuls bleibt.",
+        "Ziehe die Fragmente am Itemkörper auseinander. Für freie Zeitpositionen das Magnet-Symbol (Snap) in der Werkzeugleiste ausschalten."
+      ],
+      "tip": "Vor S das gewünschte Item auswählen. Ohne ausgewähltes Item kann REAPER an derselben Position mehrere Spuren teilen.",
+      "sources": [
+        "reaper-basic-edit",
+        "reaper-quickstart",
+        "reaper-video-cut"
+      ]
+    },
+    "arrange": {
+      "term": "Move / copy media items",
+      "steps": [
+        "Ziehe die drei Fragmente am Itemkörper in eine neue Reihenfolge. Schalte Ripple Editing aus, falls spätere Items ungefragt mitwandern.",
+        "Erzeuge per Doppelklick in die freie Spurkopffläche eine Spur. Kopiere ein ausgewähltes Item, klicke auf der neuen Spur zur gewünschten Zeit und füge es ein (Cmd+C/V am Mac, Ctrl+C/V unter Windows/Linux).",
+        "Verschiebe die Kopie leicht gegen das Original; benenne die Spuren per Doppelklick auf den Spurnamen nach ihrer Rolle."
+      ],
+      "tip": "Höre beide Schichten erst einzeln, dann zusammen. Ein kleiner Versatz kann den Klang zunächst färben und erst bei größerem Abstand als Echo hörbar werden.",
+      "sources": [
+        "reaper-basic-edit",
+        "reaper-track-manage",
+        "reaper-ripple",
+        "reaper-video-arrange"
+      ]
+    },
+    "fades": {
+      "term": "Item fade-in / fade-out · Auto-crossfade",
+      "steps": [
+        "Zoome in ein Fragment. Fahre zur oberen linken Ecke, bis der Fade-Cursor erscheint, und ziehe nach rechts. Ziehe oben rechts nach links für den Fade-out.",
+        "Teste den Einsatz mit kurzem und langem Fade-in. Für eine andere Kurvenform wähle das Item aus, öffne mit F2 die Item properties und wähle die Form bei Fade in oder Fade out.",
+        "Aktiviere Auto-crossfade in der Hauptwerkzeugleiste. Schiebe zwei Items auf derselben Spur ein Stück übereinander und höre die Überlappung ab."
+      ],
+      "tip": "Klingt die Naht zu weich, verkürze die Überlappung. Ein langer Verlauf kann eine Attacke vollständig verdecken.",
+      "sources": [
+        "reaper-fades",
+        "reaper-crossfades",
+        "reaper-quickstart",
+        "reaper-video-fades"
+      ]
+    },
+    "gain": {
+      "term": "Item volume handle / knob · Track Volume · Pan",
+      "steps": [
+        "Greife oben in der Mitte des Items den Lautstärkegriff (senkrechter Doppelpfeil). Ziehe ihn nach unten, um nur dieses Fragment leiser zu machen. Je nach Einstellungen erscheint der Griff als Regler am Item.",
+        "Gleiche zuerst die Fragmente nach Gehör an. Stelle dann mit dem Volume-Fader der jeweiligen Spur den Vorder- und Hintergrund ein.",
+        "Verteile zwei Spuren mit Pan nach links und rechts. Spiele die dichteste Stelle ab und kontrolliere am Master, dass nichts übersteuert."
+      ],
+      "tip": "Der Item-Griff ändert nur den gewählten Baustein; der Spur-Fader bleibt für die Mischung frei. Der Pegelunterschied sollte auch leise hörbar sein.",
+      "sources": [
+        "reaper-item-volume",
+        "reaper-track-controls"
+      ]
+    },
+    "loop": {
+      "term": "Glue items · Item properties > Loop source",
+      "steps": [
+        "Isoliere den Impuls auf einer Arbeitskopie: Itemränder auf den gewünschten Ausschnitt kürzen, nur dieses Item auswählen, Rechtsklick > Glue items. Damit wird genau dieser Ausschnitt zu einer neuen Quelldatei.",
+        "Öffne per F2 die Item properties und aktiviere Loop source. Ziehe die rechte Itemkante nach außen, bis acht Durchläufe zu sehen sind. Die Kerben markieren die Wiederholungen.",
+        "Für Lücken: Teile das geloopte Item an den Grenzen zweier Durchläufe mit S. Wähle diese Teilstücke aus und entferne sie bei ausgeschaltetem Ripple Editing. Trenne eine weitere Wiederholung ab und verschiebe sie.",
+        "Lege einen anders langen Ausschnitt als zweiten Loop auf eine andere Spur und höre, wann die beiden Anfänge wieder zusammenfallen."
+      ],
+      "tip": "Die Loop-Länge folgt der Quelldatei. Ohne Glue kann beim Verlängern eines bloß gekürzten Items wieder das ausgeblendete Ausgangsmaterial erscheinen. Repeat im Transport wiederholt nur die Wiedergabe.",
+      "sources": [
+        "reaper-create-loops",
+        "reaper-basic-edit",
+        "reaper-ripple"
+      ]
+    },
+    "reverse": {
+      "term": "Reverse items as new take",
+      "steps": [
+        "Eine Kopie des Fragments auf eine zweite Spur legen und nur diese Kopie auswählen.",
+        "Das Item rechts anklicken und Reverse items as new take wählen. Im selben Item entsteht ein rückwärts laufender Take.",
+        "Das Ende der Rückwärtskopie an den Anfang des Originals schieben. Beide abspielen und die Naht mit kurzen Fades gestalten."
+      ],
+      "tip": "Der Vorwärts-Take bleibt im Item. Zum Vergleich das Item auswählen und mit T zwischen den Takes wechseln. Für das Arrangement die rückwärts laufende Variante aktiv lassen.",
+      "sources": [
+        "reaper-reverse-take",
+        "reaper-select-take"
+      ]
+    },
+    "pitch": {
+      "term": "Media Item Properties / Pitch adjust (semitones)",
+      "steps": [
+        "Zwei Kopien des unveränderten Drei-Sekunden-Items anlegen. Nur die erste anwählen und mit F2 die Media Item Properties öffnen.",
+        "Unter Take properties bei Pitch adjust (semitones) den Wert −12 eintragen; Playback rate auf 1.0 lassen. Mit OK bestätigen.",
+        "Die zweite Kopie ebenso auf +7 setzen. Beide gegen das Original bei 0 Halbtönen hören: Die drei Items enden bei gleicher Startposition auch gleichzeitig."
+      ],
+      "tip": "Klingt der Anschlag nach dem Transponieren verwaschen, in Take pitch shift/time stretch mode zwei Verfahren vergleichen, etwa élastique Pro und Rubber Band Library.",
+      "sources": [
+        "reaper-take-pitch",
+        "reaper-algorithms-video"
+      ]
+    },
+    "speed": {
+      "term": "Playback rate / Preserve pitch when changing rate: aus",
+      "steps": [
+        "Eine frische Kopie des Drei-Sekunden-Items auswählen. F2 öffnen; unter Take properties Pitch adjust auf 0 und Playback rate zunächst auf 1.0 belassen.",
+        "Preserve pitch when changing rate ausschalten und mit OK bestätigen.",
+        "An der rechten Itemkante mit gedrückter Alt-Taste (Mac: Option) ziehen, bis das Item 6 Sekunden lang ist. Rate 0.5: Der Klang läuft halb so schnell und klingt eine Oktave tiefer.",
+        "Höre im Wechsel mit der −12-Halbton-Variante aus Schritt 08. Beide klingen eine Oktave tiefer; nur die verlangsamte Fassung dauert doppelt so lange."
+      ],
+      "tip": "Den Rate-Regler im Transport auf 1.0 lassen: Er steuert das ganze Projekt. Beim Ziehen die Itemkante greifen; Alt/Option im Inneren verschiebt stattdessen den Quellinhalt.",
+      "sources": [
+        "reaper-take-stretch",
+        "reaper-take-pitch"
+      ]
+    },
+    "stretch": {
+      "term": "Time Stretch / Preserve pitch when changing rate: ein",
+      "steps": [
+        "Auf einer unveränderten Itemkopie F2 öffnen. Pitch adjust auf 0 lassen, Preserve pitch when changing rate einschalten und mit OK bestätigen.",
+        "Die rechte Itemkante mit Alt (Mac: Option) von 3 auf 12 Sekunden ziehen. Die Rate sinkt auf 0.25; die Tonlage bleibt ungefähr gleich.",
+        "Eine zweite Originalkopie mit Tonhöhenerhalt erneut mit Alt/Option auf 1,5 Sekunden ziehen. Vergleiche den Anschlag mit der vierfach gedehnten Fassung.",
+        "F2 erneut öffnen. Unter Take pitch shift/time stretch mode zwei Algorithmen ausprobieren; auf jede Änderung Apply klicken und den Ausklang abhören."
+      ],
+      "tip": "Ohne Alt/Option änderst du beim Ziehen die Itemgrenze: Das Material wird beschnitten, freigelegt oder bei aktivem Loop source wiederholt, anstatt zu einer einzigen längeren Geste zu werden.",
+      "sources": [
+        "reaper-take-stretch",
+        "reaper-algorithms-video"
+      ]
+    },
+    "warp": {
+      "term": "Stretch markers / Add stretch marker at cursor",
+      "steps": [
+        "Nur eine neue Itemkopie auswählen. In F2 Preserve pitch when changing rate aktivieren, mit OK schließen und in die Wellenform zoomen.",
+        "Nahe dem Anfang auf das Item klicken und Item > Stretch markers > Add stretch marker at cursor wählen (Shift+W). Nahe dem Ende einen zweiten Anker setzen.",
+        "Auf einen markanten Anschlag zwischen den Ankern klicken und mit Shift+W einen dritten Marker setzen.",
+        "Den mittleren Marker beim waagrechten Doppelpfeil nach rechts ziehen: Der Anschlag kommt später. Nach links ziehen und vergleichen; die äußeren Marker bleiben stehen."
+      ],
+      "tip": "Der waagrechte Doppelpfeil verschiebt den Zeitpunkt. Der senkrechte Doppelpfeil daneben verändert den Geschwindigkeitsverlauf. Für diese Übung den Marker in der Mitte seiner Griffzone anfassen.",
+      "sources": [
+        "reaper-stretch-markers",
+        "reaper-stretch-markers-video"
+      ]
+    },
+    "eq": {
+      "term": "Track FX · ReaEQ: Low Pass / High Pass",
+      "steps": [
+        "Lege eine Kopie des Items auf eine zweite Spur. Klicke bei der ersten Spur auf FX, suche ReaEQ und öffne den Effekt per Doppelklick.",
+        "Wähle im ReaEQ ein nummeriertes Band. Stelle Type auf Low Pass und senke Frequency während der Wiedergabe, bis vor allem der dunkle Körper übrig bleibt.",
+        "Lade ReaEQ auf der zweiten Spur. Wähle dort High Pass und erhöhe Frequency, bis der helle Anteil frei liegt. Höre die Spuren erst einzeln mit Solo, dann zusammen.",
+        "Schalte das Häkchen neben ReaEQ in der FX-Kette aus und wieder ein. Gleiche bei Bedarf den Ausgangspegel über Gain rechts im ReaEQ an."
+      ],
+      "tip": "Der Gain-Regler im gewählten Band und der Gain-Regler rechts außen haben verschiedene Aufgaben: Nur der rechte regelt den Ausgang des gesamten EQ.",
+      "sources": [
+        "reaper-fx-eq",
+        "reaper-fx-chain"
+      ]
+    },
+    "dynamics": {
+      "term": "Track FX · ReaComp",
+      "steps": [
+        "Öffne FX auf der Arbeitsspur und lade ReaComp. Stelle Ratio auf 3:1, schalte Auto make-up aus und lass den Dry-Regler ganz unten.",
+        "Spiele einen Abschnitt mit deutlichen Anschlägen in Schleife. Senke Threshold, bis die rote Anzeige bei den Spitzen eine Pegelreduktion zeigt.",
+        "Vergleiche eine kurze Attack-Zeit (etwa 2 ms) mit einer längeren (etwa 40 ms). Was bleibt jeweils vom ersten Anschlag übrig?",
+        "Gleiche mit Wet den gehörten Ausgangspegel an den Bypass an. Schalte das Häkchen neben ReaComp in der FX-Kette zum Vergleich aus und wieder ein."
+      ],
+      "tip": "Bleibt die Anzeige nach einem Anschlag bis zum nächsten unten, verkürze Release, bis sich die Reduktion dazwischen wieder löst.",
+      "sources": [
+        "reaper-fx-comp",
+        "reaper-fx-chain"
+      ]
+    },
+    "space": {
+      "term": "Track FX · ReaVerbate / ReaDelay",
+      "steps": [
+        "Lade im FX-Fenster der Spur ReaVerbate. Lass Dry bei 0 dB und mische mit Wet so viel Hall zu, dass der Ausklang gut hörbar wird.",
+        "Vergleiche eine kleine mit einer großen Room size. Höre besonders in der Pause nach dem Item; dort bleibt nur der Hall übrig.",
+        "Schalte ReaVerbate über sein Häkchen aus. Füge ReaDelay hinzu; stelle beim ersten Tap Length (time) auf 0 ms und Length (musical) auf 1.0 Achtelnote.",
+        "Lass Dry hörbar, mische Wet hinzu und starte mit Feedback ganz links. Erhöhe Feedback vorsichtig, bis du mehrere abklingende Antworten in der Pause hörst."
+      ],
+      "tip": "Wenn das Echo am Loopende abgeschnitten wird, verlängere den Wiedergabebereich über das Item hinaus. Stelle beim Delay nur einen der beiden Längenregler größer als null ein.",
+      "sources": [
+        "reaper-fx-reverb",
+        "reaper-fx-delay"
+      ]
+    },
+    "distortion": {
+      "term": "JS: Saturation · FX chain",
+      "steps": [
+        "Öffne die FX-Kette einer Arbeitsspur und suche im FX-Browser nach Saturation. Wähle JS: Saturation.",
+        "Vergleiche Amount (%) erst knapp über null, dann nahe 100 %. Höre bei ähnlicher Lautstärke auf die Ränder von Anschlag und Ausklang.",
+        "Ergänze ReaEQ mit einem hörbaren Low Pass. Ziehe den Namen ReaEQ links in der FX-Kette einmal über und einmal unter Saturation; die Kette läuft von oben nach unten.",
+        "Wähle aus beiden Reihenfolgen kurze Klangstellen aus und notiere Reihenfolge und Amount für die spätere Collage."
+      ],
+      "tip": "Filterst du zuletzt, kann der Tiefpass auch die neu entstandenen Obertöne abschwächen. Ein leises Eingangssignal kann selbst bei hohem Amount nur subtil reagieren.",
+      "sources": [
+        "reaper-saturation-video",
+        "reaper-fx-chain",
+        "reaper-fx-eq"
+      ]
+    },
+    "sends": {
+      "term": "Track routing · Sends / Receives · FX bus",
+      "steps": [
+        "Erzeuge über Track → Insert new track eine leere Spur „Hall“. Lade dort ReaVerbate und stelle im Plug-in Wet auf 0 dB und Dry auf −∞ dB: Nur Hall soll von dieser Spur zurückkommen.",
+        "Ziehe den Route-Knopf der ersten Quellspur auf das Spurfeld „Hall“. Wiederhole das von einer zweiten Quellspur. Lass den Master/parent send der Quellspuren eingeschaltet.",
+        "Öffne Route auf der Hallspur. Unter Receives findest du beide Zuleitungen: Wähle für beide Post-Fader (Post-Pan) und stelle die Lautstärken unterschiedlich ein.",
+        "Schalte die Hallspur kurz mit Mute stumm. Die trockenen Quellen sollen hörbar bleiben; beim Aufheben der Stummschaltung kehrt ihr gemeinsamer Raum zurück."
+      ],
+      "tip": "Der Send-Pegel verändert den Hall einer einzelnen Quelle. Der Fader der Hallspur verändert den Hall beider Quellen gemeinsam.",
+      "sources": [
+        "reaper-fx-bus",
+        "reaper-send-routing",
+        "reaper-fx-reverb",
+        "reaper-video-sends"
+      ]
+    },
+    "automation": {
+      "term": "Track Envelopes/Automation · Volume envelope · Trim/Read",
+      "steps": [
+        "Klicke auf Trim der Arbeitsspur, wähle den Modus Trim/Read und aktiviere im Hüllkurvenfenster Volume und deren Feld Visible. Die Lautstärkekurve erscheint unter der Spur.",
+        "Setze mit Umschalt-Klick auf die Linie zwei weit auseinanderliegende Punkte und ziehe den zweiten höher. Die Lautstärke steigt zwischen beiden Punkten an.",
+        "Setze danach zwei eng benachbarte Punkte und ziehe den letzten wieder nach unten: Jetzt fällt die Lautstärke schlagartig ab.",
+        "Starte vor dem ersten Punkt und höre beide Bewegungen. Für eine Filterfahrt bewege zuerst Frequency im ReaEQ und wähle dort Param → Show track envelope; zeichne auf dieser Kurve ebenso."
+      ],
+      "tip": "Umschalt-Klick setzt Punkte mit der Standard-Mausbelegung. Für gezeichnete Kurven genügt Trim/Read; Write kann vorhandene Bewegungen überschreiben.",
+      "sources": [
+        "reaper-draw-envelopes",
+        "reaper-fx-envelopes",
+        "reaper-video-automation"
+      ]
+    },
+    "resample": {
+      "term": "Render to File / Add rendered items to new tracks in project",
+      "steps": [
+        "Schalte unbeteiligte Klangspuren stumm; die gewünschte Variante und ihre Effekt-Returns bleiben hörbar. Ziehe eine Zeitauswahl vom Einsatz bis hinter das letzte Echo. Für diese Zwischenfassung: Master-Fader auf 0 dB, Master-FX vorübergehend auf Bypass.",
+        "Öffne File > Render. Wähle Source: Master mix, Bounds: Time selection, Channels: Stereo und als Format WAV. Gib der Datei einen neuen Namen.",
+        "Aktiviere Add rendered items to new tracks in project und starte den Render. Schalte danach die ursprünglichen Klangspuren stumm. Die neue Spur bleibt ohne zusätzliche Sends oder Spur-FX; stelle den ursprünglichen Master wieder her.",
+        "Höre die neue Spur allein. Setze mit S zwei Schnitte und ordne die drei Bausteine neu."
+      ],
+      "tip": "Der Hall-Return ist bereits in der neuen Datei zu hören. Ein erneuter Send zum selben Hall würde sie ein zweites Mal verhallen. Glue items allein erfasst diesen Return nicht.",
+      "sources": [
+        "reaper-render-options",
+        "reaper-render-import",
+        "reaper-render-source"
+      ]
+    },
+    "structure": {
+      "term": "Project markers / Regions",
+      "steps": [
+        "Stelle per Rechtsklick aufs Zeitlineal die Anzeige auf Minutes:Seconds. Setze den Edit-Cursor bei 0:00 und drücke Shift+M, um einen Projektmarker anzulegen und zu benennen.",
+        "Setze weitere Marker bei 0:30, 1:15, 2:00, 2:40 und 3:00. Benenne nach dem, was man hören soll, etwa „erster Einsatz“, „Verdichtung“ oder „Stille“.",
+        "Für einen ganzen Formteil: Ziehe eine Zeitauswahl zwischen zwei Markern und drücke Shift+R. Die Region erscheint als Balken über dem Arrangement. Verteile die drei Klangfamilien und lass vor einem Kontrast bewusst Platz.",
+        "Höre von 0:00 bis 3:00 durch. Notiere drei Stellen mit Markerzeit und überarbeite genau diese."
+      ],
+      "tip": "Ein Projektmarker bezeichnet einen Zeitpunkt, eine Region einen Zeitraum über alle Spuren. Stretch markers aus Schritt 11 verändern dagegen das Timing innerhalb eines Items.",
+      "sources": [
+        "reaper-form-markers",
+        "reaper-form-regions",
+        "reaper-video-structure"
+      ]
+    },
+    "export": {
+      "term": "File > Render / Master mix",
+      "steps": [
+        "Prüfe Solo und Mute, höre die dichteste Stelle und kontrolliere den Masterpegel. Lege eine Zeitauswahl von 0:00 bis zum gewünschten Ende an. Für genau 3:00 muss auch der Hall innerhalb dieses Bereichs ausklingen.",
+        "Öffne File > Render. Wähle Source: Master mix, Bounds: Time selection und Channels: Stereo. Prüfe Start und Ende; für eine exakte Länge keinen zusätzlichen Nachlauf anhängen.",
+        "Wähle WAV, die vom Kurs gewünschte Samplerate und Bittiefe (z. B. 48 kHz, 24 Bit PCM). Gib Zielordner und den Namen Name_Titel an. Unter Postprocess bleibt Normalize ausgeschaltet, sofern keine Normalisierung gefordert ist.",
+        "Starte Render 1 file. Öffne Name_Titel.wav in einem separaten Player und höre sie vollständig: Stimmen Anfang, Dauer, lauteste Stelle und letzter Ausklang?"
+      ],
+      "tip": "Master mix liefert eine einzige Datei mit der hörbaren Mischung. Selected tracks (stems) würde stattdessen einzelne Spurdateien erzeugen.",
+      "sources": [
+        "reaper-render-options",
+        "reaper-render-source",
+        "reaper-video-export"
+      ]
+    }
+  },
+  "sourceLabel": "Handbuch & Lernmaterial"
+}

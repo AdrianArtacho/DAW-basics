@@ -1,7 +1,8 @@
 {
   "title": "DAW Basics",
-  "subtitle": "Ein Klang. Fünf DAWs. Viele Möglichkeiten.",
-  "date": "2026-10-21",
+  "subtitle": "Ein Klang. Sechs DAWs. Viele Möglichkeiten.",
+  "date": "2026-11-21",
+  "daws": ["ableton", "logic", "cubase", "flstudio", "protools", "reaper"],
   "phases": [
     {
       "id": "material",
