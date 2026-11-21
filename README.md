@@ -97,4 +97,4 @@ Die Abbildungen aus Herstellerhandbüchern sind mit Originalseite, Asset-URL und
 
 Der eigens synthetisierte Beispielklang kann für die Übung und für eigene Musik frei verwendet werden; es sind keine Fremdaufnahmen enthalten.
 
-## [ToDo](https://trello.com/c/gaMuYSPe/119-daw-basics)
+## [📝 ToDo](https://trello.com/c/gaMuYSPe/119-daw-basics)
