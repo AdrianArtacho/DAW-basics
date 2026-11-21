@@ -90,6 +90,16 @@ def diagram(kind, title):
     return f'<figure class="schematic"><svg viewBox="0 0 310 132" role="img" aria-label="{e(title)}: schematische Darstellung">{out}</svg><figcaption>Prinzipdarstellung · keine DAW-Oberfläche</figcaption></figure>'
 
 
+def optional_attr(daw):
+    return f' data-browser-extra="{e(daw["id"])}"' if daw.get('browser') else ''
+
+
+def browser_toggle(controls, words=False):
+    current='<span id="browser-current" hidden></span>' if controls=='browser-choices' else ''
+    label='<span class="disclosure-label">Browser-DAWs</span>' if words else ''
+    return f'<button type="button" class="browser-toggle" aria-expanded="false" aria-controls="{e(controls)}" aria-label="Browser-DAWs anzeigen" title="Browser-DAWs anzeigen"><span class="disclosure-icon" aria-hidden="true">+</span>{label}{current}</button>'
+
+
 def daw_panel(daw, op):
     item=daw['operations'][op['id']]
     sources={s['id']:s for s in daw['sources']}
@@ -103,16 +113,19 @@ def daw_panel(daw, op):
         figures+=f'''<details class="manual-image"><summary>{e(im.get('label','Abbildung aus dem Handbuch'))}: {e(im['title'])}</summary><figure><a href="{e(src)}" target="_blank" rel="noopener" class="image-open"><img src="{e(src)}" alt="{e(im['alt'])}" loading="lazy" decoding="async" referrerpolicy="no-referrer"></a><figcaption>{e(im['credit'])} {link(im['sourceUrl'],'Original und Erklärung ↗')} · Abbildungsstand kann von deiner Version abweichen.</figcaption></figure></details>'''
     source_html=''.join(link(sources[s]['url'], sources[s]['title']+' ↗') for s in item['sources'])
     intro='<p class="daw-intro">'+e(daw['intro'])+'</p>' if op['id']=='setup' else ''
+    status={'alternative':'Alternative für diese Übung','unavailable':'Im Web-Studio nicht verfügbar'}.get(item.get('availability'))
+    badge=f'<span class="method-note">{e(status)}</span>' if status else ''
+    studio=link(daw['browser']['studioUrl'],daw['name']+' im Browser öffnen ↗','studio-link') if daw.get('browser') else ''
     return f'''<section class="daw-panel" data-daw="{e(daw['id'])}" id="{op['id']}-{daw['id']}-panel" role="tabpanel" tabindex="0" aria-labelledby="{op['id']}-{daw['id']}-tab" {'hidden' if daw['id']!='ableton' else ''}>
       <div class="panel-daw eyebrow">{e(daw['name'])}</div><div class="panel-meta"><h4>{e(item['term'])}</h4><small>{e(daw['version'])}</small></div>
-      {intro}<ol>{''.join('<li>'+e(t)+'</li>' for t in item['steps'])}</ol>
+      {badge}{intro}{studio}<ol>{''.join('<li>'+e(t)+'</li>' for t in item['steps'])}</ol>
       <aside class="tip"><b>Darauf achten</b>{e(item['tip'])}</aside>{figures}
       <div class="source-links"><span class="eyebrow">{e(daw.get('sourceLabel','Offizielles Handbuch'))}</span>{source_html}</div>
     </section>'''
 
 
 def operation_html(op, i, ops, daws):
-    tabs=''.join(f'<button class="daw-tab" id="{op["id"]}-{d["id"]}-tab" role="tab" data-daw="{d["id"]}" aria-selected="{str(d["id"]=="ableton").lower()}" aria-controls="{op["id"]}-{d["id"]}-panel" tabindex="{0 if d["id"]=="ableton" else -1}">{e(d["name"])}</button>' for d in daws)
+    tabs=''.join(f'<button class="daw-tab"{optional_attr(d)} id="{op["id"]}-{d["id"]}-tab" role="tab" data-daw="{d["id"]}" aria-selected="{str(d["id"]=="ableton").lower()}" aria-controls="{op["id"]}-{d["id"]}-panel" tabindex="{0 if d["id"]=="ableton" else -1}">{e(d["name"])}</button>' for d in daws)
     previous=f'<a class="prev" href="#{ops[i-1]["id"]}"><b>← Vorheriger Schritt</b>{e(ops[i-1]["short"])}</a>' if i else '<a class="prev" href="#unterricht"><b>Zur Orientierung</b>Unterrichtsplan</a>'
     next_=f'<a class="next" href="#{ops[i+1]["id"]}"><b>Nächster Schritt →</b>{e(ops[i+1]["short"])}</a>' if i+1<len(ops) else '<a class="next" href="#unterricht"><b>Zum Abschluss</b>Gemeinsam hören →</a>'
     sample = '''<details class="sample-audio"><summary>Beispielklang anhören &amp; herunterladen · 3 Sekunden</summary><audio controls preload="metadata" aria-label="Dreisekündigen Beispielklang anhören"><source src="assets/audio/3-sekunden.wav" type="audio/wav">Dein Browser unterstützt keine Audiowiedergabe.</audio><a href="assets/audio/3-sekunden.wav" download>Beispielklang herunterladen · WAV ↙</a><p>Das Beispiel enthält einen Impuls, Tonanteile und Geräusch. Du kannst auch deinen eigenen Klang verwenden.</p></details>''' if op['id']=='setup' else ''
@@ -121,8 +134,8 @@ def operation_html(op, i, ops, daws):
       <h2 id="title-{op['id']}" tabindex="-1">{e(op['title'])}</h2><p class="summary">{e(op['summary'])}</p>
       <div class="concept-row"><div><h3>Was wir verändern</h3><p>{e(op['concept'])}</p></div>{diagram(op['diagram'],op['title'])}</div>
       <section class="task"><h3>Dein Versuch</h3><ol>{''.join('<li>'+e(t)+'</li>' for t in op['task'])}</ol>{sample}<p class="listen"><b>Hörfrage</b>{e(op['listen'])}</p></section>
-      <section class="instruction-section"><div class="instruction-heading"><h3>So geht’s in deiner DAW</h3><label class="compare-label"><input type="checkbox" class="compare-toggle"> Alle DAWs vergleichen</label></div>
-      <div class="daw-tabs" role="tablist" aria-label="DAW für {e(op['title'])}">{tabs}</div>{''.join(daw_panel(d,op) for d in daws)}</section>
+      <section class="instruction-section"><div class="instruction-heading"><h3>So geht’s in deiner DAW</h3><label class="compare-label"><input type="checkbox" class="compare-toggle"> DAWs vergleichen</label></div>
+      <div class="daw-tabbar"><div class="daw-tabs" id="{op['id']}-tabs" role="tablist" aria-label="DAW für {e(op['title'])}">{tabs}</div>{browser_toggle(op['id']+'-tabs')}</div>{''.join(daw_panel(d,op) for d in daws)}</section>
       <div class="checkpoint"><input type="checkbox" id="done-{op['id']}" data-complete="{op['id']}"><label for="done-{op['id']}"><strong>Bereit für den nächsten Schritt?</strong>{e(op['checkpoint'])}</label></div>
       <details class="bonus"><summary>Wenn du schon weiter bist</summary><p>{e(op['bonus'])}</p></details>
       <nav class="step-footer" aria-label="Schrittnavigation">{previous}<button class="share" data-share="{op['id']}">Schritt-Link kopieren ↗</button>{next_}</nav>
@@ -151,7 +164,11 @@ def lesson():
 def build():
     course=json.loads((ROOT/'data/operations.json').read_text())
     ops=course['operations']
-    daws=[json.loads((ROOT/f'data/{did}.json').read_text()) for did in course['daws']]
+    browser_specs={b['id']:b for b in course['browserDaws']}
+    assert not set(course['daws']).intersection(browser_specs)
+    daws=[json.loads((ROOT/f'data/{did}.json').read_text()) for did in [*course['daws'],*browser_specs]]
+    for d in daws:
+        if d['id'] in browser_specs: d['browser']=browser_specs[d['id']]
     publication=date.fromisoformat(course['date']).strftime('%d.%m.%Y')
     names=[e(d['name']) for d in daws]
     daw_names=', '.join(names[:-1])+' und '+names[-1]
@@ -173,17 +190,22 @@ def build():
             keywords=' '.join([op['title'],op['short'],op['concept']]+[d['operations'][op['id']]['term'] for d in daws])
             nav+=f'<a class="operation-link" href="#{op["id"]}" data-search="{e(keywords)}"><span class="number">{i+1:02d}</span><span>{e(op["short"])}</span>{"<span class=\"level-dot\" title=\"Vertiefung\"></span>" if op["level"]=="Vertiefung" else ""}</a>'
         nav+='</div>'
-    buttons=''.join(f'<button class="daw-button" data-daw="{d["id"]}" aria-pressed="{str(d["id"]=="ableton").lower()}">{e(d["name"])}</button>' for d in daws)
-    glossary='<section class="page-view" id="woerterbuch" hidden><span class="eyebrow">Die gleiche Operation, andere Namen</span><h2>Das DAW-Wörterbuch.</h2><p>Jede Zelle öffnet die passende Anleitung. Die englischen Bezeichnungen entsprechen den dokumentierten Oberflächen; deutsche Menüs können anders heißen. Ein ähnlicher Name garantiert nicht dieselbe Funktion.</p><div class="table-wrap"><table class="glossary"><thead><tr><th>Operation</th>'+''.join('<th>'+e(d['name'])+'</th>' for d in daws)+'</tr></thead><tbody>'
+    def choice(d):
+        return f'<button class="daw-button" type="button" data-daw="{d["id"]}" aria-pressed="{str(d["id"]=="ableton").lower()}">{e(d["name"])}</button>'
+    desktop=[d for d in daws if not d.get('browser')]
+    buttons=''.join(choice(d) for d in desktop[:-1])+f'<span class="last-daw">{choice(desktop[-1])}{browser_toggle("browser-choices")}</span>'
+    browser_cards=''.join(f'<div class="browser-choice">{choice(d)}<span>{e(d["browser"]["access"])}</span>{link(d["browser"]["studioUrl"],d["name"]+" öffnen ↗","launch-studio")}</div>' for d in daws if d.get('browser'))
+    glossary='<section class="page-view" id="woerterbuch" hidden><span class="eyebrow">Die gleiche Operation, andere Namen</span><h2>Das DAW-Wörterbuch.</h2><p>Jede Zelle öffnet die passende Anleitung. Die englischen Bezeichnungen entsprechen den dokumentierten Oberflächen; deutsche Menüs können anders heißen. Ein ähnlicher Name garantiert nicht dieselbe Funktion.</p>'+browser_toggle('glossary-main glossary-terms',True)+'<div class="table-wrap"><table class="glossary" id="glossary-main"><thead><tr><th>Operation</th>'+''.join('<th'+optional_attr(d)+'>'+e(d['name'])+'</th>' for d in daws)+'</tr></thead><tbody>'
     for i,op in enumerate(ops):
-        glossary+=f'<tr><td>{i+1:02d} · {e(op["short"])}</td>'+''.join(f'<td><a href="?daw={d["id"]}#{op["id"]}">{e(d["operations"][op["id"]]["term"])}</a></td>' for d in daws)+'</tr>'
-    glossary+='</tbody></table></div><h3>Grundbegriffe</h3><div class="table-wrap"><table><thead><tr><th>Gemeint ist …</th>'+''.join('<th>'+e(d['name'])+'</th>' for d in daws)+'</tr></thead><tbody>'
+        glossary+=f'<tr><td>{i+1:02d} · {e(op["short"])}</td>'+''.join(f'<td{optional_attr(d)}><a href="?daw={d["id"]}#{op["id"]}">{e(d["operations"][op["id"]]["term"])}</a></td>' for d in daws)+'</tr>'
+    glossary+='</tbody></table></div><h3>Grundbegriffe</h3><div class="table-wrap"><table id="glossary-terms"><thead><tr><th>Gemeint ist …</th>'+''.join('<th'+optional_attr(d)+'>'+e(d['name'])+'</th>' for d in daws)+'</tr></thead><tbody>'
     for key,title in [('region','Audiobaustein'),('timeline','Zeitleiste'),('mixer','Mischpult'),('stretch','Zeitbearbeitung'),('render','Audio berechnen')]:
-        glossary+='<tr><td>'+title+'</td>'+''.join('<td>'+e(d['terms'][key])+'</td>' for d in daws)+'</tr>'
+        glossary+='<tr><td>'+title+'</td>'+''.join('<td'+optional_attr(d)+'>'+e(d['terms'][key])+'</td>' for d in daws)+'</tr>'
     glossary+='</tbody></table></div></section>'
-    sources=f'<section class="page-view" id="quellen" hidden><span class="eyebrow">Nachlesen & weiterlernen · Stand {publication}</span><h2>Handbücher & Bildquellen.</h2><p>Die Anleitungen wurden anhand der offiziellen Dokumentation recherchiert. Version, Edition, Sprache und eigene Tastaturbelegungen können einzelne Wege verändern. Die Menü- und Werkzeugnamen helfen deshalb auch dann, wenn ein Shortcut anders belegt ist.</p><p>Die Schritte wurden nicht in jeder Desktop-Version praktisch getestet. Wähle bei Abweichungen die verlinkte Anleitung für deine installierte Version. Die eigenen Grafiken erklären das Prinzip; aufklappbare Herstellerabbildungen zeigen echte Oberflächen.</p>'
+    sources=f'<section class="page-view" id="quellen" hidden><span class="eyebrow">Nachlesen & weiterlernen · Stand {publication}</span><h2>Handbücher & Bildquellen.</h2><p>Die Anleitungen wurden anhand der offiziellen Dokumentation recherchiert. Version, Edition, Sprache und eigene Tastaturbelegungen können einzelne Wege verändern. Die Menü- und Werkzeugnamen helfen deshalb auch dann, wenn ein Shortcut anders belegt ist.</p><p>Die Schritte wurden nicht in jeder Desktop-Version praktisch getestet. Wähle bei Abweichungen die verlinkte Anleitung für deine Version. Die eigenen Grafiken erklären das Prinzip; aufklappbare Herstellerabbildungen zeigen echte Oberflächen.</p>'
+    sources+=browser_toggle(' '.join('sources-'+id for id in browser_specs),True)
     for daw in daws:
-        sources+=f'<section class="source-daw"><span class="eyebrow">{e(daw["platform"])}</span><h3>{e(daw["name"])}</h3><p class="source-intro">{e(daw["version"])}<br>{e(daw["intro"])}</p><ul>'
+        sources+=f'<section class="source-daw" id="sources-{e(daw['id'])}"{optional_attr(daw)}><span class="eyebrow">{e(daw["platform"])}</span><h3>{e(daw["name"])}</h3><p class="source-intro">{e(daw["version"])}<br>{e(daw["intro"])}</p><ul>'
         for s in daw['sources']:
             sources+=f'<li>{link(s["url"],s["title"]+" ↗")}<small>Abruf: {e(s.get("accessed","2026-10-21"))}</small></li>'
         sources+='</ul>'
@@ -193,7 +215,7 @@ def build():
                 sources+=f'<li>{link(im["sourceUrl"],im["title"])}<small>{e(im["credit"])}</small></li>'
             sources+='</ul>'
         sources+='</section>'
-    sources+='<div class="callout copyright"><h3>Credits</h3><p>Konzept und Lehre: Adrián Artacho · MUK / Elektronische Musik. Die Abbildungen stammen aus den verlinkten Handbüchern und Produktseiten. Die Rechte bleiben bei Ableton, Apple, Steinberg, Image-Line, Avid und Cockos. Sie dienen hier der Erläuterung der jeweiligen Bedienung. Marken und Produktnamen gehören ihren jeweiligen Inhabern.</p><p>Das dreisekündige Beispiel wurde eigens synthetisiert. Du darfst es für diese Übung und eigene Musik frei verwenden. Alle Prinzipdarstellungen sind eigens für diese Anleitung erstellt.</p></div></section>'
+    sources+='<div class="callout copyright"><h3>Credits</h3><p>Konzept und Lehre: Adrián Artacho · MUK / Elektronische Musik. Die Abbildungen stammen aus den verlinkten Handbüchern und Produktseiten. Rechte und Herkunft sind bei jeder Abbildung ausgewiesen. Sie dienen hier der Erläuterung der jeweiligen Bedienung. Marken und Produktnamen gehören ihren jeweiligen Inhabern.</p><p>Das dreisekündige Beispiel wurde eigens synthetisiert. Du darfst es für diese Übung und eigene Musik frei verwenden. Alle Prinzipdarstellungen sind eigens für diese Anleitung erstellt.</p></div></section>'
     mobile='<option value="">Schritt wählen …</option>'+''.join(f'<option value="{op["id"]}">{i+1:02d} · {e(op["short"])}</option>' for i,op in enumerate(ops))+'<option value="unterricht">Unterrichtsplan</option><option value="woerterbuch">DAW-Wörterbuch</option><option value="quellen">Quellen & Versionen</option>'
     style_revision=hashlib.sha256((ROOT/'assets/style.css').read_bytes()).hexdigest()[:12]
     app_revision=hashlib.sha256((ROOT/'assets/app.js').read_bytes()).hexdigest()[:12]
@@ -202,7 +224,7 @@ def build():
 <body><a class="skip" href="#workspace">Zur Anleitung springen</a><noscript><p class="nojs">JavaScript ist deaktiviert. Alle Operationen und DAW-Anleitungen werden untereinander angezeigt.</p></noscript>
 <header class="topbar"><div class="wrap"><a class="identity" href="#" aria-label="DAW Basics — Start"><span class="muk">MUK</span><span class="course"><strong>Elektronische Musik</strong>DAW Basics · Adrián Artacho</span></a><nav class="topnav" aria-label="Weitere Inhalte"><a class="desktop-link" href="#unterricht">Unterrichtsplan</a><a class="desktop-link" href="#woerterbuch">Wörterbuch</a><a class="desktop-link" href="#quellen">Quellen</a><button id="print-guide" type="button">Anleitung drucken ↗</button></nav></div></header>
 <main class="wrap" aria-labelledby="site-title"><h1 id="site-title" class="sr-only">DAW Basics</h1>
-<section class="chooser" aria-label="DAW auswählen"><span class="chooser-label">Wähle deine DAW</span><div class="daw-buttons" role="group" aria-label="DAW für alle Schritte">{buttons}</div><span class="note">Deine Auswahl bleibt über alle Schritte erhalten.</span></section>
+<section class="chooser" aria-label="DAW auswählen"><span class="chooser-label">Wähle deine DAW</span><div class="daw-buttons" role="group" aria-label="DAW für alle Schritte">{buttons}</div><span class="note">Deine Auswahl bleibt über alle Schritte erhalten.</span><div class="browser-tray" id="browser-choices" role="group" aria-label="Browser-DAWs ohne Installation" hidden><div class="browser-heading"><b>Browser-DAWs</b><span>Name für Anleitung wählen · ohne Installation</span></div>{browser_cards}</div></section>
 <div class="workspace" id="workspace"><aside class="sidebar"><div class="sidebar-heading"><span class="eyebrow">Dein Weg durch die Übung</span><span id="progress-label">0 / 20</span></div><input class="search" id="operation-search" type="search" placeholder="Operation oder DAW-Begriff …" aria-label="Operationen durchsuchen"><nav aria-label="Operationen">{nav}</nav><p class="search-empty" id="search-empty" hidden>Keine passende Operation. Versuche „Pitch“, „Fade“ oder „Render“.</p><div class="nav-extras"><a href="#unterricht">↗ Unterrichtsplan</a><a href="#woerterbuch">↗ DAW-Wörterbuch</a><a href="#quellen">↗ Quellen & Versionen</a></div><div class="progress-line" role="progressbar" aria-label="Abgeschlossene Schritte" aria-valuemin="0" aria-valuemax="20" aria-valuenow="0"><span id="progress-fill" style="width:0%"></span></div><button class="reset-progress" id="reset-progress">Häkchen zurücksetzen</button></aside>
 <div class="content"><div class="mobile-select"><label for="step-select">DEIN NÄCHSTER SCHRITT</label><select id="step-select">{mobile}</select></div><p class="print-daw" hidden></p>{''.join(operation_html(op,i,ops,daws) for i,op in enumerate(ops))}{lesson()}{glossary}{sources}</div></div></main>
 <footer class="footer"><div class="wrap"><p>{link('https://muk.ac.at/','MUK — Musik und Kunst Privatuniversität der Stadt Wien')}<br>Elektronische Musik · {link('https://muk.ac.at/studienangebot/lehrende/details/adrian-artacho.html','Adrián Artacho')}</p><p>Letzte Ergänzung: <time id="guide-date" datetime="{e(course['date'])}">{publication}</time> · Fortschritt nur in diesem Browser gespeichert.<br><a href="#quellen">Quellen & Bildnachweise</a> · {link('https://github.com/AdrianArtacho/DAW-basics','Quellcode auf GitHub ↗')}</p></div></footer><div class="status" role="status" aria-live="polite" hidden></div></body></html>'''

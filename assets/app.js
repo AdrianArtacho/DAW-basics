@@ -13,6 +13,9 @@
   const queryDaw = new URLSearchParams(location.search).get('daw');
   let daw = dawIds.includes(queryDaw) ? queryDaw : read('daw-basics-daw', 'ableton');
   if (!dawIds.includes(daw)) daw = 'ableton';
+  const tray = document.getElementById('browser-choices');
+  const browserIds = new Set([...tray.querySelectorAll('.daw-button')].map(b => b.dataset.daw));
+  let browserOpen = browserIds.has(daw);
   let compare = false;
   let current = operationIds[0];
   let statusTimer;
@@ -23,9 +26,30 @@
     clearTimeout(statusTimer);
     statusTimer = setTimeout(() => { el.hidden = true; }, 3500);
   }
-  function updateDaw(id, updateURL = true) {
+  function drawBrowserChoices() {
+    tray.hidden = !browserOpen;
+    all('.browser-toggle').forEach(toggle => {
+      const text = browserOpen ? 'Browser-DAWs ausblenden' : 'Browser-DAWs anzeigen';
+      toggle.title = text;
+      toggle.setAttribute('aria-label', text);
+      toggle.setAttribute('aria-expanded', String(browserOpen));
+      toggle.querySelector('.disclosure-icon').textContent = browserOpen ? '−' : '+';
+    });
+    // If a student closes the tray, keep their chosen studio and its local tab.
+    all('[data-browser-extra]').forEach(el => { el.hidden = !browserOpen && el.dataset.browserExtra !== daw; });
+    const topToggle = document.querySelector('.chooser .browser-toggle');
+    const currentName = document.getElementById('browser-current');
+    if (!browserOpen && browserIds.has(daw)) {
+      currentName.textContent = tray.querySelector('[data-daw="' + daw + '"]').textContent;
+      currentName.hidden = false;
+      topToggle.setAttribute('aria-label', 'Browser-DAWs anzeigen · ausgewählt: ' + currentName.textContent);
+    } else { currentName.hidden = true; }
+  }
+  function updateDaw(id, updateURL = true, reveal = true) {
     if (!dawIds.includes(id)) return;
     daw = id;
+    if (reveal && browserIds.has(id)) browserOpen = true;
+    drawBrowserChoices();
     save('daw-basics-daw', daw);
     all('.daw-button').forEach(button => button.setAttribute('aria-pressed', String(button.dataset.daw === daw)));
     all('.daw-tab').forEach(button => {
@@ -34,7 +58,8 @@
       button.tabIndex = selected ? 0 : -1;
     });
     all('.daw-panel').forEach(panel => {
-      panel.hidden = !compare && panel.dataset.daw !== daw;
+      const optional = browserIds.has(panel.dataset.daw);
+      panel.hidden = compare ? (optional && !browserOpen && panel.dataset.daw !== daw) : panel.dataset.daw !== daw;
       panel.classList.toggle('print-selected', panel.dataset.daw === daw);
       if (compare) panel.removeAttribute('role'); else panel.setAttribute('role', 'tabpanel');
     });
@@ -81,6 +106,17 @@
     showRoute(id, true, shouldFocus);
   }
   document.addEventListener('click', async event => {
+    const toggle = event.target.closest('.browser-toggle');
+    if (toggle) {
+      browserOpen = !browserOpen;
+      updateDaw(daw, false, false);
+      if (browserOpen && toggle.closest('.chooser')) {
+        tray.querySelector('.daw-button')?.focus({preventScroll:true});
+      } else if (browserOpen && toggle.closest('.daw-tabbar') && !compare) {
+        toggle.closest('.daw-tabbar').querySelector('[data-browser-extra]')?.focus();
+      }
+      return;
+    }
     const button = event.target.closest('.daw-button, .daw-tab');
     if (button) { updateDaw(button.dataset.daw); return; }
     const anchor = event.target.closest('a[href]');
@@ -94,7 +130,8 @@
       if (url.origin === location.origin && url.pathname === location.pathname) {
         if (routes.includes(url.hash.slice(1))) {
           event.preventDefault();
-          if (url.searchParams.has('daw')) updateDaw(url.searchParams.get('daw'));
+          // A hash-only lesson link inherits location.search; only an explicit DAW link changes the selection.
+          if (!anchor.getAttribute('href').startsWith('#') && url.searchParams.has('daw')) updateDaw(url.searchParams.get('daw'));
           navigate(url.hash.slice(1), event.detail === 0);
         } else if (anchor.getAttribute('href') === '#') {
           event.preventDefault();
@@ -116,15 +153,16 @@
   all('.daw-tabs').forEach(list => list.addEventListener('keydown', event => {
     if (!['ArrowLeft', 'ArrowRight', 'Home', 'End'].includes(event.key)) return;
     event.preventDefault();
-    let i = dawIds.indexOf(daw);
+    const reachable = [...list.querySelectorAll('.daw-tab:not([hidden])')].map(tab => tab.dataset.daw);
+    let i = reachable.indexOf(event.target.closest('.daw-tab')?.dataset.daw ?? daw);
     if (event.key === 'Home') i = 0;
-    else if (event.key === 'End') i = dawIds.length - 1;
-    else i = (i + (event.key === 'ArrowRight' ? 1 : -1) + dawIds.length) % dawIds.length;
-    updateDaw(dawIds[i]);
+    else if (event.key === 'End') i = reachable.length - 1;
+    else i = (i + (event.key === 'ArrowRight' ? 1 : -1) + reachable.length) % reachable.length;
+    updateDaw(reachable[i], true, false);
     list.querySelector(`[data-daw="${daw}"]`).focus();
   }));
   document.addEventListener('change', event => {
-    if (event.target.matches('.compare-toggle')) { compare = event.target.checked; updateDaw(daw, false); }
+    if (event.target.matches('.compare-toggle')) { compare = event.target.checked; updateDaw(daw, false, false); }
     if (event.target.matches('[data-complete]')) {
       const id = event.target.dataset.complete;
       if (event.target.checked) done.add(id); else done.delete(id);
@@ -149,7 +187,7 @@
   });
   function onHistory() {
     const id = new URLSearchParams(location.search).get('daw');
-    if (dawIds.includes(id)) updateDaw(id, false);
+    if (dawIds.includes(id)) updateDaw(id, false, id !== daw);
     if (!location.hash) { showRoute(operationIds[0]); window.scrollTo({top: 0, behavior: 'instant'}); }
     else if (routes.includes(location.hash.slice(1))) showRoute(location.hash.slice(1), true);
   }

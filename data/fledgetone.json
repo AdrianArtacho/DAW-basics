@@ -1,0 +1,489 @@
+{
+  "id": "fledgetone",
+  "name": "Fledgetone",
+  "version": "Fledgetone 2026.11.21 · Webstudio, Desktopansicht",
+  "platform": "Desktopbrowser · Chrome, Edge, Firefox, Safari",
+  "intro": "Öffne fledgetone.com/app/ auf einem Computer mit Maus oder Trackpad. Das Studio braucht kein Konto. Ein Audio track enthält die Wellenform deiner Aufnahme; Instrumentenspuren enthalten Noten. Auf dem Handy öffnet sich standardmäßig Pocket mit anderen Bedienelementen. Die Webversion wird laufend weiterentwickelt; speichere neben dem Browser-Autosave eine Projektdatei mit File > Save.",
+  "terms": {
+    "region": "Audio clip",
+    "timeline": "Arrangement Timeline",
+    "mixer": "Mixer / Track Inspector (FX Rack)",
+    "stretch": "Mangle… / Follow tempo / Warp",
+    "render": "Resample… / Export > Mixdown"
+  },
+  "sources": [
+    {
+      "id": "fledge-studio",
+      "title": "Fledgetone · Studio für Desktopbrowser",
+      "url": "https://fledgetone.com/app/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-start",
+      "title": "Guide · Getting started",
+      "url": "https://fledgetone.com/guide/getting-started/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-project",
+      "title": "Guide · Projects: saving and opening",
+      "url": "https://fledgetone.com/guide/projects-saving-and-opening/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-audio",
+      "title": "Guide · Audio tracks: your own recordings",
+      "url": "https://fledgetone.com/guide/instruments/#audio-tracks-your-own-recordings",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-tools",
+      "title": "Guide · Timeline: Tools",
+      "url": "https://fledgetone.com/guide/the-timeline/#tools",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-edit",
+      "title": "Guide · Timeline: Editing clips",
+      "url": "https://fledgetone.com/guide/the-timeline/#editing-clips",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-snap",
+      "title": "Guide · Timeline: Snap",
+      "url": "https://fledgetone.com/guide/the-timeline/#snap",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-mixer",
+      "title": "Guide · The Mixer",
+      "url": "https://fledgetone.com/guide/mixing-and-effects/#the-mixer",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-bus",
+      "title": "Guide · Buses (group channels)",
+      "url": "https://fledgetone.com/guide/mixing-and-effects/#buses-group-channels",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-fx",
+      "title": "Guide · The Track Inspector (FX Rack)",
+      "url": "https://fledgetone.com/guide/mixing-and-effects/#the-track-inspector-fx-rack",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-return",
+      "title": "Guide · Return tracks (effect returns)",
+      "url": "https://fledgetone.com/guide/mixing-and-effects/#return-tracks-effect-returns",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-resample",
+      "title": "Guide · Resampling und Mangle",
+      "url": "https://fledgetone.com/guide/mixing-and-effects/#resampling",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-mangle-ui",
+      "title": "Fledgetone · Auswahl im Audio Clip Editor (Quellstand 7a1ad71)",
+      "url": "https://github.com/martinmswanson-cmd/fledgetone/blob/7a1ad7155a8bb94c872312724c51f29b23c8eaf1/src/components/timeline/AudioClipEditor.tsx#L31-L41",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-warp",
+      "title": "Fledgetone · Funktionsweise der Warp-Marker (Quellstand 7a1ad71)",
+      "url": "https://github.com/martinmswanson-cmd/fledgetone/blob/7a1ad7155a8bb94c872312724c51f29b23c8eaf1/src/store/warp.ts#L3-L14",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-comp",
+      "title": "Fledgetone · Fledge Compressor: Parameter",
+      "url": "https://github.com/martinmswanson-cmd/fledgetone/blob/7a1ad7155a8bb94c872312724c51f29b23c8eaf1/engine/fledge-compressor/README.md",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-plugins",
+      "title": "Guide · Plugins",
+      "url": "https://fledgetone.com/guide/instruments/#plugins",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-order",
+      "title": "Fledgetone · Signalreihenfolge der Spur (Quellstand 7a1ad71)",
+      "url": "https://github.com/martinmswanson-cmd/fledgetone/blob/7a1ad7155a8bb94c872312724c51f29b23c8eaf1/src/audio/effects/trackStrip.ts#L628-L646",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-loop",
+      "title": "Guide · Playback and the loop",
+      "url": "https://fledgetone.com/guide/playback-and-the-loop/#the-loop",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-auto",
+      "title": "Guide · Automation",
+      "url": "https://fledgetone.com/guide/automation/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-marker",
+      "title": "Guide · Markers",
+      "url": "https://fledgetone.com/guide/markers/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-time",
+      "title": "Guide · Typing a timecode",
+      "url": "https://fledgetone.com/guide/timecode-and-frame-rates/#typing-a-timecode",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-export",
+      "title": "Guide · Exporting audio",
+      "url": "https://fledgetone.com/guide/exporting-audio/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-key",
+      "title": "Guide · Keyboard shortcuts",
+      "url": "https://fledgetone.com/guide/keyboard-shortcuts/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-resample-ui",
+      "title": "Fledgetone · Resample-Dialog (Quellstand 7a1ad71)",
+      "url": "https://github.com/martinmswanson-cmd/fledgetone/blob/7a1ad7155a8bb94c872312724c51f29b23c8eaf1/src/components/timeline/ResampleDialog.tsx#L86-L121",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-track-ui",
+      "title": "Fledgetone · Spurnamen ändern (Quellstand 7a1ad71)",
+      "url": "https://github.com/martinmswanson-cmd/fledgetone/blob/7a1ad7155a8bb94c872312724c51f29b23c8eaf1/src/components/timeline/TrackHeader.tsx#L341-L375",
+      "accessed": "2026-11-21"
+    }
+  ],
+  "images": [
+    {
+      "id": "fledge-img-timeline",
+      "label": "Abbildung von Fledgetone",
+      "src": "https://fledgetone.com/guide/img/timeline.webp",
+      "local": "assets/images/fledgetone-timeline.webp",
+      "sourceUrl": "https://fledgetone.com/guide/the-timeline/",
+      "title": "Spuren und Clips im Arrangement",
+      "alt": "Arrangement mit farbigen Clips auf fünf Spuren; links stehen die Spurköpfe, oberhalb der Clips das Zeitlineal.",
+      "credit": "Fledgetone · Martin Swanson, offizieller Studio-Guide.",
+      "operations": [
+        "arrange"
+      ],
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-img-eq",
+      "label": "Abbildung von Fledgetone",
+      "src": "https://fledgetone.com/guide/img/eq.webp",
+      "local": "assets/images/fledgetone-eq.webp",
+      "sourceUrl": "https://fledgetone.com/guide/mixing-and-effects/",
+      "title": "Pro EQ in der Ansicht EQ & Dynamics",
+      "alt": "Der Pro EQ zeigt mehrere farbige Filterpunkte auf einer flachen Kurve; darunter liegen die Parameter des gewählten Bands.",
+      "credit": "Fledgetone · Martin Swanson, offizieller Studio-Guide.",
+      "operations": [
+        "eq"
+      ],
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "fledge-img-automation",
+      "label": "Abbildung von Fledgetone",
+      "src": "https://fledgetone.com/guide/img/automation.webp",
+      "local": "assets/images/fledgetone-automation.webp",
+      "sourceUrl": "https://fledgetone.com/guide/automation/",
+      "title": "Lautstärkeautomation in einer Spur",
+      "alt": "Unter der Kopfzeile einer Spur ist LANE mit Volume ausgewählt; eine Linie in der Spur zeigt den Pegelverlauf.",
+      "credit": "Fledgetone · Martin Swanson, offizieller Studio-Guide.",
+      "operations": [
+        "automation"
+      ],
+      "accessed": "2026-11-21"
+    }
+  ],
+  "operations": {
+    "setup": {
+      "term": "File > New… / Blank timeline · Audio track",
+      "steps": [
+        "Öffne das Studio am Computer, schließe bei Bedarf die Begrüßung und wähle File > New… > Blank timeline. Drücke Play oder START AUDIO, um den Browserton freizugeben; stoppe die Wiedergabe.",
+        "Ziehe die WAV-Datei vom Computer auf den Streifen unter der letzten Spur. Dadurch entsteht eine Audiospur. Ziehe den Clip an den Anfang; doppelklicke den Spurnamen und nenne ihn ORIGINAL.",
+        "Ziehe dieselbe Datei ein zweites Mal auf den Streifen. Richte den Clip wieder am Anfang aus, nenne die zweite Spur MATERIAL und schalte nur ORIGINAL mit M stumm.",
+        "Klicke oben auf den Projektnamen, benenne das Stück und wähle File > Save. Höre MATERIAL dreimal: Welche Stelle verrät dir am ehesten, woher der Klang kommt?"
+      ],
+      "tip": "Die .fledgetone.json-Datei enthält auch die importierte Aufnahme. Ein Share-Link enthält sie dagegen nicht; gib für die Weiterarbeit die Projektdatei weiter.",
+      "sources": [
+        "fledge-studio",
+        "fledge-start",
+        "fledge-audio",
+        "fledge-project",
+        "fledge-track-ui"
+      ]
+    },
+    "cut": {
+      "term": "Razor tool (C) / Selection tool (V) / Trim",
+      "steps": [
+        "Vergrößere MATERIAL mit +. Stelle SNAP für Schnitte innerhalb des Klangs auf Off; die Spitze der Wellenform hilft dir, die Attacke zu finden.",
+        "Wähle C (Razor). Klicke einmal hinter der Attacke und einmal vor dem Ausklang in den Clip. Jetzt hast du drei einzeln bewegliche Teile.",
+        "Wechsle mit V zum Auswahlpfeil. Ziehe die Mitte zweier Teile nach rechts, bis hörbare Pausen entstehen. Kürze einen Teil durch Ziehen an seiner linken oder rechten Kante zum Impuls."
+      ],
+      "tip": "Die Kante kürzt den gespielten Ausschnitt, die kleinen Quadrate oben ändern dagegen Fades. Falls ein Fragment kaum greifbar ist, zoome weiter hinein.",
+      "sources": [
+        "fledge-tools",
+        "fledge-edit",
+        "fledge-snap",
+        "fledge-audio"
+      ]
+    },
+    "arrange": {
+      "term": "Selection tool / Duplicate / Paste here",
+      "steps": [
+        "Ziehe die drei Fragmente mit V an ihrer Mitte an neue Zeitpositionen: etwa Impuls, Pause, Ausklang, Antwort. Ziehe am Clipkörper, damit seine Dauer erhalten bleibt.",
+        "Erzeuge mit + Add Track > Your Sounds > Audio eine weitere Audiospur. Rechtsklicke das gewünschte Fragment > Copy; rechtsklicke die Zielspur an der gewünschten Zeit > Paste here.",
+        "Starte den Zug in der Clipmitte und halte erst dann Shift, um die Kopie ohne Raster leicht zu versetzen. Doppelklicke die Spurnamen und nenne sie etwa IMPULS und GESTE; ergänze bei Bedarf FLÄCHE."
+      ],
+      "tip": "Audio lässt sich auf andere Audio tracks, aber nicht beliebig auf Instrumentenspuren verschieben. Duplicate im Clipmenü setzt die Kopie direkt hinter die Auswahl.",
+      "sources": [
+        "fledge-edit",
+        "fledge-audio",
+        "fledge-track-ui"
+      ],
+      "image": "fledge-img-timeline"
+    },
+    "fades": {
+      "term": "Fade in / Fade out / Crossfade",
+      "steps": [
+        "Doppelklicke ein geschnittenes Fragment. Gib ihm mit Fade in und Fade out kurze Blenden, bis das Knacken an der Schnittkante verschwindet.",
+        "Teste an einer Kopie einen deutlich längeren Fade in. Spiele beide Varianten nacheinander: Wann klingt die Attacke wie ein Anschwellen?",
+        "Lege zwei unterschiedliche Audioclips auf dieselbe Spur. Schiebe den zweiten so über das Ende des ersten, dass nur die Ränder überlappen. Das gelbe X zeigt die automatische Überblendung."
+      ],
+      "tip": "Liegt ein Clip vollständig im anderen, spielt Fledgetone sie als Schichten. Für eine Überblendung muss der zweite Clip über das Ende des ersten hinausreichen.",
+      "sources": [
+        "fledge-audio",
+        "fledge-edit"
+      ]
+    },
+    "gain": {
+      "term": "Clip editor: GAIN / Mixer: VOL, PAN",
+      "steps": [
+        "Doppelklicke den ersten Clip. Senke oder hebe GAIN und vergleiche ihn mit dem nächsten Fragment. Gleiche die Fragmente einzeln nach Gehör an.",
+        "Öffne unten Mixer. Nutze die Spurfader für Vorder- und Hintergrund; alle Clips derselben Spur bewegen sich nun im Verhältnis zur übrigen Mischung gemeinsam.",
+        "Verteile zwei Schichten mit PAN leicht nach links und rechts. Spiele die dichteste Stelle ab und beobachte rechts den Master: Senke die Spuren, falls die Summe ständig die Spitze erreicht."
+      ],
+      "tip": "Clip-GAIN und Spurfader wirken auf unterschiedliches Material. Die Abhörlautstärke ist noch einmal getrennt: Sie verändert den exportierten Mix nicht.",
+      "sources": [
+        "fledge-audio",
+        "fledge-mixer"
+      ]
+    },
+    "loop": {
+      "term": "Repeat ×N… / Fill to loop Out / Repeat",
+      "steps": [
+        "Setze einen kurzen Impuls an den Beginn der Phrase. Wähle per Rechtsklick Repeat ×N… und gib 7 ein: Der vorhandene Impuls plus sieben neue Kopien ergeben acht Einsätze.",
+        "Lösche zwei der Kopien. Verschiebe einen anderen Einsatz mit V; für eine absichtliche Vorziehung halte nach Beginn des Ziehens Shift.",
+        "Wiederhole auf einer zweiten Audiospur eine anders lange Zelle. Ziehe die IN- und OUT-Klammern im Lineal um die gemeinsame Passage und schalte mit L die Schleifenwiedergabe ein."
+      ],
+      "tip": "Repeat ×N… erzeugt neue Clips. Die Transport-Schleife mit L wiederholt nur die Wiedergabe zwischen IN und OUT. Schalte sie beim anschließenden Arbeiten am ganzen Stück wieder aus.",
+      "sources": [
+        "fledge-edit",
+        "fledge-loop"
+      ]
+    },
+    "reverse": {
+      "term": "Audio clip editor: Reverse / Reversed",
+      "steps": [
+        "Kopiere den Klang per Copy und Paste here auf eine freie Audiospur und öffne den neuen Clip per Doppelklick.",
+        "Klicke im Audio-Clip-Editor auf Reverse. Der neue Clip soll aus dem leiseren Ende auf die frühere Attacke zulaufen; die Vorwärtsfassung bleibt auf ihrer Spur.",
+        "Schließe den Editor mit Esc. Platziere das Ende des Rückwärtsclips genau vor dem Anfang der Vorwärtsfassung. Glätte die Naht mit kleinen Fades."
+      ],
+      "tip": "Der Knopf heißt nach dem Umschalten Reversed. Ein weiterer Klick stellt die ursprüngliche Abspielrichtung dieser Kopie wieder her.",
+      "sources": [
+        "fledge-audio",
+        "fledge-edit"
+      ]
+    },
+    "pitch": {
+      "term": "Mangle… > Pitch (same length)",
+      "steps": [
+        "Lege drei Kopien desselben unbearbeiteten, ungekürzten Klangs mit etwas Abstand ab. Lass die mittlere als 0-Halbton-Referenz stehen.",
+        "Doppelklicke die erste Kopie. Wähle in Mangle… unter Pitch (same length) den Eintrag Pitch −12. Öffne die letzte Kopie und wähle dort Pitch +7.",
+        "Richte die Anfänge zum Kontrollhören kurz auf drei Spuren aus: Alle drei Enden sollen nach rund drei Sekunden liegen. Ordne die tiefere und die höhere Stimme dann als Frage und Antwort an."
+      ],
+      "tip": "Pitch −12 ergibt eine Oktave tiefer bei gleicher Dauer. Der ähnlich klingende Befehl Half speed (an octave down) im Bereich Tape speed verlängert den Klang.",
+      "sources": [
+        "fledge-mangle-ui",
+        "fledge-resample"
+      ]
+    },
+    "speed": {
+      "term": "Mangle… > Tape speed (pitch and length)",
+      "steps": [
+        "Doppelklicke eine frische Kopie des dreisekündigen Ausgangsklangs; lass dahinter mindestens sechs Sekunden frei.",
+        "Wähle Mangle… > Tape speed (pitch and length) > Half speed (an octave down). Die Kopie wird etwa sechs Sekunden lang und klingt eine Oktave tiefer.",
+        "Vergleiche mit Pitch −12 aus Schritt 08: Bei gleicher Tonlage dauern nur in der Tape-Variante auch Attacke und Ausklang etwa doppelt so lange. Setze das langsamere Ergebnis als neue Fläche ein."
+      ],
+      "tip": "Der Befehl wirkt nur auf den gewählten Clip; das Projekttempo bleibt gleich. Back to the original im Editor setzt die Mangle-Bearbeitungen am vollständigen Clip zurück.",
+      "sources": [
+        "fledge-mangle-ui",
+        "fledge-resample"
+      ]
+    },
+    "stretch": {
+      "term": "Mangle… > Stretch (same pitch)",
+      "steps": [
+        "Lass neben einer frischen Dreisekunden-Kopie genug Platz. Doppelklicke sie und wähle Mangle… > Stretch (same pitch) > Stretch ×2 (half as fast).",
+        "Wende Stretch ×2 auf das entstandene Ergebnis ein zweites Mal an: Aus etwa 3 werden 6 und dann 12 Sekunden. Nutze für den Gegenversuch eine neue Kopie des Originals.",
+        "Wähle dort Squeeze ×0.5 (twice as fast). Vergleiche die etwa 1,5 Sekunden lange Fassung mit der langen: Bleibt die Tonhöhe erkennbar, und was wird aus Geräusch und Attacke?"
+      ],
+      "tip": "Die Stretch-Einträge bieten Faktoren, kein Auswahlmenü für Algorithmen. Der Unterschied zu Tape speed ist an einem gehaltenen Ton leicht hörbar.",
+      "sources": [
+        "fledge-mangle-ui",
+        "fledge-resample"
+      ]
+    },
+    "warp": {
+      "term": "Audio clip editor: Warp / Follow tempo",
+      "steps": [
+        "Wähle eine Arbeitskopie mit einem klaren inneren Ereignis. Doppelklicke den Clip und schalte im Editor Warp ein.",
+        "Setze per Doppelklick drei Marker in die Wellenform: nahe ihrem Beginn, genau auf dem inneren Ereignis und nahe ihrem Ende. Lasse die beiden äußeren Marker stehen.",
+        "Ziehe den mittleren Marker nach rechts und höre die Verzögerung. Ziehe ihn danach links vom Ausgangspunkt, um das Ereignis vorzuziehen. Mit Shift ziehst du frei statt auf Sechzehntel."
+      ],
+      "tip": "Beim ersten Warp-Marker schaltet sich Follow tempo mit dem aktuellen Songtempo ein. Der erste und letzte Marker sichern die Nachbarschaft; beobachte, wie sich die Klangteile dazwischen gegenläufig dehnen und stauchen.",
+      "sources": [
+        "fledge-audio",
+        "fledge-warp"
+      ]
+    },
+    "eq": {
+      "term": "FX Rack: PRO EQ / High cut / Low cut",
+      "steps": [
+        "Wähle die Audiospur, öffne oben FX Rack und aktiviere im Reiter Track FX den PRO EQ. Mit Open big öffnest du die größere Grafik unter EQ & Dynamics.",
+        "Wähle einen Punkt und stelle seinen Filtertyp auf High cut. Aktiviere das Band, falls es aus ist. Ziehe den Punkt nach links, bis die Höhen verschwinden: Das ist ein Tiefpass.",
+        "Stelle für die zweite Fassung auf Low cut und ziehe den Punkt nach rechts, bis der Klang dünner und heller wird. Vergleiche beide Fassungen mit PRO EQ aus/an bei ähnlicher Lautstärke."
+      ],
+      "tip": "High cut benennt, was verschwindet: hohe Frequenzen. Low cut entfernt tiefe Frequenzen. Doppelklick auf einen Punkt schaltet nur dieses Band aus oder ein.",
+      "sources": [
+        "fledge-fx"
+      ],
+      "image": "fledge-img-eq"
+    },
+    "dynamics": {
+      "term": "Plugins > Fledge Compressor: Threshold, Ratio, Attack, Make-up",
+      "steps": [
+        "Wähle die Arbeitsspur. Öffne Plugins > Browse plugins…, suche Fledge Compressor, kontrolliere die Zielspur unter Effects go on und klicke Add. Lasse Sidechain from auf None und Mix auf 100 %.",
+        "Stelle Ratio auf etwa 3:1 und Make-up zunächst auf 0 dB. Senke Threshold bei laufender Passage, bis die lauten Anschläge gegenüber der trockenen Fassung kleiner werden. Vergleiche auch den Ausschlag im Mixer.",
+        "Probiere Attack um 2 ms und dann um 30 ms; lasse den Rest gleich. Passe danach Make-up nach Gehör an und wechsle zum Vergleich zwischen Mix 0 % (trocken) und 100 % (bearbeitet)."
+      ],
+      "tip": "Der einfache COMPRESSOR im Track-FX-Rack hat keinen Attack-Regler. Wähle für diesen Versuch ausdrücklich das mitgelieferte Plugin Fledge Compressor; der Mixer zeigt den Spurpegel, nicht die Gain Reduction.",
+      "sources": [
+        "fledge-plugins",
+        "fledge-comp",
+        "fledge-mixer"
+      ]
+    },
+    "space": {
+      "term": "Track FX: REVERB / DELAY",
+      "steps": [
+        "Wähle die Audiospur und öffne FX Rack > Track FX. Aktiviere REVERB, stelle Mix zunächst niedrig ein und vergleiche einen kurzen Decay (etwa 0,4 s) mit mehreren Sekunden Hallzeit.",
+        "Aktiviere DELAY. Nimm bei Time ein Achtel, gib etwas Feedback hinzu und hebe Mix, bis eine rhythmische Antwort hörbar wird.",
+        "Lass nach einem kurzen Impuls eine Lücke frei. Schalte andere Clips dort stumm oder verschiebe sie, damit du die letzten Wiederholungen und die Hallfahne alleine hörst."
+      ],
+      "tip": "Decay betrifft den Hall, Feedback die Zahl der Echos. Ein hoher Mix auf einer einzelnen Audiospur macht den trockenen Ausgangsklang leiser; für einen gemeinsamen Raum folgt der Send-Versuch.",
+      "sources": [
+        "fledge-fx"
+      ]
+    },
+    "distortion": {
+      "term": "Track FX: DISTORTION (Drive) / FILTER / Bus",
+      "steps": [
+        "Lege den Klang auf zwei Audiospuren und höre sie einzeln. Aktiviere auf A im FX Rack DISTORTION und vergleiche niedrigen und hohen Drive mit ausgeglichenem Abhörpegel.",
+        "Aktiviere auf A zusätzlich FILTER > Low-pass. Der eingebaute Filter liegt hinter der Verzerrung; so kannst du die neu entstandenen Höhen abschneiden.",
+        "Für die Gegenrichtung bleibt auf Spur B nur derselbe FILTER aktiv. Rechtsklicke ihren Spurnamen > Send to a new bus. Aktiviere im FX Rack des neuen Busses nur DISTORTION mit demselben Drive. Jetzt trifft der gefilterte Klang auf die Verzerrung.",
+        "Vergleiche A und B jeweils solo, passe den Pegel an und notiere zwei kurze Stellen, die als Collage-Bausteine funktionieren."
+      ],
+      "tip": "Die eingebauten Rack-Effekte haben eine feste Reihenfolge. Der Bus macht die umgekehrte Reihenfolge hörbar, ohne in die Quelldatei zu schreiben.",
+      "sources": [
+        "fledge-fx",
+        "fledge-bus",
+        "fledge-order"
+      ]
+    },
+    "sends": {
+      "term": "Add Track > Return (effect return) / Send",
+      "steps": [
+        "Lege über + Add Track > Return (effect return) eine Effektspur an. Benenne sie HALL. Aktiviere in ihrem FX Rack REVERB und stelle Mix auf 100 %.",
+        "Öffne auf der ersten Quellspur den Inspector. Hebe bei den Sends den Regler für HALL an. Schicke die zweite Quellspur mit einem anderen Pegel an denselben Return; für diesen Versuch bleibt pre aus.",
+        "Schalte HALL mit M kurz stumm: Beide Direktsignale müssen bleiben. Aktiviere HALL wieder und ändere seine Decay-Zeit: Beide Spuren teilen nun denselben Raum.",
+        "Vergleiche mit zwei separaten REVERB-Inserts: Schalte dafür den Return vorübergehend stumm und stelle die Insert-Mischungen auf den beiden Quellspuren jeweils unter 100 %."
+      ],
+      "tip": "Die Send-Regler heißen wie der Return. REV und DLY können zusätzlich die werkseitigen gemeinsamen Effekte speisen; drehe sie zum isolierten Vergleich herunter.",
+      "sources": [
+        "fledge-return",
+        "fledge-fx",
+        "fledge-mixer"
+      ]
+    },
+    "automation": {
+      "term": "Show automation / LANE > Volume",
+      "steps": [
+        "Klicke im Kopf der Arbeitsspur auf das Kurvensymbol Show automation. Wähle bei LANE den Parameter Volume.",
+        "Klicke nahe dem Phrasenbeginn einen leisen und einige Sekunden später einen lauteren Punkt in die Spur. Die Verbindung erzeugt ein langsames Anschwellen.",
+        "Setze danach zwei nahe beieinanderliegende Punkte für einen kurzen Einbruch. Verschiebe sie bei Bedarf mit Shift frei vom Raster. Starte die Wiedergabe vor dem ersten Punkt und höre auch den anschließenden Verlauf."
+      ],
+      "tip": "Vor dem ersten und nach dem letzten Punkt hält Fledgetone deren jeweiligen Wert. Setze für einen festen Ausgangspegel einen eigenen ersten Punkt. Ein weiterer Klick auf das Kurvensymbol bringt die Clips zurück.",
+      "sources": [
+        "fledge-auto"
+      ],
+      "image": "fledge-img-automation"
+    },
+    "resample": {
+      "term": "Tools > Resample… / Onto: A new audio track",
+      "steps": [
+        "Lege die zu druckende Effektvariante auf eine eigene Arbeitsspur. Markiere den kurzen Clip oder mehrere zusammengehörige Clips und wähle Tools > Resample….",
+        "Wähle bei What den Clipnamen bzw. die ausgewählten Clips und bei Onto A new audio track. Aktiviere Let reverb and echo ring out past the end und Mute the track it came from.",
+        "Lasse Through the master section too aus, wenn die neue Spur anschließend wieder durch denselben Master läuft. Starte Resample. Höre die neue Spur inklusive Ausklang; die vorherige Spur bleibt im Projekt stumm erhalten.",
+        "Schneide die neue Wellenform mit C in drei Teile und baue sie mit V um. Zusätzliche Sends auf der neuen Spur sind nur nötig, wenn du noch mehr Raum hinzufügen möchtest."
+      ],
+      "tip": "Das Stummschalten betrifft die ganze Quellspur. Lege die Variante deshalb vorher auf eine eigene Spur, wenn andere Stellen im Arrangement hörbar bleiben sollen.",
+      "sources": [
+        "fledge-resample",
+        "fledge-resample-ui"
+      ]
+    },
+    "structure": {
+      "term": "Time ruler / TIMECODE / Markers",
+      "steps": [
+        "Schalte über den Spurnamen von Bars auf Time. Klicke oben das TIMECODE-Feld an, gib 00:00:00:00 ein und drücke Enter. Mit Shift+M setzt du einen an die Zeit gebundenen Marker.",
+        "Wiederhole das bei 00:00:30:00, 00:01:15:00, 00:02:00:00, 00:02:40:00 und 00:03:00:00. Benenne die Fahnen per Doppelklick, etwa „Impuls“, „Fläche“ oder „Pause“.",
+        "Ordne die drei Klangfamilien entlang dieser Marken. Deaktiviere die Schleifenwiedergabe, springe zu 0:00 und höre das ganze Stück ohne Eingriff. Notiere erst danach drei Änderungen."
+      ],
+      "tip": "Das letzte Zahlenpaar bezeichnet Frames. Eine Eingabe wie 00:02:40:00 bedeutet zwei Minuten und vierzig Sekunden. Zeitgebundene Marker bleiben auch bei einer späteren Tempoänderung an ihrer Uhrzeit.",
+      "sources": [
+        "fledge-marker",
+        "fledge-time",
+        "fledge-loop"
+      ]
+    },
+    "export": {
+      "term": "File > Export audio / video… / Mixdown > WAV",
+      "steps": [
+        "Prüfe Mute, Solo und Masterpegel. Für genau drei Minuten: Schalte das Lineal auf Time, öffne den kleinen Pfeil neben dem Loop-Schalter und trage In 00:00:00:00 und Out 00:03:00:00 ein. Plane die Hallfahne innerhalb dieses Bereichs.",
+        "Öffne Export. Wähle für diese Fassung Range: Loop region, Mixdown, Ending: Exact length und Format: WAV, z. B. 48 kHz / 24-bit. Wenn der Ausklang über das Bereichsende hinausragen darf, wähle stattdessen Ring out.",
+        "Lass Match a loudness target aus und prüfe, dass Loud master nicht ungewollt aktiv ist. Exportiere die Datei, nenne sie Name_Titel.wav und öffne sie anschließend in einem anderen Player.",
+        "Höre bis zum Ende. Prüfe die tatsächliche Dauer, Stille vor dem ersten Impuls und den letzten Ausklang. Bei abgeschnittenem Nachhall verschiebe den letzten Einsatz nach vorn oder exportiere mit Ring out neu."
+      ],
+      "tip": "Der Export enthält Mastereffekte, aber nicht die Abhörlautstärke. Bei drohendem Clipping kann Fledgetone den Exportpegel zum Schutz absenken. Lasse deshalb schon in der Mischung Reserve.",
+      "sources": [
+        "fledge-export",
+        "fledge-loop",
+        "fledge-time"
+      ]
+    }
+  },
+  "sourceLabel": "Offizieller Guide & Studio"
+}

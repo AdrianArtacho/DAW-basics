@@ -1,8 +1,12 @@
 {
   "title": "DAW Basics",
-  "subtitle": "Ein Klang. Sechs DAWs. Viele Möglichkeiten.",
+  "subtitle": "Ein Klang. Sechs Desktop-DAWs und zwei Browser-Studios.",
   "date": "2026-11-21",
   "daws": ["ableton", "logic", "cubase", "flstudio", "protools", "reaper"],
+  "browserDaws": [
+    {"id": "fledgetone", "studioUrl": "https://fledgetone.com/app/", "access": "Ohne Konto · Projekte lokal sichern"},
+    {"id": "bandlab", "studioUrl": "https://www.bandlab.com/studio", "access": "Mit Konto · in der Regel ab 13 · regional mit Membership"}
+  ],
   "phases": [
     {
       "id": "material",

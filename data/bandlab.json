@@ -1,0 +1,479 @@
+{
+  "id": "bandlab",
+  "name": "BandLab Studio",
+  "version": "Studio Web · englische Bedienoberfläche, Hilfestand November 2026",
+  "platform": "Desktop-/Laptop-Browser · Cloud-Projekt · Anmeldung erforderlich",
+  "intro": "Für BandLab Studio im Browser brauchst du ein Konto. Laut BandLab gilt grundsätzlich ein Mindestalter von 13 Jahren; örtlich kann es höher sein. Minderjährige benötigen die Zustimmung ihrer Erziehungsberechtigten. In einigen Regionen verlangt schon das Öffnen oder Bearbeiten von Projekten eine kostenpflichtige Membership. Für diese Aufgabe brauchst du weder eine Veröffentlichung noch ein Probeabo. Fehlt ein zulässiger Zugang, nimm die Beispiel-WAV mit und folge denselben Schritten in einer verfügbaren Klassen-DAW oder in einem Editor ohne Anmeldung.",
+  "terms": {
+    "region": "Audio Region",
+    "timeline": "Timeline / Composition Area",
+    "mixer": "Track Headers / Track Volume / Pan / Master",
+    "stretch": "Timestretch Mode / Playback Rate",
+    "render": "Project > Download > Mixdown As"
+  },
+  "sourceLabel": "BandLab-Hilfe & Tutorials",
+  "sources": [
+    {
+      "id": "bandlab-studio",
+      "title": "BandLab Studio öffnen · Anmeldung",
+      "url": "https://www.bandlab.com/studio",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-access",
+      "title": "BandLab Help · Regionaler Studio-Zugang und Membership",
+      "url": "https://help.bandlab.com/hc/en-us/articles/63415042774553-Changes-to-BandLab-Studio-Access",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-age",
+      "title": "BandLab Help · Minor Safety: Mindestalter und Zustimmung",
+      "url": "https://help.bandlab.com/hc/en-us/articles/52223951629465-Minor-Safety",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-terms",
+      "title": "BandLab · Nutzungsbedingungen, Abschnitte 1.4–1.5",
+      "url": "https://bandlabtechnologies.com/policies/bandlab-terms-of-use/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-start",
+      "title": "BandLab Help · Getting Started with the BandLab Studio",
+      "url": "https://help.bandlab.com/hc/en-us/articles/115002945153-Getting-Started-with-the-BandLab-Studio",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-import",
+      "title": "BandLab Help · Importing Audio and MIDI Files",
+      "url": "https://help.bandlab.com/hc/en-us/articles/900003008403-Importing-Audio-and-MIDI-Files",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-privacy",
+      "title": "BandLab Help · Who can access my music?",
+      "url": "https://help.bandlab.com/hc/en-us/articles/48041557586201-Who-can-access-my-music",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-keys",
+      "title": "BandLab Help · Studio Keyboard Shortcuts (Web)",
+      "url": "https://help.bandlab.com/hc/en-us/articles/360021363353-Studio-Keyboard-Shortcuts",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-slice",
+      "title": "BandLab Help · Slicing and Merging Regions (Web, mit Abbildung)",
+      "url": "https://help.bandlab.com/hc/en-us/articles/57252800910745-Slicing-and-Merging-Regions",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-copy",
+      "title": "BandLab Help · Duplicating and Extending Regions",
+      "url": "https://help.bandlab.com/hc/en-us/articles/57253754933529-Duplicating-and-Extending-Regions",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-regions",
+      "title": "BandLab Help · Editing Audio Regions (Web, mit Abbildungen)",
+      "url": "https://help.bandlab.com/hc/en-us/articles/900003878046-Editing-Audio-Regions",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-loop",
+      "title": "BandLab Help · Looping Regions and Setting a Playback Cycle",
+      "url": "https://help.bandlab.com/hc/en-us/articles/57252306473497-Looping-Regions-and-Setting-a-Playback-Cycle",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-stretch",
+      "title": "BandLab Help · Using Timestretch Mode (Web, mit Abbildung)",
+      "url": "https://help.bandlab.com/hc/en-us/articles/56960895744281-Using-Timestretch-Mode",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-fx",
+      "title": "BandLab Help · Adding Effects",
+      "url": "https://help.bandlab.com/hc/en-us/articles/115002945473-Adding-Effects",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-custom",
+      "title": "BandLab Help · Creating Custom FX Presets und Grenzen der Effektketten",
+      "url": "https://help.bandlab.com/hc/en-us/articles/900000100726-Creating-Custom-FX-Presets",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-hiphop",
+      "title": "BandLab-Tutorial · Pitch Shift, Rückwärtshall und Multi Filter im Web-Studio",
+      "url": "https://blog.bandlab.com/5-tips-for-producing-top-notch-hip-hop-vocals-on-bandlab/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-boom",
+      "title": "BandLab-Tutorial · BL Driver und Studio Reverb im Web-Studio",
+      "url": "https://blog.bandlab.com/how-to-make-a-boom-bap-beat-on-bandlab/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-compress",
+      "title": "BandLab-Tutorial · Kompression mit DIGI Comp und FBK Compressor",
+      "url": "https://blog.bandlab.com/what-is-audio-compression-in-music/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-vocals",
+      "title": "BandLab-Tutorial · Graphic EQ, D-Delay und Studio Reverb",
+      "url": "https://blog.bandlab.com/how-to-mix-vocals-on-bandlab/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-visual-eq",
+      "title": "BandLab Help · Visual EQ (Membership)",
+      "url": "https://help.bandlab.com/hc/en-us/articles/43480259396377-Visual-EQ",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-pan",
+      "title": "BandLab-Tutorial · Panorama und versetzte Regionkopien",
+      "url": "https://blog.bandlab.com/five-ways-to-manipulate-loops-and-make-them-your-own/",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-automation",
+      "title": "BandLab Help · Using Automation (Web)",
+      "url": "https://help.bandlab.com/hc/en-us/articles/360021039314-Using-Automation",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-download",
+      "title": "BandLab Help · Downloading Mixdowns and Tracks",
+      "url": "https://help.bandlab.com/hc/en-us/articles/115002959774-Downloading-Mixdowns-and-Tracks",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-formats",
+      "title": "BandLab Help · Supported Import and Export File Formats",
+      "url": "https://help.bandlab.com/hc/en-us/articles/360036010533-Supported-Import-and-Export-File-Formats",
+      "accessed": "2026-11-21"
+    },
+    {
+      "id": "bandlab-metronome",
+      "title": "BandLab Help · Using the Metronome: Tempo und Taktart",
+      "url": "https://help.bandlab.com/hc/en-us/articles/115002960274-Using-the-Metronome",
+      "accessed": "2026-11-21"
+    }
+  ],
+  "images": [
+    {
+      "id": "bandlab-img-web-mixdown",
+      "label": "Abbildung aus der BandLab-Hilfe",
+      "src": "https://help.bandlab.com/hc/article_attachments/63268627174041",
+      "sourceUrl": "https://help.bandlab.com/hc/en-us/articles/115002959774-Downloading-Mixdowns-and-Tracks",
+      "local": "assets/images/bandlab-mixdown.webp",
+      "title": "Im Web-Studio einen Mixdown herunterladen",
+      "alt": "Drei geöffnete Menüs zeigen Project, Download und Mixdown As; oberhalb von Download stehen Save und Publish als getrennte Befehle.",
+      "credit": "© BandLab Technologies · BandLab Help Center: „Downloading Mixdowns and Tracks“, Web, „From the Studio“.",
+      "operations": [
+        "resample",
+        "export"
+      ],
+      "accessed": "2026-11-21"
+    }
+  ],
+  "operations": {
+    "setup": {
+      "term": "Create > New Project · Import Audio/MIDI · Save Revision",
+      "steps": [
+        "Öffne BandLab Studio im Desktop-Browser mit deinem zugelassenen Konto. Auf der BandLab-Startseite führt Create > New Project ins Studio.",
+        "Wähle bei New Track unten Import Audio/MIDI und lade die Drei-Sekunden-WAV. Spiele die Region ab.",
+        "Nenne die Spur ORIGINAL. Klicke auf ihren Spurkopf, dupliziere sie mit Shift+D und nenne die Kopie MATERIAL. Schalte nur ORIGINAL stumm (Mute).",
+        "Gib dem Projekt einen Namen und speichere mit Strg+S bzw. ⌘+S eine Revision. Lass das Projekt privat."
+      ],
+      "tip": "Save Revision sichert dein weiter editierbares Cloud-Projekt. Publish macht es öffentlich und ist für die Übung nicht nötig. Eine WAV-Datei erhältst du erst beim Export.",
+      "sources": [
+        "bandlab-studio",
+        "bandlab-access",
+        "bandlab-age",
+        "bandlab-terms",
+        "bandlab-import",
+        "bandlab-keys",
+        "bandlab-privacy"
+      ]
+    },
+    "cut": {
+      "term": "Slice · Regiongrenzen ziehen",
+      "steps": [
+        "Wähle die Arbeitsregion und setze den Abspielkopf genau hinter den Anschlag. Schalte bei Bedarf Snap-to-grid aus.",
+        "Drücke S oder wähle per Rechtsklick Slice. Setze einen zweiten Schnitt vor dem Ausklang.",
+        "Ziehe die Teile auseinander. Kürze eines an seiner linken oder rechten Außenkante auf einen Impuls und höre die Pausen mit."
+      ],
+      "tip": "Schneiden und Ausschneiden haben unterschiedliche Folgen: S teilt die Region am Abspielkopf. Strg/⌘+X entfernt die Auswahl und kopiert sie in die Zwischenablage.",
+      "sources": [
+        "bandlab-slice",
+        "bandlab-copy",
+        "bandlab-keys"
+      ]
+    },
+    "arrange": {
+      "term": "Move / Copy / Paste · Duplicate Region",
+      "steps": [
+        "Ziehe ein Fragment in der Mitte an eine neue Stelle. Halte für eine Kopie Alt (Mac: Option) beim Ziehen gedrückt.",
+        "Lege mit Add Track eine zweite Voice/Audio-Spur an. Ziehe eine Kopie dorthin und versetze ihren Einsatz leicht.",
+        "Für eine Antwort an einer bestimmten Stelle: Region kopieren (Strg/⌘+C), auf der Zielspur zur gewünschten Zeit klicken und mit Strg/⌘+V einsetzen."
+      ],
+      "tip": "Soll ein Einsatz zwischen den Taktschlägen liegen, schalte Snap-to-grid aus. Fass die Region in der Mitte an; am Rand änderst du die Länge.",
+      "sources": [
+        "bandlab-start",
+        "bandlab-copy",
+        "bandlab-keys"
+      ]
+    },
+    "fades": {
+      "term": "Fade In/Out · Überblendung auf zwei Audiospuren",
+      "steps": [
+        "Klicke ein Fragment an. Ziehe den Fade-Griff am Anfang ein kleines Stück hinein und den am Ende zurück. Höre auf die Schnittknackser.",
+        "Ziehe den ersten Fade auf einer Kopie weiter in die Region, bis der Anschlag in ein Anschwellen übergeht.",
+        "Für eine Überblendung: Lege das zweite Fragment auf eine andere Spur, überlappe die Enden zeitlich und ziehe Fade-out und Fade-in über die Überlappung."
+      ],
+      "tip": "Beim Web-Fader bearbeitest du immer eine Region. Für den Übergang beide Regionen einzeln einblenden bzw. ausblenden und dann gemeinsam abhören.",
+      "sources": [
+        "bandlab-regions",
+        "bandlab-copy"
+      ]
+    },
+    "gain": {
+      "term": "Editor > Region Gain · Track Volume · Pan",
+      "steps": [
+        "Wähle eine einzelne Region und öffne unten Editor. Senke links Region Gain ab, etwa um 6 dB. Vergleiche mit der nächsten Region derselben Spur.",
+        "Stelle anschließend am Spurkopf den Pegel der ganzen Schicht ein. Ziehe die Antwort leiser als den ersten Impuls.",
+        "Verteile zwei Schichten mit Pan leicht nach links bzw. rechts. Höre beide gemeinsam ab und lass am Master Platz für weitere Stimmen."
+      ],
+      "tip": "Region Gain ändert nur die Auswahl; der Spurpegel betrifft auch spätere Regionen dieser Spur. Normalize ist eine separate Pegelanpassung am Spitzenwert.",
+      "sources": [
+        "bandlab-regions",
+        "bandlab-pan",
+        "bandlab-automation"
+      ]
+    },
+    "loop": {
+      "term": "Loop-Griff der Region · Cycle Bar",
+      "steps": [
+        "Bilde mit zwei Schnitten eine kurze Region. Wähle sie aus und ziehe das Loop-Symbol in ihrer oberen rechten Ecke über mehrere Wiederholungen nach rechts.",
+        "Für acht einzeln veränderbare Einsätze nutze stattdessen Kopien des Originalfragments. Entferne zwei Kopien und verschiebe einen Einsatz.",
+        "Lege auf einer zweiten Spur einen anders langen Loop darüber. Zum Probehören kannst du am Zeitlineal einen Cycle setzen; Taste C schaltet ihn wieder aus."
+      ],
+      "tip": "Der Loop-Griff verlängert das Arrangement hörbar. Die Cycle Bar wiederholt nur die Wiedergabe oder Aufnahme und erzeugt keine zusätzlichen Regionen im Mixdown.",
+      "sources": [
+        "bandlab-loop",
+        "bandlab-copy",
+        "bandlab-slice"
+      ]
+    },
+    "reverse": {
+      "term": "Reverse Region",
+      "steps": [
+        "Kopiere ein Fragment auf eine eigene Audiospur; lass das Vorwärts-Original stehen.",
+        "Klicke die Kopie rechts an und wähle Reverse Region. Alternativ findest du die Umkehr im Editor unten.",
+        "Ziehe das Ende der Rückwärtsregion an den Beginn des Originals und höre die Naht ab. Setze dort bei Bedarf kurze Fades."
+      ],
+      "tip": "Ein schon gerenderter Nachhall wird beim Umkehren zum Auftakt. Ein Hall-Effekt auf der Spur entsteht weiterhin erst beim Abspielen: Rendere ihn für einen Rückwärtshall vorher mit.",
+      "sources": [
+        "bandlab-regions",
+        "bandlab-hiphop"
+      ]
+    },
+    "pitch": {
+      "term": "Editor > Pitch Shift",
+      "steps": [
+        "Erzeuge zwei Kopien der unveränderten Region. Wähle nur die erste, öffne unten Editor und lass Playback Rate bei der Ausgangsgeschwindigkeit.",
+        "Stelle Pitch Shift bei der ersten Kopie auf −12 Halbtöne. Wähle die zweite und stelle sie auf +7; das Original bleibt bei 0.",
+        "Lege die drei Varianten probeweise an denselben Startpunkt: Die Enden bleiben zusammen. Höre sie danach einzeln als Frage und Antwort."
+      ],
+      "tip": "Bearbeite Pitch Shift der Region. Die Tonart-Einstellung des Projekts wäre für eine einzelne Variante zu weitreichend.",
+      "sources": [
+        "bandlab-regions",
+        "bandlab-hiphop"
+      ]
+    },
+    "speed": {
+      "term": "Annäherung: Timestretch + Pitch Shift",
+      "steps": [
+        "Wähle eine frische Drei-Sekunden-Kopie. Aktiviere oben links Timestretch und ziehe ihr Ende bei festem Start auf sechs Sekunden. Schalte Timestretch wieder aus.",
+        "Öffne für dieselbe Region Editor und stelle Pitch Shift auf −12. Vergleiche mit der nur transponierten Drei-Sekunden-Variante.",
+        "Für die schnelle Gegenprobe stauche eine neue Kopie auf 1,5 Sekunden und erhöhe Pitch Shift auf +12."
+      ],
+      "tip": "Ersatz für Bandgeschwindigkeit: Dauer und Oktavlage stimmen mit halber bzw. doppelter Geschwindigkeit überein. BandLab dokumentiert hier zwei getrennte Bearbeitungen; die Klangtextur kann von echter gekoppelter Wiedergabe abweichen.",
+      "sources": [
+        "bandlab-stretch",
+        "bandlab-regions",
+        "bandlab-hiphop"
+      ],
+      "availability": "alternative"
+    },
+    "stretch": {
+      "term": "Timestretch Mode",
+      "steps": [
+        "Markiere eine unveränderte Kopie und aktiviere links oben im Studio Timestretch Mode. Stelle Pitch Shift auf 0.",
+        "Ziehe den Endgriff nach rechts: Versuche, aus 3 ungefähr 12 Sekunden zu machen. Stauche eine zweite Kopie auf 1,5 Sekunden.",
+        "Schalte Timestretch Mode wieder aus. Höre, wie sich Anschlag und Ausklang verändern und die Tonlage ungefähr gleich bleibt."
+      ],
+      "tip": "Wenn das Raster die Ziellänge verhindert, schalte Snap-to-grid aus. Die Web-Hilfe nennt keinen wählbaren Stretch-Algorithmus; vergleiche deshalb zwei Dehnungsfaktoren.",
+      "sources": [
+        "bandlab-stretch",
+        "bandlab-regions"
+      ]
+    },
+    "warp": {
+      "term": "Ersatz für Warp-Marker: Slice + Timestretch",
+      "steps": [
+        "Kopiere die Region. Isoliere den zu bewegenden Anschlag mit einem Schnitt genau dort: Nun liegen ein linkes und ein rechtes Teilstück vor dir. Merke dir die Position des ursprünglichen Endes.",
+        "Für einen späteren Anschlag schiebe das rechte Teilstück etwas nach rechts. Aktiviere Timestretch und ziehe das Ende des linken Teils an den neuen Einsatz.",
+        "Ziehe das Ende des rechten Teils auf die ursprüngliche Endposition zurück. Prüfe die Naht, schalte Timestretch aus und spiele beide Teile gemeinsam.",
+        "Für einen früheren Anschlag auf einer weiteren Kopie den linken Teil verkürzen und den rechten bis zur alten Endposition dehnen."
+      ],
+      "tip": "Die Außenpunkte bleiben beim Versuch fest. Die Web-Hilfe dokumentiert globales Timestretch pro Region; die Schnitte übernehmen hier die Aufgabe lokaler Warp-Marker.",
+      "sources": [
+        "bandlab-slice",
+        "bandlab-stretch",
+        "bandlab-regions"
+      ],
+      "availability": "alternative"
+    },
+    "eq": {
+      "term": "Effects > Add Effect > Tone > Multi Filter",
+      "steps": [
+        "Wähle die Arbeitsspur. Öffne unten links Effects (oder Fx am Spurkopf), dann Add Effect > Tone > Multi Filter.",
+        "Wähle Lowpass und senke Frequency beim Abspielen, bis der Anschlag dumpfer wird. Behalte eine trockene Kopie für den Vergleich.",
+        "Probiere auf einer zweiten Variante Highpass und erhöhe Frequency: Welche Geräuschanteile bleiben übrig? Vergleiche ungefähr gleich laut."
+      ],
+      "tip": "Multi Filter genügt für den Versuch. Visual EQ ist laut BandLab ein Membership-Effekt; alternativ bietet Graphic EQ eine Bearbeitung nach Frequenzbändern.",
+      "sources": [
+        "bandlab-fx",
+        "bandlab-hiphop",
+        "bandlab-visual-eq",
+        "bandlab-vocals"
+      ]
+    },
+    "dynamics": {
+      "term": "Effects > Add Effect > Dynamics > DIGI Comp",
+      "steps": [
+        "Öffne Fx an der Arbeitsspur. Wähle Add Effect > Dynamics > DIGI Comp; FBK Compressor ist eine Alternative.",
+        "Beginne bei Ratio etwa 3:1. Senke Threshold beim Abspielen, bis die Spitzen kontrollierter klingen.",
+        "Vergleiche kurze und längere Attack-Zeiten und passe Release dem Ausklang an. Gleiche die Lautheit nach dem Kompressor für den Vergleich mit der trockenen Spur an."
+      ],
+      "tip": "Bei längerem Attack kann der Anschlag stärker hervortreten. Diese Kompression ändert den Pegelverlauf; die Region dauert weiterhin gleich lange.",
+      "sources": [
+        "bandlab-fx",
+        "bandlab-compress"
+      ]
+    },
+    "space": {
+      "term": "Effects > Studio Reverb / D-Delay",
+      "steps": [
+        "Füge an der Arbeitsspur mit Fx > Add Effect unter Reverb den Studio Reverb hinzu. Beginne mit kleinem Mix und kleiner Size.",
+        "Vergrößere Size und mische mit Mix mehr Hall bei. Lass nach dem Impuls eine Pause, damit der Raum hörbar antwortet.",
+        "Teste auf einer anderen Kopie D-Delay. Stelle einen hörbaren Wiederholungsabstand ein und erhöhe den Effektanteil nur so weit, dass die Antwort erkennbar bleibt."
+      ],
+      "tip": "Der Effekt gehört zur ganzen Spur. Sollen benachbarte Fragmente trocken bleiben, lege die Hallvariante auf eine eigene Spur.",
+      "sources": [
+        "bandlab-fx",
+        "bandlab-boom",
+        "bandlab-vocals"
+      ]
+    },
+    "distortion": {
+      "term": "Effects > Add Effect > Distortion > BL Driver",
+      "steps": [
+        "Öffne an einer Kopie Fx > Add Effect > Distortion > BL Driver. Erhöhe Drive von wenig bis deutlich hörbar.",
+        "Gleiche mit Volume die Lautheit an. Stelle mit Tone ein, wie hell die Verzerrung klingt.",
+        "Baue zwei Varianten auf getrennten Spuren: erst Multi Filter, dann BL Driver; auf der anderen in umgekehrter Reihenfolge. Höre, wie sich die Obertonfarbe ändert."
+      ],
+      "tip": "Nutze einzelne Effekte im FX-Fenster. One-Knob-Effekte können Membership voraussetzen; für diese zweigliedrige Kette sind sie nicht nötig.",
+      "sources": [
+        "bandlab-fx",
+        "bandlab-boom",
+        "bandlab-custom",
+        "bandlab-hiphop"
+      ]
+    },
+    "sends": {
+      "term": "Ersatz für Aux-Send: parallele Hallspur mit Space Maker",
+      "steps": [
+        "Lass zwei trockene, zeitlich getrennte Einsätze auf ihren bisherigen Spuren. Lege eine zusätzliche Voice/Audio-Spur namens HALL an und kopiere beide Regionen positionsgleich darauf.",
+        "Lade auf HALL unter Fx > Add Effect > Reverb den Space Maker. Stelle Mix auf Maximum, damit auf dieser Spur nur der Hall zu hören ist.",
+        "Stelle im Editor den Region Gain der ersten Hallkopie niedriger als den der zweiten. Der HALL-Spurfader regelt nun beide Hallfahnen gemeinsam.",
+        "Schalte HALL im Vergleich stumm: Die trockenen Quellen sollen erhalten bleiben."
+      ],
+      "tip": "Das ist eine manuelle Parallelspur. Änderungen an den Quellregionen folgen nicht automatisch, und du hast keinen frei routbaren Aux-Bus eingerichtet. Für diese Übung macht sie die Rollen von Zufuhr und Rückweg hörbar.",
+      "sources": [
+        "bandlab-start",
+        "bandlab-copy",
+        "bandlab-regions",
+        "bandlab-fx",
+        "bandlab-hiphop"
+      ],
+      "availability": "alternative"
+    },
+    "automation": {
+      "term": "Automation Lane · Volume / Pan / FX",
+      "steps": [
+        "Drücke A oder klicke oberhalb der Spurköpfe auf Automation. Wähle an der gewünschten Spur im Menü Volume.",
+        "Setze durch Klicks auf die Linie mehrere Punkte: erst einen leisen Ausgangswert, dann einen Anstieg und ein Plateau.",
+        "Setze für einen schnellen Rückgang zwei Punkte dicht zusammen und spiele schon vor dem ersten Punkt ab. Probiere danach Pan oder einen Parameter eines zuvor eingesetzten Effekts."
+      ],
+      "tip": "Der letzte gesetzte Wert kann nach dem Abschnitt hörbar bleiben. Setze dort einen Rückkehrpunkt, wenn der folgende Klang wieder den Ausgangswert haben soll.",
+      "sources": [
+        "bandlab-automation"
+      ]
+    },
+    "resample": {
+      "term": "Project > Download > Mixdown As · Reimport",
+      "steps": [
+        "Speichere eine Revision. Für den Arbeitsmix nur die gewünschte Klangschicht mit ihren Effekten hörbar lassen. Spiele sie samt Nachklang einmal ab.",
+        "Öffne links oben das Projektmenü und wähle Project > Download > Mixdown As. Lade WAV herunter. Das ist der Mix des Projekts; ein frei gewählter Zeitabschnitt ist kein Exportbereich.",
+        "Ziehe die WAV auf eine neue, effektfreie Spur. Isoliere die gewünschte Geste einschließlich Hallfahne mit Slice; entferne die überschüssige Stille aus dieser Arbeitskopie.",
+        "Lass die gerenderte Variante allein statt der Quellschicht laufen, stelle andere benötigte Spuren wieder hörbar und schneide drei neue Fragmente."
+      ],
+      "tip": "Merge verbindet Regionen; es ersetzt das Drucken der hörbaren Effektmischung nicht. Fehlt im Arbeitsmix ein Ausklang, plane vor dem Projektende mehr Zeit ein und kontrolliere den neuen Export.",
+      "sources": [
+        "bandlab-download",
+        "bandlab-formats",
+        "bandlab-import",
+        "bandlab-slice",
+        "bandlab-hiphop"
+      ],
+      "image": "bandlab-img-web-mixdown"
+    },
+    "structure": {
+      "term": "Timeline / Cycle Bar · Formplan mit Zeitmarken",
+      "steps": [
+        "Notiere sechs Wegmarken für dein Stück: 0:00, 0:30, 1:15, 2:00, 2:40 und 3:00. Gib jedem Abschnitt eine Aufgabe, etwa „ein Impuls“, „dichtes Geflecht“, „Pause“ oder „Rückkehr“.",
+        "Setze den Abspielkopf auf die geplanten Zeiten und verteile die Regionen auf die Spuren. Bei einem neuen Projekt mit konstant 120 BPM und 4/4 liegt das Ende von drei Minuten am Beginn von Takt 91.",
+        "Ziehe die Cycle Bar zum Probehören über einen Übergang. Schalte Cycle mit C wieder aus und höre anschließend die ganze Form von vorn."
+      ],
+      "tip": "Die Wegmarken sind ein schriftlicher Formplan; die Cycle Bar kann jeweils nur einen Bereich wiederholen. Sie ersetzt keine Sammlung benannter Projektmarker. Ändere das Tempo eines bestehenden Stücks für diese Orientierung nicht.",
+      "sources": [
+        "bandlab-start",
+        "bandlab-loop",
+        "bandlab-metronome"
+      ],
+      "availability": "alternative"
+    },
+    "export": {
+      "term": "Project > Download > Mixdown As · WAV",
+      "steps": [
+        "Kontrolliere die Hörmischung: Experiment-Spuren stumm, gewünschte Schichten hörbar, kein unbeabsichtigtes Solo. Lass den letzten Anschlag so früh enden, dass der Hall vor 3:00 ausklingen kann.",
+        "Speichere mit Strg/⌘+S eine Revision. Öffne oben links Project > Download > Mixdown As und wähle WAV.",
+        "Benenne die heruntergeladene Datei Name_Titel.wav und höre sie in einem anderen Player vollständig ab. Prüfe Dauer, ersten Einsatz und Schlussfahne."
+      ],
+      "tip": "Die Web-Formattabelle nennt für den Mixdown 16-Bit-WAV bei 44,1 kHz. Die Cycle Bar begrenzt den Export nicht. Endet die Datei zu spät, korrigiere das Arrangement oder kürze die exportierte WAV anschließend in einem lokalen Editor.",
+      "sources": [
+        "bandlab-download",
+        "bandlab-formats",
+        "bandlab-keys"
+      ],
+      "image": "bandlab-img-web-mixdown"
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Bildnachweise
 
-Die folgenden 14 Abbildungen stammen aus offiziellen Herstellerhandbüchern und von der ReaPlugs-Produktseite von Cockos. Die Rechte verbleiben bei den jeweils genannten Herstellern. Die Speicherung dient der Erläuterung der dokumentierten Arbeitsschritte; diese Dateien sind nicht als frei lizenzierte Projektbestandteile ausgewiesen.
+Die folgenden Abbildungen stammen aus den Handbüchern und Produktseiten der jeweiligen Anbieter. Die Rechte verbleiben bei den jeweils genannten Herstellern. Die Speicherung dient der Erläuterung der dokumentierten Arbeitsschritte; diese Dateien sind nicht als frei lizenzierte Projektbestandteile ausgewiesen.
 
 | Datei | Abbildung | Originalseite | Rechte |
 | --- | --- | --- | --- |
@@ -20,5 +20,9 @@ Die folgenden 14 Abbildungen stammen aus offiziellen Herstellerhandbüchern und 
 | [reaper-reacomp.png](reaper-reacomp.png) | ReaComp: Threshold, Ratio, Attack und Release | [ReaPlugs-Produktseite](https://www.reaper.fm/reaplugs/) | © Cockos Incorporated · ReaPlugs |
 
 Die beiden Cockos-Abbildungen zeigen die separat angebotene ReaPlugs-Ausgabe. Sie veranschaulichen die Parameter der Effekte; deren Darstellung in REAPER 7.86 kann abweichen.
+| [fledgetone-timeline.webp](fledgetone-timeline.webp) | Spuren und Clips im Arrangement | [Originalseite](https://fledgetone.com/guide/the-timeline/) | Fledgetone · Martin Swanson, offizieller Studio-Guide. |
+| [fledgetone-eq.webp](fledgetone-eq.webp) | Pro EQ in der Ansicht EQ & Dynamics | [Originalseite](https://fledgetone.com/guide/mixing-and-effects/) | Fledgetone · Martin Swanson, offizieller Studio-Guide. |
+| [fledgetone-automation.webp](fledgetone-automation.webp) | Lautstärkeautomation in einer Spur | [Originalseite](https://fledgetone.com/guide/automation/) | Fledgetone · Martin Swanson, offizieller Studio-Guide. |
+| [bandlab-mixdown.webp](bandlab-mixdown.webp) | Im Web-Studio einen Mixdown herunterladen | [Originalseite](https://help.bandlab.com/hc/en-us/articles/115002959774-Downloading-Mixdowns-and-Tracks) | © BandLab Technologies · BandLab Help Center: „Downloading Mixdowns and Tracks“, Web, „From the Studio“. |
 
 Originale Asset-URLs und Abrufdaten stehen in `data/*.json`. Stand: 21.10.2026 für die fünf ursprünglichen DAWs; 21.11.2026 für REAPER.

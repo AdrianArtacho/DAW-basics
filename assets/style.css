@@ -12,3 +12,28 @@
 .daw-intro{font-size:12px;line-height:1.7;color:var(--muted);padding-bottom:15px;border-bottom:1px solid var(--line)}
 
 .glossary td a{display:block;min-height:24px}
+
+/* Browser studios are an optional group. Only the disclosure occupies space on first visit. */
+.last-daw{display:inline-flex;align-items:center;gap:4px}
+.browser-toggle{display:inline-flex;align-items:center;justify-content:center;gap:6px;min-height:32px;min-width:32px;border:1px solid var(--line);border-radius:6px;padding:2px 7px;background:transparent;color:var(--accent);line-height:1.1}
+.browser-toggle:hover,.browser-toggle[aria-expanded=true]{background:var(--accent-pale);border-color:#bcb5df}
+.disclosure-icon{font-size:19px;font-weight:500;line-height:1;min-width:12px}
+.disclosure-label,#browser-current{font-size:12px;font-weight:600}
+.page-view>.browser-toggle{margin-bottom:14px}
+.browser-tray{flex-basis:100%;display:grid;grid-template-columns:minmax(130px,.65fr) repeat(2,minmax(0,1fr));gap:12px 20px;align-items:center;padding:14px 18px;background:var(--accent-pale);border-radius:8px}
+.browser-heading,.browser-choice{display:flex;align-items:flex-start;flex-direction:column;gap:3px}
+.browser-heading b{font-size:14px}.browser-heading span,.browser-choice>span,.launch-studio{font-size:12px}
+.browser-choice .daw-button{width:auto;font-size:14px;padding:4px 9px;background:white;border:1px solid #c8c5d3}
+.browser-choice .daw-button[aria-pressed=true]{background:var(--accent);color:white;border-color:var(--accent)}
+.browser-choice>span,.browser-heading span{color:#555a57}.launch-studio{margin-top:3px}
+.daw-tabbar{display:flex;gap:5px;align-items:center;flex-wrap:wrap;background:white;padding:8px 10px 3px;border:1px solid var(--line);border-bottom:0;border-radius:var(--radius) var(--radius) 0 0}
+.daw-tabbar .daw-tabs{padding:0;border:0;background:none;min-width:0}
+.daw-tabbar .browser-toggle{min-height:28px;min-width:28px}
+.compare-mode .daw-tabbar{padding:0;border:0;margin:0 0 12px;background:none}
+.compare-mode .daw-tabbar .browser-toggle:after{content:"Browser-DAWs";font-size:12px}
+.method-note{display:table;font-size:12px;font-weight:650;background:var(--yellow);border-radius:4px;padding:3px 8px;margin:8px 0}
+.studio-link{display:inline-flex;margin:3px 0 10px;font-size:13px;font-weight:600}
+.no-js .browser-toggle,.no-js .daw-tabbar{display:none}
+@media(max-width:760px){.browser-tray{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;padding:12px}.browser-heading{grid-column:1/-1}.daw-tabbar{padding:6px}.last-daw{gap:1px}}
+@media(max-width:370px){.browser-tray{grid-template-columns:1fr}}
+@media print{.browser-toggle,.daw-tabbar,.studio-link{display:none!important}}
